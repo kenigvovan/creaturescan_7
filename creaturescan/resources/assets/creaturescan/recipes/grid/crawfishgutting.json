@@ -1,0 +1,20 @@
+{
+	"ingredientPattern": "KC",
+	"ingredients": {
+		"K": {
+			"type": "item",
+			"code": "game:knife-*",
+			"isTool": true
+		},
+		"C": {
+			"type": "item",
+			"code": "insect-crawfish"
+		}
+	},
+	"width": 2,
+	"height": 1,
+	"output": {
+		"type": "item",
+		"code": "crawfishmeat-raw"
+	}
+}

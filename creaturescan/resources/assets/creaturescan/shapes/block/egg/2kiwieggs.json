@@ -1,0 +1,44 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"egg": "game:block/henbox/egg"
+	},
+	"elements": [
+		{
+			"name": "egg 1",
+			"from": [ 3.7, 0.0, 6.7 ], 
+			"to": [ 7.2, 1.5, 10.2 ], 
+			"rotationOrigin": [ 4.7, 1.0, 7.7 ],
+			"rotationY": 22.5,
+			"faces": {
+				"north": { "texture": "#egg", "uv": [ 12.0, 6.5, 15.5, 8.0 ] },
+				"east": { "texture": "#egg", "uv": [ 12.0, 8.0, 15.5, 9.5 ] },
+				"south": { "texture": "#egg", "uv": [ 10.0, 7.5, 13.5, 9.0 ] },
+				"west": { "texture": "#egg", "uv": [ 10.0, 6.5, 13.5, 8.0 ] },
+				"up": { "texture": "#egg", "uv": [ 11.5, 6.5, 15.0, 10.0 ] },
+				"down": { "texture": "#egg", "uv": [ 12.0, 7.0, 15.5, 10.5 ] }
+			}
+		},
+		{
+			"name": "egg 2",
+			"from": [ 9.9, -0.1, 7.1 ], 
+			"to": [ 13.4, 1.4, 10.6 ], 
+			"rotationOrigin": [ 10.9, 1.0, 8.1 ],
+			"rotationY": -22.5,
+			"faces": {
+				"north": { "texture": "#egg", "uv": [ 12.0, 2.5, 15.5, 4.0 ] },
+				"east": { "texture": "#egg", "uv": [ 10.0, 2.5, 13.5, 4.0 ] },
+				"south": { "texture": "#egg", "uv": [ 11.0, 3.5, 14.5, 5.0 ] },
+				"west": { "texture": "#egg", "uv": [ 11.5, 3.5, 15.0, 5.0 ] },
+				"up": { "texture": "#egg", "uv": [ 12.0, 2.0, 15.5, 5.5 ] },
+				"down": { "texture": "#egg", "uv": [ 10.5, 1.5, 14.0, 5.0 ] }
+			}
+		}
+	]}

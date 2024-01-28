@@ -1,0 +1,150 @@
+{
+	"code": "insect",
+	"maxstacksize": 64,
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "slug" ]
+		}
+	],
+	"shapebytype": {
+		"*-slug": { "base": "entity/land/deadslug" }
+	},
+	"texture": { "base": "slug" },
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"nutritionPropsByType": {
+		"*-slug": {
+			"satiety": 30,
+			"foodcategory": "Protein"
+		}
+	},
+	"attributesByType": {
+		"*-slug": {
+			"inContainerTexture": { "base": "block/transparent" },
+			"nutritionPropsWhenInMeal": {
+				"satiety": 50,
+				"foodcategory": "Protein"
+			},
+			"inPieProperties": {
+				"texture": "block/food/pie/fill-{type}",
+				"partType": "Filling"
+			}
+		}
+	},
+	"transitionablePropsByType": {
+		"*": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 48 },
+				"transitionHours": { "avg": 18 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 0.5
+			}
+		]
+	},
+	"materialDensity": 600,
+	"guiTransformByType": {
+		"*": {
+			"translation": {
+				"x": 2,
+				"y": 2,
+				"z": 0
+			},
+			"rotation": {
+				"x": 127,
+				"y": 180,
+				"z": 38
+			},
+			"origin": {
+				"x": 0.55,
+				"y": 0.05,
+				"z": 0.53
+			},
+			"scale": 5
+		},
+		"*-slug": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 51,
+				"y": -10,
+				"z": 137
+			},
+			"origin": {
+				"x": 0.48,
+				"y": 0.07,
+				"z": 0.47
+			},
+			"scale": 6
+		}
+	},
+	"fpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0,
+				"y": 0.22,
+				"z": 0
+			},
+			"rotation": {
+				"x": 38,
+				"y": -75,
+				"z": 2
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 1.8
+		}
+	},
+	"tpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": -0.8,
+				"y": -0.17,
+				"z": -0.65
+			},
+			"rotation": {
+				"x": 124,
+				"y": -42,
+				"z": -65
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.72
+		}
+	},
+	"groundTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 4
+		}
+	}
+}

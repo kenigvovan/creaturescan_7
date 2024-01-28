@@ -1,0 +1,3759 @@
+{
+	"code": "creature",
+	"class": "ItemCreature",
+	"maxstacksize": 64,
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [
+				"dragonfly-blue",
+				"dragonfly-brownhawker",
+				"dragonfly-demoiselle",
+				"glowworm",
+				"hummingbird-green",
+				"hummingbird-rubythroated",
+				"cochineal",
+				"cricket",
+				"grasshopper",
+				"kiwi-rooster",
+				"kiwi-hen",
+				"kiwi-henpoult",
+				"kiwi-roosterpoult",
+				"kiwi-baby",
+				"crawfish",
+				"slug",
+				"gardensnail",
+				"squirrel-male",
+				"squirrel-female",
+				"squirrel-baby",
+				"tortoise-male",
+				"tortoise-female",
+				"tortoise-baby",
+				"songbird-sparrow",
+				"rolypoly",
+				"bullfrog",
+				"tiger-male",
+				"tiger-female",
+				"tiger-cub",
+				"hamster-male",
+				"hamster-female",
+				"hamster-baby",
+				"gecko",
+				"flamejellyfish",
+				"alpaca-male",
+				"alpaca-female",
+				"alpaca-lamb",
+				"elephant-male",
+				"elephant-female",
+				"elephant-baby",
+				"hippo-male",
+				"hippo-female",
+				"hippo-baby",
+				"komododragon",
+				"puma-male",
+				"puma-female",
+				"puma-cub",
+				"salamander-marbled",
+				"salamander-red",
+				"salamander-bluespotted",
+				"salamander-tiger",
+				"salamander-tennesseecave",
+				"moth-brown",
+				"cassowary-male",
+				"cassowary-female",
+				"cassowary-chick",
+				"cassowary-youngling",
+				"toad-tan",
+				"toad-grey",
+				"toad-light",
+				"toad-dark",
+				"crocodile",
+				"crocodile-hatchling",
+				"camel-male",
+				"camel-female",
+				"camel-calf",
+				"caribou-male",
+				"caribou-female",
+				"caribou-calf",
+				"mosquitoswarm",
+				"honeybadger-male",
+				"honeybadger-female",
+				"honeybadger-pup"
+			]
+		}
+	],
+	"shapeByType": {
+		"*-hummingbird-green": {
+			"base": "entity/air/hummingbird"
+		},
+		"*-hummingbird-rubythroated": {
+			"base": "entity/air/hummingbird"
+		},
+		"*-dragonfly-blue": {
+			"base": "entity/air/dragonfly"
+		},
+		"*-dragonfly-brownhawker": {
+			"base": "entity/air/dragonfly"
+		},
+		"*-dragonfly-demoiselle": {
+			"base": "entity/air/dragonfly"
+		},
+		"*-glowworm": {
+			"base": "entity/land/glowworm"
+		},
+		"*-cochineal": {
+			"base": "entity/land/cochineal"
+		},
+		"*-cricket": {
+			"base": "entity/land/cricket"
+		},
+		"*-grasshopper": {
+			"base": "entity/land/grasshopper"
+		},
+		"*-kiwi-rooster": {
+			"base": "entity/land/kiwi-rooster"
+		},
+		"*-kiwi-hen": {
+			"base": "entity/land/kiwi-hen"
+		},
+		"*-kiwi-henpoult": {
+			"base": "entity/land/kiwi-hen"
+		},
+		"*-kiwi-roosterpoult": {
+			"base": "entity/land/kiwi-rooster"
+		},
+		"*-kiwi-baby": {
+			"base": "entity/land/kiwi-baby"
+		},
+		"*-crawfish": {
+			"base": "entity/water/crawfish"
+		},
+		"*-slug": {
+			"base": "entity/land/slug"
+		},
+		"*-gardensnail": {
+			"base": "entity/land/gardensnail"
+		},
+		"*-squirrel-male": {
+			"base": "entity/land/squirrel-male"
+		},
+		"*-squirrel-female": {
+			"base": "entity/land/squirrel-female"
+		},
+		"*-squirrel-baby": {
+			"base": "entity/land/squirrel-baby"
+		},
+		"*-tortoise-male": {
+			"base": "entity/land/tortoise"
+		},
+		"*-tortoise-female": {
+			"base": "entity/land/tortoise"
+		},
+		"*-tortoise-baby": {
+			"base": "entity/land/tortoise"
+		},
+		"*-songbird-sparrow": {
+			"base": "entity/air/sparrow"
+		},
+		"*-rolypoly": {
+			"base": "entity/land/rolypoly"
+		},
+		"*-toad-tan": {
+			"base": "entity/land/toad"
+		},
+		"*-toad-grey": {
+			"base": "entity/land/toad"
+		},
+		"*-toad-light": {
+			"base": "entity/land/toad"
+		},
+		"*-toad-dark": {
+			"base": "entity/land/toad"
+		},
+		"*-bullfrog": {
+			"base": "entity/water/bullfrog"
+		},
+		"*-tiger-male": {
+			"base": "entity/land/tiger-male"
+		},
+		"*-tiger-female": {
+			"base": "entity/land/tiger-female"
+		},
+		"*-tiger-cub": {
+			"base": "entity/land/tiger-cub"
+		},
+		"*-hamster-male": {
+			"base": "entity/land/hamster-male"
+		},
+		"*-hamster-female": {
+			"base": "entity/land/hamster-male"
+		},
+		"*-hamster-baby": {
+			"base": "entity/land/hamster-male"
+		},
+		"*-gecko": {
+			"base": "entity/land/gecko"
+		},
+		"*-crocodile": {
+			"base": "entity/water/crocodile"
+		},
+		"*-crocodile-hatchling": {
+			"base": "entity/water/crocodile"
+		},
+		"*-flamejellyfish": {
+			"base": "entity/water/flamejellyfish"
+		},
+		"*-alpaca-male": {
+			"base": "entity/land/alpaca"
+		},
+		"*-alpaca-female": {
+			"base": "entity/land/alpaca"
+		},
+		"*-alpaca-lamb": {
+			"base": "entity/land/alpaca"
+		},
+		"*-elephant-male": {
+			"base": "entity/land/elephant-male"
+		},
+		"*-elephant-female": {
+			"base": "entity/land/elephant-female"
+		},
+		"*-elephant-baby": {
+			"base": "entity/land/elephant-baby"
+		},
+		"*-hippo-male": {
+			"base": "entity/water/hippo"
+		},
+		"*-hippo-female": {
+			"base": "entity/water/hippo"
+		},
+		"*-hippo-baby": {
+			"base": "entity/water/hippobaby"
+		},
+		"*-komododragon": {
+			"base": "entity/land/komododragon"
+		},
+		"*-puma-male": {
+			"base": "entity/land/puma"
+		},
+		"*-puma-female": {
+			"base": "entity/land/puma"
+		},
+		"*-puma-cub": {
+			"base": "entity/land/puma-cub"
+		},
+		"*-salamander-marbled": {
+			"base": "entity/land/salamander"
+		},
+		"*-salamander-red": {
+			"base": "entity/land/salamander"
+		},
+		"*-salamander-bluespotted": {
+			"base": "entity/land/salamander"
+		},
+		"*-salamander-tiger": {
+			"base": "entity/land/salamander"
+		},
+		"*-salamander-tennesseecave": {
+			"base": "entity/land/salamander"
+		},
+		"*-moth-brown": {
+			"base": "entity/air/moth"
+		},
+		"*-cassowary-male": {
+			"base": "entity/land/cassowary"
+		},
+		"*-cassowary-female": {
+			"base": "entity/land/cassowary"
+		},
+		"*-cassowary-chick": {
+			"base": "entity/land/cassowary-chick"
+		},
+		"*-cassowary-youngling": {
+			"base": "entity/land/cassowary-youngling"
+		},
+		"*-camel-male": {
+			"base": "entity/land/camel-male"
+		},
+		"*-camel-female": {
+			"base": "entity/land/camel-female"
+		},
+		"*-camel-calf": {
+			"base": "entity/land/camel-calf"
+		},
+		"*-caribou-male": {
+			"base": "entity/land/reindeer-male"
+		},
+		"*-caribou-female": {
+			"base": "entity/land/reindeer-female"
+		},
+		"*-caribou-calf": {
+			"base": "entity/land/reindeer-calf"
+		},
+		"*-mosquitoswarm": {
+			"base": "entity/air/mosquitoswarm"
+		},
+		"*-honeybadger-male": {
+			"base": "entity/land/honeybadger-male"
+		},
+		"*-honeybadger-female": {
+			"base": "entity/land/honeybadger-male"
+		},
+		"*-honeybadger-pup": {
+			"base": "entity/land/honeybadger-male"
+		}
+	},
+	"texturesByType": {
+		"*-hummingbird-green": {
+			"greenhummer": { "base": "entity/greenhummer" }
+		},
+		"*-hummingbird-rubythroated": {
+			"greenhummer": { "base": "entity/rubyhummer" }
+		},
+		"*-dragonfly-blue": {
+			"dragonfly": { "base": "dragonfly/blue" }
+		},
+		"*-dragonfly-brownhawker": {
+			"dragonfly": { "base": "dragonfly/brownhawker" }
+		},
+		"*-dragonfly-demoiselle": {
+			"dragonfly": { "base": "dragonfly/demoiselle" }
+		},
+		"*-glowworm": {
+			"glowworm": { "base": "glowworm" }
+		},
+		"*-cochineal": {
+			"cochineal": { "base": "cochineal" }
+		},
+		"*-cricket": {
+			"cricket": { "base": "cricket" }
+		},
+		"*-grasshopper": {
+			"grasshopper": { "base": "grasshopper" }
+		},
+		"*-kiwi-rooster": {
+			"kiwi-hen": { "base": "entity/kiwi/hen" }
+		},
+		"*-kiwi-hen": {
+			"kiwi-hen": { "base": "entity/kiwi/hen" }
+		},
+		"*-kiwi-roosterpoult": {
+			"kiwi-hen": { "base": "entity/kiwi/hen" }
+		},
+		"*-kiwi-henpoult": {
+			"kiwi-hen": { "base": "entity/kiwi/hen" }
+		},
+		"*-kiwi-baby": {
+			"babykiwi": { "base": "entity/kiwi/babykiwi" }
+		},
+		"*-crawfish": {
+			"crawfish": { "base": "entity/water/crawfish" }
+		},
+		"*-slug": {
+			"slug": { "base": "slug" }
+		},
+		"*-gardensnail": {
+			"slug": { "base": "snail" }
+		},
+		"*-squirrel-male": {
+			"red-squirrel": { "base": "entity/land/squirrel1" }
+		},
+		"*-squirrel-female": {
+			"red-squirrel": { "base": "entity/land/squirrel2" }
+		},
+		"*-squirrel-baby": {
+			"red-squirrel": { "base": "entity/land/squirrel3" }
+		},
+		"*-tortoise-male": {
+			"tortoise": { "base": "entity/land/tortoise" }
+		},
+		"*-tortoise-female": {
+			"tortoise": { "base": "entity/land/tortoise" }
+		},
+		"*-tortoise-baby": {
+			"tortoise": { "base": "entity/land/tortoise" }
+		},
+		"*-songbird-sparrow": {
+			"songbird-sparrow": { "base": "entity/air/songbird-sparrow" }
+		},
+		"*-rolypoly": {
+			"rolypoly": { "base": "entity/rolypoly" }
+		},
+		"*-toad-tan": {
+			"toad": { "base": "toad-tan" }
+		},
+		"*-toad-grey": {
+			"toad": { "base": "toad-grey" }
+		},
+		"*-toad-dark": {
+			"toad": { "base": "toad-dark" }
+		},
+		"*-toad-light": {
+			"toad": { "base": "toad-light" }
+		},
+		"*-bullfrog": {
+			"bullfrog": { "base": "bullfrog" }
+		},
+		"*-tiger-male": {
+			"tiger1": { "base": "tiger1" }
+		},
+		"*-tiger-female": {
+			"tiger1": { "base": "tiger1" }
+		},
+		"*-tiger-cub": {
+			"tiger": { "base": "tiger1" }
+		},
+		"*-hamster-male": {
+			"hamster": { "base": "hamster" }
+		},
+		"*-hamster-female": {
+			"hamster": { "base": "hamster" }
+		},
+		"*-hamster-baby": {
+			"hamster": { "base": "hamster" }
+		},
+		"*-gecko": {
+			"gecko": { "base": "gecko" }
+		},
+		"*-crocodile": {
+			"crocodile": { "base": "crocodile" }
+		},
+		"*-crocodile-hatchling": {
+			"crocodile": { "base": "crocodile" }
+		},
+		"*-flamejellyfish": {
+			"flamejellyfish": { "base": "flamejellyfish" }
+		},
+		"*-alpaca-male": {
+			"alpaca": { "base": "alpaca1" }
+		},
+		"*-alpaca-female": {
+			"alpaca": { "base": "alpaca2" }
+		},
+		"*-alpaca-lamb": {
+			"alpaca": { "base": "alpaca3" }
+		},
+		"*-elephant-male": {
+			"elephant": { "base": "elephant" }
+		},
+		"*-elephant-female": {
+			"elephant": { "base": "elephant" }
+		},
+		"*-elephant-baby": {
+			"elephant": { "base": "elephantbaby" }
+		},
+		"*-hippo-male": {
+			"hipponose": { "base": "hipponose" },
+			"hippothroat": { "base": "hippothroat" },
+			"hippo": { "base": "hippo" },
+			"hippomouth": { "base": "hippomouth" }
+		},
+		"*-hippo-female": {
+			"hipponose": { "base": "hipponose" },
+			"hippothroat": { "base": "hippothroat" },
+			"hippo": { "base": "hippo" },
+			"hippomouth": { "base": "hippomouth" }
+		},
+		"*-hippo-baby": {
+			"hipponose": { "base": "hipponose" },
+			"hippothroat": { "base": "hippothroat" },
+			"hippo": { "base": "hippo" },
+			"hippomouth": { "base": "hippomouth" }
+		},
+		"*-komododragon": {
+			"komododragon": { "base": "komododragon" }
+		},
+		"*-puma-male": {
+			"pumabelly": { "base": "pumabelly" },
+			"puma": { "base": "puma" }
+		},
+		"*-puma-female": {
+			"pumabelly": { "base": "pumabelly" },
+			"puma": { "base": "puma" }
+		},
+		"*-puma-cub": {
+			"pumabelly": { "base": "pumabelly" },
+			"puma": { "base": "puma" }
+		},
+		"*-salamander-marbled": {
+			"salamander": { "base": "salamander-marbled" }
+		},
+		"*-salamander-red": {
+			"salamander": { "base": "salamander-red" }
+		},
+		"*-salamander-bluespotted": {
+			"salamander": { "base": "salamander-bluespotted" }
+		},
+		"*-salamander-tiger": {
+			"salamander": { "base": "salamander-tiger" }
+		},
+		"*-salamander-tennesseecave": {
+			"salamander": { "base": "salamander-tennesseecave" }
+		},
+		"*-moth-brown": {
+			"moth": { "base": "moth" }
+		},
+		"*-cassowary-male": {
+			"cassowary": { "base": "cassowary" }
+		},
+		"*-cassowary-female": {
+			"cassowary": { "base": "cassowary" }
+		},
+		"*-cassowary-chick": {
+			"cassowary-chick": { "base": "cassowary-chick" }
+		},
+		"*-cassowary-youngling": {
+			"cassowary-youngling": { "base": "cassowary-youngling" }
+		},
+		"*-camel-male": {
+			"camel1": { "base": "camel1" },
+			"camel2": { "base": "camel2" }
+		},
+		"*-camel-female": {
+			"camel1": { "base": "camel1" },
+			"camel2": { "base": "camel2" }
+		},
+		"*-camel-calf": {
+			"camel1": { "base": "camel1" },
+			"camel2": { "base": "camel2" }
+		},
+		"*-caribou-male": {
+			"reindeerback": { "base": "reindeerback" },
+			"reindeerhead": { "base": "reindeerhead" },
+			"reindeerneck": { "base": "reindeerneck" },
+			"reindeerantlers": { "base": "reindeerantlers" }
+		},
+		"*-caribou-female": {
+			"reindeerback": { "base": "reindeerback" },
+			"reindeerhead": { "base": "reindeerhead" },
+			"reindeerneck": { "base": "reindeerneck" },
+			"reindeerantlers": { "base": "reindeerantlers" }
+		},
+		"*-caribou-calf": {
+			"reindeerbaby1": { "base": "reindeerbaby1" },
+			"reindeerantlers": { "base": "reindeerantlers" }
+		},
+		"*-mosquitoswarm": {
+			"mosquitoswarm": { "base": "mosquitoswarm" }
+		},
+		"*-honeybadger-male": {
+			"honeybadger3": { "base": "honeybadger3" },
+			"honeybadger2": { "base": "honeybadger2" },
+			"honeybadger1": { "base": "honeybadger1" }
+		},
+		"*-honeybadger-female": {
+			"honeybadger3": { "base": "honeybadger3" },
+			"honeybadger2": { "base": "honeybadger2" },
+			"honeybadger1": { "base": "honeybadger1" }
+		},
+		"*-honeybadger-pup": {
+			"honeybadger3": { "base": "honeybadger3" },
+			"honeybadger2": { "base": "honeybadger2" },
+			"honeybadger1": { "base": "honeybadger1" }
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ],
+		"creatures": [ "*" ]
+	},
+	"materialDensity": 600,
+	"guiTransformByType": {
+		"creature-hummingbird-*": {
+			"rotation": {
+				"x": 10,
+				"y": -45,
+				"z": 180
+			},
+			"origin": {
+				"x": 1,
+				"y": 0.25,
+				"z": 0
+			},
+			"scale": 4
+		},
+		"creature-dragonfly-*": {
+			"rotation": {
+				"x": 180,
+				"y": -118,
+				"z": 75
+			},
+			"origin": {
+				"x": 0.55,
+				"y": -0.2,
+				"z": 0.38
+			},
+			"scale": 1.9
+		},
+		"creature-glowworm": {
+			"rotation": {
+				"x": -73,
+				"y": -11,
+				"z": 1
+			},
+			"origin": {
+				"x": 0.43,
+				"y": 1.7,
+				"z": 0
+			},
+			"scale": 4.89
+		},
+		"creature-cochineal": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0.55
+			},
+			"scale": 5
+		},
+		"creature-cricket": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0,
+				"z": 0.55
+			},
+			"scale": 5
+		},
+		"creature-grasshopper": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0,
+				"z": 0.60
+			},
+			"scale": 4.8
+		},
+		"creature-kiwi-baby": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.06,
+				"z": 0.45
+			},
+			"scale": 3.5
+		},
+		"creature-kiwi-hen": {
+			"rotate": true,
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0.25
+			},
+			"scale": 2
+		},
+		"creature-kiwi-rooster": {
+			"rotate": true,
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0.4
+			},
+			"scale": 1.8
+		},
+		"creature-kiwi-henpoult": {
+			"rotate": true,
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0.25
+			},
+			"scale": 1.7
+		},
+		"creature-kiwi-roosterpoult": {
+			"rotate": true,
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0.4
+			},
+			"scale": 1.5
+		},
+		"creature-crawfish": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0,
+				"z": 0.55
+			},
+			"scale": 3
+		},
+		"creature-slug": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0,
+				"z": 0.55
+			},
+			"scale": 5
+		},
+		"creature-gardensnail": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0,
+				"z": 0.55
+			},
+			"scale": 5
+		},
+		"creature-squirrel-male": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.54,
+				"y": 0.28,
+				"z": 0.5
+			},
+			"scale": 2.6
+		},
+		"creature-squirrel-female": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.54,
+				"y": 0.28,
+				"z": 0.5
+			},
+			"scale": 2.4
+		},
+		"creature-squirrel-baby": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.54,
+				"y": 0.28,
+				"z": 0.5
+			},
+			"scale": 2
+		},
+		"creature-tortoise-male": {
+			"rotate": true,
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0.4
+			},
+			"scale": 2.2
+		},
+		"creature-tortoise-female": {
+			"rotate": true,
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0.4
+			},
+			"scale": 2
+		},
+		"creature-tortoise-baby": {
+			"rotate": true,
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0.4
+			},
+			"scale": 0.7
+		},
+		"creature-songbird-*": {
+			"rotation": {
+				"x": 10,
+				"y": -45,
+				"z": 180
+			},
+			"origin": {
+				"x": 0.56,
+				"y": 0.2,
+				"z": 0.5
+			},
+			"scale": 3
+		},
+		"creature-rolypoly": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0,
+				"z": 0.55
+			},
+			"scale": 5
+		},
+		"creature-toad-tan": {
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.57,
+				"y": 0.05,
+				"z": 0.4
+			},
+			"scale": 5
+		},
+		"creature-toad-grey": {
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.57,
+				"y": 0.05,
+				"z": 0.4
+			},
+			"scale": 5
+		},
+		"creature-toad-dark": {
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.57,
+				"y": 0.05,
+				"z": 0.4
+			},
+			"scale": 5
+		},
+		"creature-toad-light": {
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.57,
+				"y": 0.05,
+				"z": 0.4
+			},
+			"scale": 5
+		},
+		"creature-bullfrog": {
+			"translation": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -7,
+				"y": -37,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.6,
+				"y": 0.05,
+				"z": 0.5
+			},
+			"scale": 3.5
+		},
+		"creature-tiger-male": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 0.96
+		},
+		"creature-tiger-female": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 0.86
+		},
+		"creature-tiger-cub": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 0.7
+		},
+		"creature-hamster-male": {
+			"translation": {
+				"x": 2,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.54,
+				"y": 0.2,
+				"z": 0.5
+			},
+			"scale": 3
+		},
+		"creature-hamster-female": {
+			"translation": {
+				"x": 2,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.54,
+				"y": 0.2,
+				"z": 0.5
+			},
+			"scale": 2.8
+		},
+		"creature-hamster-baby": {
+			"translation": {
+				"x": 2,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.54,
+				"y": 0.28,
+				"z": 0.5
+			},
+			"scale": 1.5
+		},
+		"creature-gecko": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0,
+				"z": 0.55
+			},
+			"scale": 2
+		},
+		"creature-crocodile": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 0.75
+		},
+		"creature-crocodile-hatchling": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 0.2
+		},
+		"creature-flamejellyfish": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 1.5
+		},
+		"creature-alpaca-male": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": -1.9,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.2,
+				"z": 0.5
+			},
+			"scale": 0.7
+		},
+		"creature-alpaca-female": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": -1.5,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1,
+				"z": 0.5
+			},
+			"scale": 0.6
+		},
+		"creature-alpaca-lamb": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 0.75,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.9,
+				"z": 0.5
+			},
+			"scale": 0.3
+		},
+		"creature-elephant-male": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.4,
+				"z": 0.5
+			},
+			"scale": 0.3
+		},
+		"creature-elephant-female": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.4,
+				"z": 0.5
+			},
+			"scale": 0.28
+		},
+		"creature-elephant-baby": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.4,
+				"z": 0.5
+			},
+			"scale": 0.2
+		},
+		"creature-hippo-male": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 1
+		},
+		"creature-hippo-female": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 0.9
+		},
+		"creature-hippo-baby": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 0.5
+		},
+		"creature-komododragon": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 1
+		},
+		"creature-puma-male": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 1
+		},
+		"creature-puma-female": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 0.9
+		},
+		"creature-puma-cub": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 0.5
+		},
+		"creature-salamander-marbled": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0,
+				"z": 0.55
+			},
+			"scale": 2
+		},
+		"creature-salamander-red": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0,
+				"z": 0.55
+			},
+			"scale": 2
+		},
+		"creature-salamander-bluespotted": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0,
+				"z": 0.55
+			},
+			"scale": 2
+		},
+		"creature-salamander-tiger": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0,
+				"z": 0.55
+			},
+			"scale": 2
+		},
+		"creature-salamander-tennesseecave": {
+			"rotation": {
+				"x": 180,
+				"y": 45,
+				"z": -45
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0,
+				"z": 0.55
+			},
+			"scale": 2
+		},
+		"creature-moth-brown": {
+			"rotation": {
+				"x": 180,
+				"y": -118,
+				"z": 75
+			},
+			"origin": {
+				"x": 0.55,
+				"y": -0.2,
+				"z": 0.38
+			},
+			"scale": 1.9
+		},
+		"creature-cassowary-male": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.7,
+				"z": 0.5
+			},
+			"scale": 0.9
+		},
+		"creature-cassowary-female": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.6,
+				"z": 0.5
+			},
+			"scale": 0.7
+		},
+		"creature-cassowary-chick": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.35,
+				"z": 0.5
+			},
+			"scale": 1
+		},
+		"creature-cassowary-youngling": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 1
+		},
+		"creature-camel-male": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.4,
+				"z": 0.5
+			},
+			"scale": 0.45
+		},
+		"creature-camel-female": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.25,
+				"z": 0.5
+			},
+			"scale": 0.4
+		},
+		"creature-camel-calf": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1,
+				"z": 0.5
+			},
+			"scale": 0.25
+		},
+		"creature-caribou-male": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1,
+				"z": 0.5
+			},
+			"scale": 0.75
+		},
+		"creature-caribou-female": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.9,
+				"z": 0.5
+			},
+			"scale": 0.65
+		},
+		"creature-caribou-calf": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			},
+			"scale": 0.8
+		},
+		"creature-mosquitoswarm": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.54,
+				"y": 0.45,
+				"z": 0.5
+			},
+			"scale": 1
+		},
+		"creature-honeybadger-male": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0.5
+			},
+			"scale": 2
+		},
+		"creature-honeybadger-female": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0.5
+			},
+			"scale": 1.8
+		},
+		"creature-honeybadger-pup": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0.5
+			},
+			"scale": 1
+		}
+	},
+
+	"tpHandTransformByType": {
+		"creature-hummingbird-*": {
+			"translation": {
+				"x": -1.38,
+				"y": -1.26,
+				"z": -1.39
+			},
+			"rotation": {
+				"x": 0,
+				"y": 17,
+				"z": 82
+			},
+			"origin": {
+				"x": 0.9,
+				"y": 0.8,
+				"z": 0.6
+			},
+			"scale": 0.46
+		},
+		"creature-dragonfly-*": {
+			"translation": {
+				"x": -1.38,
+				"y": -1.26,
+				"z": -1.39
+			},
+			"rotation": {
+				"x": 0,
+				"y": 17,
+				"z": 82
+			},
+			"origin": {
+				"x": 0.9,
+				"y": 0.8,
+				"z": 0.6
+			},
+			"scale": 0.46
+		},
+		"creature-glowworm": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-cochineal": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-cricket": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-grasshopper": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-kiwi-baby": {
+			"translation": {
+				"x": -0.6,
+				"y": -0.1,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -156,
+				"y": -19,
+				"z": -82
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.9
+		},
+		"creature-kiwi-hen": {
+			"translation": {
+				"x": -0.4,
+				"y": 0,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -160,
+				"y": -26,
+				"z": -90
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.92
+		},
+		"creature-kiwi-rooster": {
+			"translation": {
+				"x": -0.3,
+				"y": 0,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -158,
+				"y": -25,
+				"z": -87
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.85
+		},
+		"creature-kiwi-henpoult": {
+			"translation": {
+				"x": -0.4,
+				"y": 0,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -160,
+				"y": -26,
+				"z": -90
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.60
+		},
+		"creature-kiwi-roosterpoult": {
+			"translation": {
+				"x": -0.3,
+				"y": 0,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -158,
+				"y": -25,
+				"z": -87
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.75
+		},
+		"creature-crawfish": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-slug": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-gardensnail": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-squirrel-male": {
+			"translation": {
+				"x": -0.8,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.7
+		},
+		"creature-squirrel-female": {
+			"translation": {
+				"x": -0.8,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.7
+		},
+		"creature-squirrel-baby": {
+			"translation": {
+				"x": -0.8,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.7
+		},
+		"creature-tortoise-male": {
+			"translation": {
+				"x": -0.3,
+				"y": 0,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -158,
+				"y": -25,
+				"z": -87
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.85
+		},
+		"creature-tortoise-female": {
+			"translation": {
+				"x": -0.3,
+				"y": 0,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -158,
+				"y": -25,
+				"z": -87
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.85
+		},
+		"creature-tortoise-baby": {
+			"translation": {
+				"x": -0.3,
+				"y": 0,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -158,
+				"y": -25,
+				"z": -87
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.85
+		},
+		"creature-songbird-*": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-rolypoly": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-toad-tan": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-toad-grey": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-toad-dark": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-toad-light": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-bullfrog": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.67
+		},
+		"creature-tiger-male": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-tiger-female": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.45
+		},
+		"creature-tiger-cub": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.3
+		},
+		"creature-hamster-male": {
+			"translation": {
+				"x": -0.8,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 1
+		},
+		"creature-hamster-female": {
+			"translation": {
+				"x": -0.8,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 1
+		},
+		"creature-hamster-baby": {
+			"translation": {
+				"x": -0.8,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 1
+		},
+		"creature-gecko": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 1
+		},
+		"creature-crocodile": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-crocodile-hatchling": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.1
+		},
+		"creature-flamejellyfish": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-alpaca-male": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-alpaca-female": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-alpaca-lamb": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-elephant-male": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-elephant-female": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-elephant-baby": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-hippo-male": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.8
+		},
+		"creature-hippo-female": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.7
+		},
+		"creature-hippo-baby": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.4
+		},
+		"creature-komododragon": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-puma-male": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-puma-female": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.45
+		},
+		"creature-puma-cub": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.3
+		},
+		"creature-salamander-marbled": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 1
+		},
+		"creature-salamander-red": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 1
+		},
+		"creature-salamander-bluespotted": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 1
+		},
+		"creature-salamander-tiger": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 1
+		},
+		"creature-salamander-tennesseecave": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 1
+		},
+		"creature-moth-brown": {
+			"translation": {
+				"x": -1.38,
+				"y": -1.26,
+				"z": -1.39
+			},
+			"rotation": {
+				"x": 0,
+				"y": 17,
+				"z": 82
+			},
+			"origin": {
+				"x": 0.9,
+				"y": 0.8,
+				"z": 0.6
+			},
+			"scale": 0.46
+		},
+		"creature-cassowary-male": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-cassowary-female": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.45
+		},
+		"creature-cassowary-chick": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.1
+		},
+		"creature-cassowary-youngling": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-camel-male": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-camel-female": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.45
+		},
+		"creature-camel-calf": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.45
+		},
+		"creature-caribou-male": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.5
+		},
+		"creature-caribou-female": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.45
+		},
+		"creature-caribou-calf": {
+			"translation": {
+				"x": -1,
+				"y": -0.6,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.45
+		},
+		"creature-mosquitoswarm": {
+			"translation": {
+				"x": -0.8,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -180,
+				"y": 0,
+				"z": -156
+			},
+			"scale": 0.7
+		},
+		"creature-honeybadger-male": {
+			"translation": {
+				"x": -0.3,
+				"y": 0,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -158,
+				"y": -25,
+				"z": -87
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.85
+		},
+		"creature-honeybadger-female": {
+			"translation": {
+				"x": -0.3,
+				"y": 0,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -158,
+				"y": -25,
+				"z": -87
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.65
+		},
+		"creature-honeybadger-pup": {
+			"translation": {
+				"x": -0.3,
+				"y": 0,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -158,
+				"y": -25,
+				"z": -87
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.35
+		}
+	},
+
+	"fpHandTransformByType": {
+		"creature-hummingbird-*": {
+			"translation": {
+				"x": 0.42,
+				"y": 0.15,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": -75,
+				"z": -25
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1,
+				"z": 0.5
+			},
+			"scale": 1.81
+		},
+		"creature-dragonfly-*": {
+			"translation": {
+				"x": 0.42,
+				"y": 0.15,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": -75,
+				"z": -25
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1,
+				"z": 0.5
+			},
+			"scale": 1.81
+		},
+		"creature-glowworm": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-cochineal": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-cricket": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-grasshopper": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-kiwi-baby": {
+			"translation": {
+				"x": 0.5,
+				"y": 0.3,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -119,
+				"z": -180
+			},
+			"scale": 2
+		},
+		"creature-kiwi-hen": {
+			"translation": {
+				"x": 0.4,
+				"y": 0.1,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -119,
+				"z": -180
+			},
+			"scale": 2
+		},
+		"creature-kiwi-rooster": {
+			"translation": {
+				"x": 0.4,
+				"y": 0.1,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -119,
+				"z": -180
+			},
+			"scale": 2
+		},
+		"creature-kiwi-henpoult": {
+			"translation": {
+				"x": 0.4,
+				"y": 0.1,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -119,
+				"z": -180
+			},
+			"scale": 1.4
+		},
+		"creature-kiwi-roosterpoult": {
+			"translation": {
+				"x": 0.4,
+				"y": 0.1,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -119,
+				"z": -180
+			},
+			"scale": 1.6
+		},
+		"creature-crawfish": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-slug": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-gardensnail": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-squirrel-male": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-squirrel-female": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-squirrel-baby": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-tortoise-male": {
+			"translation": {
+				"x": 0.4,
+				"y": 0.1,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -119,
+				"z": -180
+			},
+			"scale": 2
+		},
+		"creature-tortoise-female": {
+			"translation": {
+				"x": 0.4,
+				"y": 0.1,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -119,
+				"z": -180
+			},
+			"scale": 1.8
+		},
+		"creature-tortoise-baby": {
+			"translation": {
+				"x": 0.4,
+				"y": 0.1,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -119,
+				"z": -180
+			},
+			"scale": 0.7
+		},
+		"creature-songbird-*": {
+			"translation": {
+				"x": 0.42,
+				"y": 0.15,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": -75,
+				"z": -25
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1,
+				"z": 0.5
+			},
+			"scale": 1.81
+		},
+		"creature-rolypoly": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-toad-tan": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-toad-grey": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-toad-dark": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-toad-light": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-bullfrog": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-tiger-male": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-tiger-female": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-tiger-cub": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-hamster-male": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.6
+		},
+		"creature-hamster-female": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.6
+		},
+		"creature-hamster-baby": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.6
+		},
+		"creature-gecko": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-crocodile": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-crocodile-hatchling": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-flamejellyfish": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-alpaca-male": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-alpaca-female": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-alpaca-lamb": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-elephant-male": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 0.7
+		},
+		"creature-elephant-female": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 0.7
+		},
+		"creature-elephant-baby": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 0.7
+		},
+		"creature-hippo-male": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-hippo-female": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-hippo-baby": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-komododragon": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-puma-male": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-puma-female": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-puma-cub": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-salamander-marbled": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-salamander-red": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-salamander-bluespotted": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-salamander-tiger": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-salamander-tennesseecave": {
+			"translation": {
+				"x": 0.15,
+				"y": 0.1,
+				"z": 0.1
+			},
+			"rotation": {
+				"x": -141,
+				"y": -88,
+				"z": 180
+			},
+			"scale": 2.01
+		},
+		"creature-moth-brown": {
+			"translation": {
+				"x": 0.42,
+				"y": 0.15,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": -75,
+				"z": -25
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1,
+				"z": 0.5
+			},
+			"scale": 1.81
+		},
+		"creature-cassowary-male": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-cassowary-female": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.1
+		},
+		"creature-cassowary-chick": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 0.5
+		},
+		"creature-cassowary-youngling": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 0.7
+		},
+		"creature-camel-male": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-camel-female": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.14
+		},
+		"creature-camel-calf": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.14
+		},
+		"creature-caribou-male": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-caribou-female": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.14
+		},
+		"creature-caribou-calf": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.14
+		},
+		"creature-mosquitoswarm": {
+			"translation": {
+				"x": 0.4,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 1.16
+		},
+		"creature-honeybadger-male": {
+			"translation": {
+				"x": 0.4,
+				"y": 0.1,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -119,
+				"z": -180
+			},
+			"scale": 2
+		},
+		"creature-honeybadger-female": {
+			"translation": {
+				"x": 0.4,
+				"y": 0.1,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -119,
+				"z": -180
+			},
+			"scale": 1.8
+		},
+		"creature-honeybadger-pup": {
+			"translation": {
+				"x": 0.4,
+				"y": 0.1,
+				"z": 0
+			},
+			"rotation": {
+				"x": -180,
+				"y": -119,
+				"z": -180
+			},
+			"scale": 1
+		}
+	},
+
+	"groundTransformByType": {
+		"creature-glowworm": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 4
+		},
+		"creature-cochineal": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 2
+		},
+		"creature-cricket": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 2
+		},
+		"creature-grasshopper": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 2
+		},
+		"creature-crawfish": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 2
+		},
+		"creature-slug": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 4
+		},
+		"creature-gardensnail": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 4
+		},
+		"creature-tortoise-baby": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 180
+			},
+			"origin": {
+				"x": 0,
+				"y": 0.3,
+				"z": 0
+			},
+			"scale": 1.5
+		},
+		"creature-rolypoly": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 2
+		}
+
+	}
+}

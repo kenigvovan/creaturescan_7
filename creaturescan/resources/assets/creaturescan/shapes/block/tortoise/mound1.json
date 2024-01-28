@@ -1,0 +1,107 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"normal-top": "game:block/plant/grassroofing/normal-top",
+		"tortoise-eggmound": "creaturescan:tortoise-eggmound"
+	},
+	"elements": [
+		{
+			"name": "BaseSW",
+			"from": [ 1.0, 0.0, 10.0 ], 
+			"to": [ 10.0, 0.5, 15.0 ], 
+			"faces": {
+				"north": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 9.0, 0.5 ] },
+				"east": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+				"south": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 9.0, 0.5 ] },
+				"west": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+				"up": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 9.0, 5.0 ] },
+				"down": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 9.0, 5.0 ] }
+			}
+		},
+		{
+			"name": "BaseSE",
+			"from": [ 10.0, 0.0, 10.0 ], 
+			"to": [ 14.0, 0.5, 14.0 ], 
+			"faces": {
+				"north": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 4.0, 0.5 ] },
+				"east": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 4.0, 0.5 ] },
+				"south": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 4.0, 0.5 ] },
+				"west": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 4.0, 0.5 ] },
+				"up": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 4.0, 4.0 ] },
+				"down": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 4.0, 4.0 ] }
+			}
+		},
+		{
+			"name": "MidNE",
+			"from": [ 10.0, 0.0, 1.0 ], 
+			"to": [ 15.0, 0.6, 7.0 ], 
+			"faces": {
+				"north": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+				"east": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"south": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+				"west": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"up": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 5.0, 6.0 ] },
+				"down": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 5.0, 6.0 ] }
+			}
+		},
+		{
+			"name": "MidE",
+			"from": [ 8.0, 0.0, 3.0 ], 
+			"to": [ 14.0, 0.9, 9.0 ], 
+			"faces": {
+				"north": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"east": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"south": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"west": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 6.0, 0.5 ], "enabled": false },
+				"up": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 6.0, 6.0 ] },
+				"down": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 6.0, 6.0 ] }
+			}
+		},
+		{
+			"name": "BaseNW",
+			"from": [ 0.0, 0.0, 0.0 ], 
+			"to": [ 8.0, 0.3, 8.0 ], 
+			"faces": {
+				"north": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 8.0, 0.5 ] },
+				"east": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 8.0, 0.5 ] },
+				"south": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 8.0, 0.5 ] },
+				"west": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 8.0, 0.5 ] },
+				"up": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 8.0, 8.0 ] },
+				"down": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 8.0, 8.0 ] }
+			}
+		},
+		{
+			"name": "MidMiddle",
+			"from": [ 2.0, 0.0, 2.0 ], 
+			"to": [ 12.0, 1.2, 12.0 ], 
+			"faces": {
+				"north": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 10.0, 1.0 ] },
+				"east": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 10.0, 1.0 ] },
+				"south": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 10.0, 1.0 ] },
+				"west": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 10.0, 1.0 ] },
+				"up": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 10.0, 10.0 ] },
+				"down": { "texture": "#tortoise-eggmound", "uv": [ 0.0, 0.0, 10.0, 10.0 ] }
+			}
+		},
+		{
+			"name": "MidNW",
+			"from": [ 1.0, 0.0, 1.0 ], 
+			"to": [ 7.0, 0.8, 7.0 ], 
+			"rotationOrigin": [ 0.0, -4.0, 0.0 ],
+			"faces": {
+				"north": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"east": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"south": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"west": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"up": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 6.0, 6.0 ] },
+				"down": { "texture": "#normal-top", "uv": [ 0.0, 0.0, 6.0, 6.0 ], "enabled": false }
+			}
+		}
+	]}

@@ -1,0 +1,32 @@
+{
+	code: "ivoryblock",
+	drawtype: "cube",
+	sidesolid: { all: true },
+	sideopaque: { all: true },
+	blockmaterial: "Stone",
+	creativeinventory: { "general": ["*"], "decorative": ["*"] },
+	replaceable: 300,
+	resistance: 2,
+	lightAbsorption: 1,
+	emitSideAo: {
+		all: false
+	},
+	textures: {
+		all: { base: "ivoryblock" },
+	},
+	vertexFlags: {
+		reflective: true
+	},
+	sounds: {
+		"place": "block/stone",
+		"break": "block/stone",
+		"hit": "block/stone",
+		"walk": "game:walk/stone"
+	},
+	heldTpIdleAnimation: "holdbothhandslarge", heldTpUseAnimation: "twohandplaceblock",
+	tpHandTransform: {
+		translation: { x: -1.2, y: -1.1, z: -0.8 },
+		rotation: { x: -2, y: 25, z: -78 },
+		scale: 0.37
+	}
+}

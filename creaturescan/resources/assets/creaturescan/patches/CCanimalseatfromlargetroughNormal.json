@@ -1,0 +1,182 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/0/foodFor",
+    "value": [
+      "creaturescan:alpaca-*",
+      "creaturescan:camel-*",
+      "creaturescan:caribou-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/1/foodFor",
+    "value": [
+      "creaturescan:alpaca-*",
+      "creaturescan:camel-*",
+      "creaturescan:caribou-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/2/foodFor",
+    "value": [
+      "creaturescan:alpaca-*",
+      "creaturescan:camel-*",
+      "creaturescan:caribou-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/3/foodFor",
+    "value": [
+      "creaturescan:alpaca-*",
+      "creaturescan:camel-*",
+      "creaturescan:caribou-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/4/foodFor",
+    "value": [
+      "creaturescan:alpaca-*",
+      "creaturescan:camel-*",
+      "creaturescan:caribou-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/5/foodFor",
+    "value": [
+      "creaturescan:alpaca-*",
+      "creaturescan:camel-*",
+      "creaturescan:caribou-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/6/foodFor",
+    "value": [
+      "creaturescan:elephant-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/7/foodFor",
+    "value": [
+      "creaturescan:tortoise-*",
+      "creaturescan:elephant-*",
+      "creaturescan:alpaca-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/8/foodFor",
+    "value": [
+      "creaturescan:tortoise-*",
+      "creaturescan:elephant-*",
+      "creaturescan:alpaca-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/9/foodFor",
+    "value": [
+      "creaturescan:elephant-*",
+      "creaturescan:alpaca-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/10/foodFor",
+    "value": [
+      "creaturescan:elephant-*",
+      "creaturescan:alpaca-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/12/foodFor",
+    "value": [
+      "creaturescan:elephant-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/13/foodFor",
+    "value": [
+      "creaturescan:elephant-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/14/foodFor",
+    "value": [
+      "creaturescan:elephant-*",
+      "creaturescan:alpaca-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/15/foodFor",
+    "value": [
+      "creaturescan:elephant-*",
+      "creaturescan:alpaca-*",
+      "creaturescan:camel-*",
+      "creaturescan:caribou-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/15/foodFor",
+    "value": [
+      "creaturescan:elephant-*",
+      "creaturescan:alpaca-*",
+      "creaturescan:camel-*",
+      "creaturescan:caribou-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/16/foodFor",
+    "value": [
+      "creaturescan:elephant-*",
+      "creaturescan:alpaca-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/17/foodFor",
+    "value": [
+      "creaturescan:elephant-*",
+      "creaturescan:alpaca-*",
+      "creaturescan:cassowary-*"
+    ],
+    "file": "game:blocktypes/wood/trough-large.json"
+  },
+  {
+    "op": "add",
+    "path": "/textures/content-redmeat",
+    "value": {
+      "base": "content-redmeat"
+    },
+    "file": "game:blocktypes/wood/trough-large.json"
+  }
+]

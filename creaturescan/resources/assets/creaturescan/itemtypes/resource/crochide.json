@@ -1,0 +1,64 @@
+{
+	"code": "crochide",
+	"maxstacksizeByType": {
+		"*-huge": 8
+	},
+	"materialDensity": 620,
+	"attributes": {
+		"handbook": {
+			"groupBy": [ "crochide-{type}-huge" ]
+		}
+	},
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "raw" ]
+		},
+		{
+			"code": "size",
+			"states": [ "huge" ]
+		}
+	],
+
+	"tpHandTransformbyType": {
+		"*-huge": {
+			"translation": {
+				"x": -0.86,
+				"y": -0.3,
+				"z": -0.68
+			},
+			"rotation": {
+				"x": 0,
+				"y": -2,
+				"z": 18
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 0.67
+		}
+	},
+
+	"guiTransformByType": {
+		"*-huge": {
+			"scale": 1.15
+		}
+	},
+	"groundTransformByType": {
+		"*-huge": {
+			"scale": 2.85
+		}
+	},
+	"fpHandTransformByType": {
+		"*-huge": {
+			"scale": 1.15
+		}
+	},
+	"texture": { "base": "crocodilehide-{type}" },
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	}
+}

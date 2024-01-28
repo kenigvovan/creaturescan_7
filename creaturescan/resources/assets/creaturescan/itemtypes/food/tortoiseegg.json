@@ -1,0 +1,63 @@
+{
+	"code": "tortoiseegg",
+	"maxstacksize": 32,
+	"variantgroups": [
+		{
+			"code": "source",
+			"states": [ "tortoise" ]
+		},
+		{
+			"code": "state",
+			"states": [ "raw" ]
+		}
+	],
+	"texture": { "base": "creaturescan:tortoiseegg" },
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"attributesByType": {
+		"tortoiseegg-tortoise-raw": {
+			"inContainerTexture": { "base": "creaturescan:block/wood/barrel/contents-tortoiseegg" },
+			"nutritionPropsWhenInMeal": {
+				"saturation": 180,
+				"foodcategory": "Protein"
+			}
+
+		}
+	},
+	"nutritionPropsByType": {
+		"*-boiled": {
+			"saturation": 130,
+			"foodcategory": "Protein"
+		}
+	},
+	"materialDensity": 200,
+	"fpHandTransform": {
+		"translation": {
+			"x": 0,
+			"y": -0.1,
+			"z": 0
+		},
+		"rotation": {
+			"x": 180,
+			"y": 90,
+			"z": 22
+		}
+	},
+	"groundTransform": {
+		"scale": 0.5
+	},
+	"transitionableProps": [
+		{
+			"type": "Perish",
+			"freshHours": { "avg": 120 },
+			"transitionHours": { "avg": 24 },
+			"transitionedStack": {
+				"type": "item",
+				"code": "game:rot"
+			},
+			"transitionRatio": 0.5
+		}
+	]
+}

@@ -1,0 +1,431 @@
+[
+	{
+		"ingredientPattern": "WFC",
+		"ingredients": {
+			"W": {
+				"type": "block",
+				"code": "game:woodbucket"
+			},
+			"F": {
+				"type": "item",
+				"code": "creaturescan:bugflour-*",
+				"quantity": 8,
+				"allowedVariants": [ "cricket", "grasshopper" ],
+				"name": "type"
+			},
+			"C": {
+				"type": "item",
+				"code": "game:flour-spelt"
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"attributes": {
+			"liquidContainerProps": {
+				"requiresContent": {
+					"type": "item",
+					"code": "game:waterportion"
+				},
+				"requiresLitres": 1
+			}
+		},
+		"name": "bug dough",
+		"shapeless": true,
+		"output": {
+			"type": "item",
+			"code": "creaturescan:bugdough-{type}",
+			"quantity": 2
+		}
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:woodbucket"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-rice",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2   }
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:woodbucket"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-flax",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2  }
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:woodbucket"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-rye",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2  }
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:woodbucket"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-cassava",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2  }
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:woodbucket"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-amaranth",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2  }
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:woodbucket"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-sunflower",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2  }
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:bowl-fired"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-spelt",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2  }
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:bowl-fired"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-rice",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2  }
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:bowl-fired"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-flax",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2  }
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:bowl-fired"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-rye",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2  }
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:bowl-fired"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-cassava",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2  }
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:bowl-fired"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-amaranth",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2  }
+	},
+	{
+		ingredientPattern: "WFC",
+		ingredients: {
+			"W": { 
+				type: "block", 
+				code: "game:bowl-fired"
+			},
+			"F": { 
+				type: "item", 
+				code: "creaturescan:bugflour-*", quantity: 8 , 
+				allowedVariants: ["cricket", "grasshopper"],
+				name: "type"
+			},
+			"C": { 
+				type: "item", 
+				code: "game:flour-sunflower",
+			}
+		},
+		width: 3,
+		height: 1,
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:waterportion" },
+				requiresLitres: 1
+			}
+		},
+		name: "bug dough",
+		shapeless: true,
+		output: { type: "item", code: "creaturescan:bugdough-{type}", quantity: 2  }
+	}
+
+]

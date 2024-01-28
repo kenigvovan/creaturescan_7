@@ -1,0 +1,122 @@
+{
+	"code": "insect",
+	"heldTpIdleAnimation": "holdbothhands",
+	"maxstacksize": 64,
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "cricket" ]
+		}
+	],
+	"shapebytype": {
+		"*-cricket": { "base": "entity/land/cricket" }
+	},
+	"texturebytype": {
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"nutritionPropsByType": {
+		"*": {
+			"satiety": 10,
+			"foodcategory": "Protein"
+		}
+	},
+	"attributesByType": {
+		"*-cricket": {
+			"inContainerTexture": { "base": "block/transparent" },
+			"nutritionPropsWhenInMeal": {
+				"satiety": 16,
+				"foodcategory": "Protein"
+			},
+			"inPieProperties": {
+				"texture": "block/food/pie/fill-{type}",
+				"partType": "Filling"
+			}
+		}
+	},
+	"transitionablePropsByType": {
+		"*": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 48 },
+				"transitionHours": { "avg": 18 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 0.5
+			}
+		]
+	},
+	"combustibleProps": {
+		"meltingPoint": 200,
+		"meltingDuration": 10,
+		"smeltedRatio": 1,
+		"smeltingType": "bake",
+		"smeltedStack": {
+			"type": "item",
+			"code": "cookedinsect-cricket"
+		},
+		"requiresContainer": false
+	},
+	"materialDensity": 600,
+	"guiTransform": {
+		"rotation": {
+			"x": 0,
+			"y": -45,
+			"z": 45
+		},
+		"origin": {
+			"x": 0.55,
+			"y": -0.01,
+			"z": 0.55
+		},
+		"scale": 5
+	},
+	"fpHandTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0.22,
+			"z": 0
+		},
+		"rotation": {
+			"x": 38,
+			"y": -75,
+			"z": 2
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.1,
+			"z": 0.5
+		},
+		"scale": 1
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -0.75,
+			"y": -0.4,
+			"z": -0.5
+		},
+		"scale": 0.2
+	},
+	"groundTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0.02,
+			"z": 0
+		},
+		"rotation": {
+			"x": 90,
+			"y": 0,
+			"z": -3
+		},
+		"origin": {
+			"x": 0.47,
+			"y": 0,
+			"z": 0.5
+		},
+		"scale": 2
+	}
+}

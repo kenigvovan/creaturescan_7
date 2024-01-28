@@ -1,0 +1,166 @@
+{
+	"code": "songbird",
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "sparrow" ]
+		}
+	],
+	"class": "EntityButterfly",
+	"habitat": "Air",
+	"attributes": {
+		"physics": {
+			"airMovingStrength": 2.0
+		}
+	},
+	"client": {
+		"renderer": "Shape",
+		"size": 0.4,
+		"shape": { "base": "entity/air/sparrow" },
+		"texture": { "base": "sparrow" },
+		"behaviors": [
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.5
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			}
+		],
+		"animations": [
+			{
+				"code": "feed",
+				"animation": "feed",
+				"animationSpeed": 1,
+				"weight": 1,
+				"blendMode": "Average"
+			},
+			{
+				"code": "rest",
+				"animation": "rest",
+				"animationSpeed": 1,
+				"weight": 1,
+				"blendMode": "Average"
+			},
+			{
+				"code": "fly",
+				"animation": "fly",
+				"animationSpeed": 1,
+				"weight": 1,
+				"blendMode": "Average"
+			}
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 900,
+				"maxTurnAnglePerSec": 1800
+			}
+		},
+		"behaviors": [
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.5
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 12,
+				"minSeconds": 120
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "butterflyflee",
+						"priority": 2,
+						"movespeed": 0.09,
+						"maxHeight": 15,
+						"targetDistance": 0.15,
+						"mincooldownHours": 0,
+						"maxcooldownHours": 0
+					},
+					{
+						"code": "butterflyrest",
+						"priority": 1.5,
+						"movespeed": 0.01,
+						"maxHeight": 13,
+						"targetDistance": 0.35,
+						"mincooldownHours": 5,
+						"maxcooldownHours": 7,
+						"sound": "creature/sparrowsong",
+						"soundRange": 10
+					},
+					{
+						"code": "getoutofwater",
+						"priority": 1.4,
+						"movespeed": 0.05,
+						"animation": "fly",
+						"animationSpeed": 2.2
+					},
+					{
+						"code": "butterflychase",
+						"priority": 1.3,
+						"movespeed": 0.07,
+						"maxHeight": 10,
+						"targetDistance": 0.15,
+						"mincooldownHours": 1,
+						"maxcooldownHours": 2
+					},
+					{
+						"code": "butterflywander",
+						"priority": 1.5,
+						"movespeed": 0.07,
+						"maxHeight": 13,
+						"targetDistance": 0.15,
+						"mincooldownHours": 0.5,
+						"maxcooldownHours": 1
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 0.095,
+					"var": 0
+				},
+				"tryOnlySurface": true,
+				"minLightLevel": 8,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 3
+				},
+				"insideBlockCodes": [ "game:air", "game:tallgrass-*" ],
+				"minTemp": -2,
+				"minRain": 0.25
+			},
+			"runtime": {
+				"group": "passive",
+				"maxQuantity": 5,
+				"chance": 0.0015,
+				"minLightLevel": 8,
+				"groupSize": {
+					"dist": "invexp",
+					"avg": 3,
+					"var": 4
+				},
+				"minTemp": -2,
+				"minRain": 0.25,
+				"tryOnlySurface": true,
+				"insideBlockCodes": [ "game:air", "game:tallgrass-*" ]
+			}
+		}
+	},
+	"sounds": {
+
+	},
+	"attributes": {
+
+	}
+}

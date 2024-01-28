@@ -1,0 +1,208 @@
+[
+	{
+		"ingredientPattern": "SH_,A__,L__",
+		"ingredients": {
+			"S": {
+				"type": "item",
+				"code": "game:saw-*",
+				"isTool": true,
+				"toolDurabilityCost": 30
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 10
+			},
+			"A": {
+				"type": "item",
+				"code": "caribouantlers",
+				"quantity": 1
+			},
+			"L": {
+				"type": "block",
+				"code": "game:log-placed-acacia-ud",
+				"returnedStack": {
+					"type": "item",
+					"code": "game:plank-acacia",
+					"quantity": 2
+				}
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"output": {
+			"type": "block",
+			"code": "caribouantlerrack-acacia-north",
+			"quantity": 1
+		}
+	},
+{
+		ingredientPattern: "SH_,A__,L__",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 30 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 10 },
+			"A": { type: "item", code: "caribouantlers", quantity: 1 },
+			"L": { type: "block", code: "game:log-placed-aged-ud",
+			returnedStack: { type: "item", code: "game:plank-aged", quantity: 2 }
+		}
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "caribouantlerrack-aged-north", quantity: 1  }
+},
+{
+		ingredientPattern: "SH_,A__,L__",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 30 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 10 },
+			"A": { type: "item", code: "caribouantlers", quantity: 1 },
+			"L": { type: "block", code: "game:log-placed-baldcypress-ud",
+			returnedStack: { type: "item", code: "game:plank-baldcypress", quantity: 2 }
+		}
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "caribouantlerrack-baldcypress-north", quantity: 1  }
+},
+{
+		ingredientPattern: "SH_,A__,L__",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 30 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 10 },
+			"A": { type: "item", code: "caribouantlers", quantity: 1 },
+			"L": { type: "block", code: "game:log-placed-birch-ud",
+			returnedStack: { type: "item", code: "game:plank-birch", quantity: 2 }
+		}
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "caribouantlerrack-birch-north", quantity: 1  }
+},
+{
+		ingredientPattern: "SH_,A__,L__",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 30 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 10 },
+			"A": { type: "item", code: "caribouantlers", quantity: 1 },
+			"L": { type: "block", code: "game:log-placed-ebony-ud",
+			returnedStack: { type: "item", code: "game:plank-ebony", quantity: 2 }
+		}
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "caribouantlerrack-ebony-north", quantity: 1  }
+},
+{
+		ingredientPattern: "SH_,A__,L__",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 30 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 10 },
+			"A": { type: "item", code: "caribouantlers", quantity: 1 },
+			"L": { type: "block", code: "game:log-placed-kapok-ud",
+			returnedStack: { type: "item", code: "game:plank-kapok", quantity: 2 }
+		}
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "caribouantlerrack-kapok-north", quantity: 1  }
+},
+{
+		ingredientPattern: "SH_,A__,L__",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 30 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 10 },
+			"A": { type: "item", code: "caribouantlers", quantity: 1 },
+			"L": { type: "block", code: "game:log-placed-larch-ud",
+			returnedStack: { type: "item", code: "game:plank-larch", quantity: 2 }
+		}
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "caribouantlerrack-larch-north", quantity: 1  }
+},
+{
+		ingredientPattern: "SH_,A__,L__",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 30 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 10 },
+			"A": { type: "item", code: "caribouantlers", quantity: 1 },
+			"L": { type: "block", code: "game:log-placed-maple-ud",
+			returnedStack: { type: "item", code: "game:plank-maple", quantity: 2 }
+		}
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "caribouantlerrack-maple-north", quantity: 1  }
+},
+{
+		ingredientPattern: "SH_,A__,L__",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 30 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 10 },
+			"A": { type: "item", code: "caribouantlers", quantity: 1 },
+			"L": { type: "block", code: "game:log-placed-oak-ud",
+			returnedStack: { type: "item", code: "game:plank-oak", quantity: 2 }
+		}
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "caribouantlerrack-oak-north", quantity: 1  }
+},
+{
+		ingredientPattern: "SH_,A__,L__",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 30 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 10 },
+			"A": { type: "item", code: "caribouantlers", quantity: 1 },
+			"L": { type: "block", code: "game:log-placed-pine-ud",
+			returnedStack: { type: "item", code: "game:plank-pine", quantity: 2 }
+		}
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "caribouantlerrack-pine-north", quantity: 1  }
+},
+{
+		ingredientPattern: "SH_,A__,L__",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 30 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 10 },
+			"A": { type: "item", code: "caribouantlers", quantity: 1 },
+			"L": { type: "block", code: "game:log-placed-purpleheart-ud",
+			returnedStack: { type: "item", code: "game:plank-purpleheart", quantity: 2 }
+		}
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "caribouantlerrack-purpleheart-north", quantity: 1  }
+},
+{
+		ingredientPattern: "SH_,A__,L__",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 30 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 10 },
+			"A": { type: "item", code: "caribouantlers", quantity: 1 },
+			"L": { type: "block", code: "game:log-placed-redwood-ud",
+			returnedStack: { type: "item", code: "game:plank-redwood", quantity: 2 }
+		}
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "caribouantlerrack-redwood-north", quantity: 1  }
+},
+{
+		ingredientPattern: "SH_,A__,L__",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 30 },
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 10 },
+			"A": { type: "item", code: "caribouantlers", quantity: 1 },
+			"L": { type: "block", code: "game:log-placed-walnut-ud",
+			returnedStack: { type: "item", code: "game:plank-walnut", quantity: 2 }
+		}
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "caribouantlerrack-walnut-north", quantity: 1  }
+}
+]

@@ -1,0 +1,91 @@
+{
+	"code": "cassowary-egg-raw",
+	"class": "EntityAgent",
+	"hitboxSize": {
+		"x": 0.3,
+		"y": 0.3
+	},
+	"deadHitboxSize": {
+		"x": 0.3,
+		"y": 0.3
+	},
+	"eyeHeight": 0.1,
+	"knockbackresistance": 2,
+	"drops": [
+		{
+			"type": "item",
+			"code": "creature-cassowary-egg-raw",
+			"quantity": { "avg": 1 }
+		}
+	],
+	"client": {
+		"renderer": "Shape",
+		"size": 1,
+		"shape": { "base": "entity/land/cassowaryegg" },
+		"texture": { "base": "cassowaryegg" },
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 40
+			}
+		],
+		"animations": [
+			{
+				"code": "die",
+				"animation": "die",
+				"animationSpeed": 1,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 40
+			},
+			{
+				"code": "health",
+				"currenthealth": 0.1,
+				"maxhealth": 0.1
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "breathe" },
+			{
+				"code": "grow",
+				"hoursToGrow": 336,
+				"adultEntityCodes": [ "cassowary-chick" ]
+			},
+			{
+				"code": "taskai",
+				"aitasks": []
+			}
+		]
+	}
+}

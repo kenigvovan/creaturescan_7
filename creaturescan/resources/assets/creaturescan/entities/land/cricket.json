@@ -1,0 +1,199 @@
+{
+	"code": "cricket",
+	"class": "EntityAgent",
+	"canClimb": true,
+	"canClimbAnywhere": true,
+	"climbTouchDistance": 0.12,
+	"rotateModelOnClimb": true,
+	"fallDamage": false,
+	"hitboxSize": {
+		"x": 0.12,
+		"y": 0.08
+	},
+	"deadHitboxSize": {
+		"x": 0.12,
+		"y": 0.08
+	},
+	"eyeHeight": 0.1,
+	"drops": [
+		{
+			"type": "item",
+			"code": "insect-cricket",
+			"quantity": { "avg": 1 }
+		}
+	],
+	"client": {
+		"renderer": "Shape",
+		"size": 0.4,
+		"shape": { "base": "entity/land/cricket" },
+		"texture": { "base": "cricket" },
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			}
+		],
+		"animations": [
+			{
+				"code": "die",
+				"animation": "die",
+				"animationSpeed": 1,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "Average",
+				"triggeredBy": { "defaultAnim": true }
+			},
+			{
+				"code": "chirp",
+				"animation": "chirp",
+				"easeInSpeed": 1,
+				"easeOutSpeed": 1,
+				"blendMode": "AddAverage"
+			}
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 1440,
+				"maxTurnAnglePerSec": 2880
+			}
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			},
+			{
+				"code": "health",
+				"currenthealth": 1,
+				"maxhealth": 1
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "breathe" },
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player", "chicken-rooster", "chicken-hen", "chicken-baby", "kiwi-rooster", "kiwi-hen", "kiwi-baby" ],
+						"priority": 1.31,
+						"movespeed": 0.03,
+						"animationSpeed": 4,
+						"seekingRange": 1,
+						"animation": "run"
+					},
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player", "chicken-rooster", "chicken-hen", "chicken-baby", "kiwi-rooster", "kiwi-hen", "kiwi-baby" ],
+						"priority": 1.3,
+						"movespeed": 0.03,
+						"animationSpeed": 4,
+						"seekingRange": 4,
+						"animation": "jump"
+					},
+					{
+						"code": "idle",
+						"priority": 1.2,
+						"minduration": 400,
+						"maxduration": 400,
+						"mincooldown": 6000,
+						"maxcooldown": 10000,
+						"animationSpeed": 1,
+						"animation": "chirp",
+						"preferredLightLevel": 3,
+						"sound": "creature/annoyingcricket",
+						"soundRange": 2,
+						"priorityForCancel": 1.29
+					},
+					{
+						"code": "idle",
+						"priority": 1.1,
+						"minduration": 400,
+						"maxduration": 400,
+						"mincooldown": 6000,
+						"maxcooldown": 10000,
+						"animationSpeed": 1,
+						"animation": "idle",
+						"preferredLightLevel": 3,
+						"priorityForCancel": 1.29
+					},
+					{
+						"code": "wander",
+						"priority": 1.01,
+						"movespeed": 0.01,
+						"animationSpeed": 2,
+						"animation": "walk",
+						"preferredLightLevel": 16
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 0.0125,
+					"var": 0
+				},
+				"tryOnlySurface": true,
+				"minLightLevel": 0,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 2
+				},
+				"insideBlockCodes": [ "game:air", "game:flower-*", "game:tallgrass-*" ],
+				"minTemp": 5,
+				"maxTemp": 40,
+				"minRain": 0.1,
+				"maxRain": 0.39
+			},
+			"runtime": {
+				"group": "passive",
+				"tryOnlySurface": true,
+				"chance": 0.009,
+				"maxQuantity": 10,
+				"minLightLevel": 0,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 2
+				},
+				"insideBlockCodes": [ "game:air", "game:flower-*", "game:tallgrass-*" ],
+				"minTemp": 5,
+				"maxTemp": 40,
+				"minRain": 0.1,
+				"maxRain": 0.39
+			}
+		}
+	}
+}

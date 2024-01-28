@@ -1,0 +1,29 @@
+{
+	"ingredientPattern": "_K_,TLT",
+	"recipeGroup": 1,
+	"ingredients": {
+		"K": {
+			"type": "item",
+			"code": "game:knife-*",
+			"isTool": true,
+			"toolDurabilityCost": 32
+		},
+		"L": {
+			"type": "item",
+			"code": "crochide-raw-huge",
+			"quantity": 1
+		},
+		"T": {
+			"type": "item",
+			"code": "game:flaxtwine"
+		}
+	},
+	"shapeless": true,
+	"width": 3,
+	"height": 2,
+	"output": {
+		"type": "item",
+		"code": "crocclothing-foot-crocboots",
+		"quantity": 1
+	}
+}

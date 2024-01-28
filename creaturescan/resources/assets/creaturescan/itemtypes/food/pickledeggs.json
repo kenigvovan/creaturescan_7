@@ -1,0 +1,283 @@
+{
+	"code": "pickledegg",
+	"heldTpIdleAnimation": "holdbothhands",
+	"maxstacksize": 32,
+	"variantgroups": [
+		{
+			"code": "source",
+			"states": [ "cassowary", "chicken", "kiwi", "tortoise", "crocodile" ]
+		},
+		{
+			"code": "state",
+			"states": [ "pickled" ]
+		}
+	],
+	"shapeByType": {
+		"pickledegg-cassowary-pickled": {
+			"base": "entity/land/cassowaryegg"
+		},
+		"pickledegg-crocodile-pickled": {
+			"base": "entity/water/crocodileegg"
+		}
+	},
+	"texturesByType": {
+		"pickledegg-cassowary-pickled": {
+			"cassowaryegg": { "base": "cassowaryeggpickled" }
+		},
+		"pickledegg-chicken-pickled": {
+			"chicken-pickled": { "base": "chicken-pickled" }
+		},
+		"pickledegg-kiwi-pickled": {
+			"kiwi-pickled": { "base": "kiwi-pickled" }
+		},
+		"pickledegg-tortoise-pickled": {
+			"tortoiseegg-pickled": { "base": "tortoiseegg-pickled" }
+		},
+		"pickledegg-crocodile-pickled": {
+			"crocodileegg-pickled": { "base": "crocodileegg-pickled" }
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"attributesByType": {
+		"pickledegg-chicken-pickled": {
+			"inContainerTexture": { "base": "contents-chickeneggpickled" }
+		},
+		"pickledegg-kiwi-pickled": {
+			"inContainerTexture": { "base": "contents-kiwieggpickled" }
+		},
+		"pickledegg-tortoise-pickled": {
+			"inContainerTexture": { "base": "contents-tortoiseeggpickled" }
+		},
+		"pickledegg-cassowary-pickled": {
+			"inContainerTexture": { "base": "contents-cassowaryeggpickled" }
+		},
+		"pickledegg-crocodile-pickled": {
+			"inContainerTexture": { "base": "contents-crocodileeggpickled" }
+		}
+	},
+	"nutritionPropsByType": {
+		"pickledegg-cassowary-pickled": {
+			"saturation": 520,
+			"foodcategory": "Protein"
+		},
+		"pickledegg-chicken-pickled": {
+			"saturation": 180,
+			"foodcategory": "Protein"
+		},
+		"pickledegg-kiwi-pickled": {
+			"saturation": 480,
+			"foodcategory": "Protein"
+		},
+		"pickledegg-tortoise-pickled": {
+			"saturation": 155,
+			"foodcategory": "Protein"
+		},
+		"pickledegg-crocodile-pickled": {
+			"saturation": 260,
+			"foodcategory": "Protein"
+		}
+	},
+	"materialDensity": 200,
+	"guiTransformByType": {
+		"pickledegg-cassowary-pickled": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.3,
+				"z": 0.5
+			},
+			"scale": 2
+		},
+		"pickledegg-crocodile-pickled": {
+			"rotate": true,
+			"translation": {
+				"x": 2,
+				"y": 1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 4,
+				"y": -59,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.3,
+				"z": 0.5
+			},
+			"scale": 2
+		}
+	},
+	"fpHandTransformByType": {
+		"pickledegg-cassowary-pickled": {
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 3
+		},
+		"pickledegg-crocodile-pickled": {
+			"rotation": {
+				"x": -180,
+				"y": -96,
+				"z": -180
+			},
+			"scale": 3
+		}
+	},
+	"tpHandTransformByType": {
+		"pickledegg-cassowary-pickled": {
+			"translation": {
+				"x": -0.2,
+				"y": -0.2,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.3,
+				"y": 0,
+				"z": 0.25
+			},
+			"scale": 1
+		},
+		"pickledegg-crocodile-pickled": {
+			"translation": {
+				"x": -0.2,
+				"y": -0.2,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.3,
+				"y": 0,
+				"z": 0.25
+			},
+			"scale": 1
+		}
+	},
+	"groundTransformByType": {
+		"pickledegg-cassowary-pickled": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 5
+		},
+		"pickledegg-crocodile-pickled": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 5
+		},
+		"pickledegg-tortoise-pickled": {
+			"scale": 0.5
+		}
+	},
+	"transitionablePropsByType": {
+		"pickledegg-cassowary-pickled": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 4800 },
+				"transitionHours": { "avg": 760 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 1
+			}
+		],
+		"pickledegg-chicken-pickled": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 4800 },
+				"transitionHours": { "avg": 760 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 1
+			}
+		],
+		"pickledegg-kiwi-pickled": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 4800 },
+				"transitionHours": { "avg": 760 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 1
+			}
+		],
+		"pickledegg-tortoise-pickled": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 4800 },
+				"transitionHours": { "avg": 760 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 1
+			}
+		],
+		"pickledegg-crocodile-pickled": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 4800 },
+				"transitionHours": { "avg": 760 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 1
+			}
+		]
+	}
+}

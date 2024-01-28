@@ -1,0 +1,139 @@
+{
+	"code": "cochineal",
+	"class": "EntityAgent",
+	"hitboxSize": {
+		"x": 0.2,
+		"y": 0.2
+	},
+	"deadHitboxSize": {
+		"x": 0.2,
+		"y": 0.2
+	},
+	"eyeHeight": 0.1,
+	"drops": [
+		{
+			"type": "item",
+			"code": "insect-cochineal",
+			"quantity": { "avg": 1 }
+		}
+	],
+	"client": {
+		"renderer": "Shape",
+		"size": 0.4,
+		"shape": { "base": "entity/land/cochineal" },
+		"texture": { "base": "cochineal" },
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			}
+		],
+		"animations": [
+			{
+				"code": "die",
+				"animation": "die",
+				"animationSpeed": 1,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 10,
+				"triggeredBy": { "defaultAnim": true }
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			},
+			{
+				"code": "health",
+				"currenthealth": 1,
+				"maxhealth": 1
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "breathe" },
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.0002,
+						"animationSpeed": 0.2,
+						"animation": "walk",
+						"preferredLightLevel": 12
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 0.0009,
+					"var": 0
+				},
+				"tryOnlySurface": true,
+				"minLightLevel": 10,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 7,
+					"var": 0.5
+				},
+				"insideBlockCodes": [ "game:tallfern", "game:air", "game:flower-croton-*" ],
+				"minTemp": 28,
+				"maxTemp": 40,
+				"minRain": 0.1,
+				"maxRain": 0.39
+			},
+			"runtime": {
+				"group": "passive",
+				"tryOnlySurface": true,
+				"chance": 0.0001,
+				"maxQuantity": 7,
+				"minLightLevel": 10,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 7,
+					"var": 0.5
+				},
+				"insideBlockCodes": [ "game:tallfern", "game:air", "game:flower-croton-*" ],
+				"minTemp": 28,
+				"maxTemp": 40,
+				"minRain": 0.1,
+				"maxRain": 0.39
+			}
+		}
+	}
+}

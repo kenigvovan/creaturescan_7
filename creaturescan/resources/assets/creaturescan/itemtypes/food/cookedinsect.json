@@ -1,0 +1,250 @@
+{
+	"code": "cookedinsect",
+	"heldTpIdleAnimation": "holdbothhands",
+	"maxstacksize": 64,
+	"attributesByType": {},
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "cricket", "grasshopper", "rolypoly" ]
+		}
+	],
+	"shapebytype": {
+		"*-cricket": { "base": "entity/land/cookedcricket" },
+		"*-grasshopper": { "base": "entity/land/cookedgrasshopper" },
+		"*-rolypoly": { "base": "entity/land/cookedrolypoly" }
+	},
+	"texturebytype": {
+		"*-cricket": { "base": "cookedcricket" },
+		"*-grasshopper": { "base": "cookedgrasshopper" },
+		"*-rolypoly": { "base": "game:cookedrolypoly" }
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"nutritionPropsByType": {
+		"*-cricket": {
+			"satiety": 20,
+			"foodcategory": "Protein"
+		},
+		"*-grasshopper": {
+			"satiety": 26,
+			"foodcategory": "Protein"
+		},
+		"*-rolypoly": {
+			"satiety": 50,
+			"foodcategory": "Protein"
+		}
+	},
+	"transitionablePropsByType": {
+		"*": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 336 },
+				"transitionHours": { "avg": 18 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 0.5
+			}
+		]
+	},
+	"materialDensity": 600,
+	"guiTransformByType": {
+		"*-cricket": {
+			"rotation": {
+				"x": 0,
+				"y": -45,
+				"z": 45
+			},
+			"origin": {
+				"x": 0.55,
+				"y": -0.01,
+				"z": 0.55
+			},
+			"scale": 5
+		},
+		"*-grasshopper": {
+			"rotation": {
+				"x": 0,
+				"y": -45,
+				"z": 45
+			},
+			"origin": {
+				"x": 0.55,
+				"y": -0.03,
+				"z": 0.58
+			},
+			"scale": 5
+		},
+		"*-rolypoly": {
+			"rotation": {
+				"x": 0,
+				"y": -45,
+				"z": 45
+			},
+			"origin": {
+				"x": 0.55,
+				"y": -0.01,
+				"z": 0.55
+			},
+			"scale": 5
+		}
+	},
+	"fpHandTransformByType": {
+		"*-cricket": {
+			"translation": {
+				"x": 0,
+				"y": 0.22,
+				"z": 0
+			},
+			"rotation": {
+				"x": 38,
+				"y": -75,
+				"z": 2
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.7
+		},
+		"*-grasshopper": {
+			"translation": {
+				"x": 0,
+				"y": 0.22,
+				"z": 0
+			},
+			"rotation": {
+				"x": 38,
+				"y": -75,
+				"z": 2
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.7
+		},
+		"*-rolypoly": {
+			"translation": {
+				"x": 0,
+				"y": 0.22,
+				"z": 0
+			},
+			"rotation": {
+				"x": 38,
+				"y": -75,
+				"z": 2
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 0.7
+		}
+	},
+	"tpHandTransformByType": {
+		"*-cricket": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.2
+		},
+		"*-grasshopper": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.2
+		},
+		"*-rolypoly": {
+			"translation": {
+				"x": -0.75,
+				"y": -0.4,
+				"z": -0.5
+			},
+			"scale": 0.2
+		}
+	},
+	"groundTransformByType": {
+		"*-cricket": {
+			"translation": {
+				"x": 0,
+				"y": 0.02,
+				"z": 0
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 2
+		},
+		"*-grasshopper": {
+			"translation": {
+				"x": 0,
+				"y": 0.02,
+				"z": 0
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 2
+		},
+		"*-rolypoly": {
+			"translation": {
+				"x": 0,
+				"y": 0.02,
+				"z": 0
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": -3
+			},
+			"origin": {
+				"x": 0.47,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 2
+		}
+	},
+	"grindingPropsByType": {
+		"*-cricket": {
+			"grindedStack": {
+				"type": "item",
+				"code": "creaturescan:bugflour-cricket",
+				"stacksize": 1
+			}
+		},
+		"*-grasshopper": {
+			"grindedStack": {
+				"type": "item",
+				"code": "creaturescan:bugflour-grasshopper",
+				"stacksize": 1
+			}
+		}
+	}
+}

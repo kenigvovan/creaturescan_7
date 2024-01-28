@@ -1,0 +1,39 @@
+{
+	"ingredientPattern": "CRC,BPB,_K_",
+	"ingredients": {
+		"P": {
+			"type": "item",
+			"code": "crochide-raw-huge",
+			"quantity": 1
+		},
+		"K": {
+			"type": "item",
+			"code": "game:knife-*",
+			"isTool": true,
+			"toolDurabilityCost": 32
+		},
+		"R": {
+			"type": "item",
+			"code": "game:rope",
+			"quantity": 2
+		},
+		"B": {
+			"type": "item",
+			"code": "game:bone",
+			"quantity": 2
+		},
+		"C": {
+			"type": "item",
+			"code": "game:cattailtops",
+			"quantity": 4
+		}
+	},
+	"name": "crocodilebackpack",
+	"width": 3,
+	"height": 3,
+	"output": {
+		"type": "item",
+		"code": "crocodilebackpack",
+		"quantity": 2
+	}
+}

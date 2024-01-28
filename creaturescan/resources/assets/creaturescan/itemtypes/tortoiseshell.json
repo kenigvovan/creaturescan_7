@@ -1,0 +1,59 @@
+{
+	"code": "tortoiseshell",
+	"shape": { "base": "creaturescan:tortoiseshell" },
+	"texture": { "base": "creaturescan:entity/land/tortoise" },
+	"attributes": {},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"maxstacksize": 64,
+	"materialDensity": 500,
+	"guiTransform": {
+		"translation": {
+			"x": 0,
+			"y": 3,
+			"z": 0
+		},
+		"rotation": {
+			"x": -7,
+			"y": -37,
+			"z": -180
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.17,
+			"z": 0.5
+		},
+		"scale": 3.1
+	},
+	"fpHandTransform": {
+		"rotation": {
+			"x": 54,
+			"y": 99,
+			"z": -30
+		},
+		"scale": 3
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -0.2,
+			"y": -0.4,
+			"z": -0.4
+		},
+		"rotation": {
+			"x": 135,
+			"y": 0,
+			"z": 90
+		},
+		"scale": 1.1
+	},
+	"groundTransform": {
+		"origin": {
+			"x": 0,
+			"y": 0.7,
+			"z": 0
+		},
+		"scale": 4
+	}
+}

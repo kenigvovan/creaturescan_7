@@ -1,0 +1,155 @@
+{
+	"code": "gardensnail",
+	"class": "EntityAgent",
+	"canClimb": true,
+	"canClimbAnywhere": true,
+	"climbTouchDistance": 0.1,
+	"rotateModelOnClimb": true,
+	"fallDamage": false,
+	"hitboxSize": {
+		"x": 0.5,
+		"y": 0.3
+	},
+	"deadHitboxSize": {
+		"x": 0.5,
+		"y": 0.3
+	},
+	"eyeHeight": 0.1,
+	"drops": [
+		{
+			"type": "item",
+			"code": "insect-gardensnail",
+			"quantity": {
+				"avg": 1,
+				"var": 0
+			}
+		}
+	],
+	"client": {
+		"renderer": "Shape",
+		"shape": { "base": "entity/land/gardensnail" },
+		"texturesbytype": {
+			"gardensnail": {
+				"slug": { "base": "slug" },
+				"latte": { "base": "game:block/creature/seashell/latte" }
+			}
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			}
+		],
+		"animations": [
+			{
+				"code": "die",
+				"animation": "die",
+				"animationSpeed": 1,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "walk",
+				"animation": "walk",
+				"blendMode": "Average",
+				"easeOutSpeed": 4
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			},
+			{
+				"code": "health",
+				"currenthealth": 1,
+				"maxhealth": 1
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "breathe" },
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.0005,
+						"animationSpeed": 0.5,
+						"animation": "walk",
+						"preferredLightLevel": 12
+					},
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player" ],
+						"priority": 2,
+						"movespeed": 0.00000001,
+						"seekingRange": 1,
+						"animation": "scared",
+						"animationSpeed": 4
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 0.01,
+					"var": 0
+				},
+				"tryOnlySurface": true,
+				"minLightLevel": 0,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 2
+				},
+				"insideBlockCodes": [ "game:air", "game:flower-*", "game:tallgrass-*" ],
+				"minTemp": 5,
+				"maxTemp": 40,
+				"minRain": 0.1,
+				"maxRain": 0.39
+			},
+			"runtime": {
+				"group": "passive",
+				"tryOnlySurface": true,
+				"chance": 0.009,
+				"maxQuantity": 10,
+				"minLightLevel": 0,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 2
+				},
+				"insideBlockCodes": [ "game:air", "game:flower-*", "game:tallgrass-*" ],
+				"minTemp": 5,
+				"maxTemp": 40,
+				"minRain": 0.1,
+				"maxRain": 0.39
+			}
+		}
+	}
+}

@@ -1,0 +1,190 @@
+[
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/crawfishmeat-cured",
+    "value": [
+      "meat",
+      "group16"
+    ],
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/crawfishmeat-raw",
+    "value": [
+      "meat",
+      "group16"
+    ],
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/creature-cassowary-egg-raw",
+    "value": [
+      "egg",
+      "group6"
+    ],
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/creature-crocodile-egg-raw",
+    "value": [
+      "egg",
+      "group6"
+    ],
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/egg-kiwi-raw",
+    "value": [
+      "egg",
+      "group6"
+    ],
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/insect-cricket",
+    "value": [
+      "meat",
+      "group17"
+    ],
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/insect-grasshopper",
+    "value": [
+      "meat",
+      "group18"
+    ],
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/insect-shelledseasnail",
+    "value": [
+      "meat",
+      "group19"
+    ],
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/insect-slug",
+    "value": [
+      "meat",
+      "group19"
+    ],
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/tortoiseegg-tortoise-raw",
+    "value": [
+      "egg",
+      "group6"
+    ],
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/turtlemeat-cured",
+    "value": [
+      "meat",
+      "group20"
+    ],
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/turtlemeat-raw",
+    "value": [
+      "meat",
+      "group20"
+    ],
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*/cookedcricket",
+    "value": {
+      "base": "game:cookedcricket"
+    },
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*/cookedgrasshopper",
+    "value": {
+      "base": "game:cookedgrasshopper"
+    },
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*/crawfishcooked",
+    "value": {
+      "base": "item/food/meat/crawfishcooked"
+    },
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*/escargot",
+    "value": {
+      "base": "game:block/transparent"
+    },
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*/group16",
+    "value": {
+      "base": "game:crawfishstew"
+    },
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*/group17",
+    "value": {
+      "base": "game:cricketstew"
+    },
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*/group18",
+    "value": {
+      "base": "game:grasshopperstew"
+    },
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*/group19",
+    "value": {
+      "base": "game:escargotstew"
+    },
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*/group20",
+    "value": {
+      "base": "game:turtlestew"
+    },
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*/turtlemeatcooked",
+    "value": {
+      "base": "game:item/food/meat/cookedturtlemeat"
+    },
+    "file": "blocktypes/clay/pot.json"
+  }
+]

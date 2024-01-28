@@ -1,0 +1,79 @@
+{
+  code: "caribouantlerrack",
+  creativeinventory: { "general": [ "caribouantlerrack-*-north" ], "decorative": [ "caribouantlerrack-*-north" ] },
+  behaviors: [ { name: "HorizontalAttachable" }, {name: "RightClickPickup"} ],
+  rainPermeable: true,
+  materialDensity: 600,
+  variantgroups: [ 
+		{ code: "wood", states: [ "acacia", "aged", "baldcypress", "birch", "ebony", "kapok", "larch", "maple", "oak", "pine", "purpleheart", "redwood", "walnut" ] },
+		{ code: "side", loadFromProperties: "game:abstract/horizontalorientation"  }
+  ],
+  shapeinventory: { base: "creaturescan:block/bone/caribouantlerrack" },
+  shapebytype: {
+    "caribouantlerrack-*-north": {
+      "base": "creaturescan:block/bone/caribouantlerrack",
+      "rotateY": 0
+    },
+    "caribouantlerrack-*-east": {
+      "base": "creaturescan:block/bone/caribouantlerrack",
+      "rotateY": 270
+    },
+    "caribouantlerrack-*-south": {
+      "base": "creaturescan:block/bone/caribouantlerrack",
+      "rotateY": 180
+    },
+    "caribouantlerrack-*-west": {
+      "base": "creaturescan:block/bone/caribouantlerrack",
+      "rotateY": 90
+    }
+  },
+  blockmaterial: "Wood",
+  lightAbsorption: 0,
+  textures: {
+    "oak": {
+      base: "game:block/wood/treetrunk/{wood}"
+    },
+    "reindeerantlers": {
+      base: "reindeerantlers"
+    },
+  },
+  sidesolid: {
+    all: false
+  },
+  sideopaque: {
+    all: false
+  },
+  sideao: {
+    all: false
+  },
+  replaceable: 5001,
+  resistance: 1,
+  collisionbox: null,
+  selectionbox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 1, z2: 0.0625,
+	rotateYByType: { "caribouantlerrack-*-east": 270, "caribouantlerrack-*-south": 180, "caribouantlerrack-*-west": 90, "caribouantlerrack-*-north": 0 }  },
+	guiTransform: {
+		rotate: false,
+		rotation: { x: -32, y: 148, z: 4 },
+		origin: { x: 0.45, y: 0.45, z: 0 },
+		scale: 1.5
+    },
+	fpHandTransform: {
+		rotation: { x: 4, y: -113, z: 3 },
+		scale: 2.86
+	},
+    tpHandTransform: {
+		translation: { x: -1, y: -0.5, z: -1 },
+		rotation: { x: 0, y: 0, z: 6 },
+		scale: 1
+	},
+	groundTransform: {
+		rotation: { x: -90, y: 0, z: 0 },
+		origin: { x: 0, y: -0.2, z: 0 },
+		scale: 5.05
+	},
+  sounds: {
+    "place": "game:block/planks",
+    "break": "game:block/planks",
+    "hit": "game:block/planks"
+  }
+}

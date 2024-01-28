@@ -1,0 +1,177 @@
+{
+	"code": "geckomeat",
+	"maxstacksize": 64,
+	"attributes": {
+		"inFirePitProps": {
+			"transform": {
+				"scale": 0.35,
+				"translation": {
+					"x": 0,
+					"y": 0.19,
+					"z": 0
+				},
+				"origin": {
+					"x": 0.5,
+					"y": -0.02,
+					"z": 0.5
+				},
+				"rotation": {
+					"x": -90,
+					"y": 180,
+					"z": 0
+				}
+			},
+			"useFirepitModel": "spit"
+		}
+	},
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "raw", "cooked" ]
+		}
+	],
+	"shapeByType": {
+		"geckomeat-raw": { "base": "entity/land/deadgecko" },
+		"geckomeat-cooked": { "base": "entity/land/cookedgecko" }
+	},
+	"texturesbytype": {
+		"geckomeat-raw": {
+			"gecko": { "base": "gecko" }
+		},
+		"geckomeat-cooked": {
+			"cookedgecko": { "base": "cookedgecko" }
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"nutritionPropsByType": {
+		"geckomeat-cooked": {
+			"satiety": 200,
+			"foodcategory": "Protein"
+		}
+	},
+	"transitionablePropsByType": {
+		"*-raw": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 36 },
+				"transitionHours": { "avg": 24 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 1
+			}
+		],
+		"*-cooked": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 120 },
+				"spoilHours": { "avg": 36 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 1
+			}
+		]
+	},
+	"materialDensity": 600,
+	"tpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 5,
+				"y": 41,
+				"z": -31
+			},
+			"origin": {
+				"x": 0.23,
+				"y": 0,
+				"z": 0.13
+			},
+			"scale": 0.5
+		}
+	},
+
+	"guiTransformByType": {
+		"*": {
+			"rotate": false,
+			"translation": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 171,
+				"y": -122,
+				"z": 33
+			},
+			"origin": {
+				"x": 0.58,
+				"y": 0.21,
+				"z": 0.49
+			},
+			"scale": 2.3
+		}
+	},
+	"groundTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 180,
+				"y": 33,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 2.2
+		}
+	},
+	"fpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": -0.06,
+				"y": 0.36,
+				"z": 0.23
+			},
+			"rotation": {
+				"x": 40,
+				"y": 91,
+				"z": 15
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 1.3
+		}
+	},
+	"combustiblePropsByType": {
+		"geckomeat-raw": {
+			"meltingPoint": 200,
+			"meltingDuration": 30,
+			"smeltedRatio": 1,
+			"smeltingType": "cook",
+			"smeltedStack": {
+				"type": "item",
+				"code": "geckomeat-cooked"
+			},
+			"requiresContainer": false
+		}
+	}
+}

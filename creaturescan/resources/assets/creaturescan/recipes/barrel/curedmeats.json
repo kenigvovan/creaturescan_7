@@ -1,0 +1,44 @@
+[
+	{
+		"code": "curedmeat",
+		"sealHours": 480,
+		"ingredients": [
+			{
+				"type": "item",
+				"code": "game:salt",
+				"quantity": 2
+			},
+			{
+				"type": "item",
+				"code": "creaturescan:*-raw",
+				"name": "meat",
+				"quantity": 1,
+				"allowedVariants": [ "crawfishmeat" ]
+			}
+		],
+		"output": {
+			"type": "item",
+			"code": "creaturescan:crawfishmeat-cured",
+			"stackSize": 1
+		}
+	},
+{
+	code: "curedmeat",
+	sealHours: 480,
+	ingredients: [
+		{ type: "item", code: "game:salt",  quantity: 2 },
+		{
+			"type": "item",
+			"code": "creaturescan:*-raw",
+			"name": "meat",
+			"quantity": 1,
+			"allowedVariants": [ "turtlemeat" ]
+		}
+	],
+	output: {
+		"type": "item",
+		"code": "creaturescan:turtlemeat-cured",
+		"stackSize": 1
+	}
+}
+]

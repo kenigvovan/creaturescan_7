@@ -1,0 +1,126 @@
+{
+	"code": "crocodile-egg-raw",
+	"class": "EntityFish",
+	"hitboxSize": {
+		"x": 0.25,
+		"y": 0.2
+	},
+	"deadHitboxSize": {
+		"x": 0.25,
+		"y": 0.2
+	},
+	"eyeHeight": 0.1,
+	"knockbackresistance": 2,
+	"drops": [
+		{
+			"type": "item",
+			"code": "creature-crocodile-egg-raw",
+			"quantity": { "avg": 1 }
+		}
+	],
+	"client": {
+		"renderer": "Shape",
+		"size": 1,
+		"shape": { "base": "entity/water/crocodileegg" },
+		"texture": { "base": "crocodileegg" },
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 60
+			}
+		],
+		"animations": [
+			{
+				"code": "die",
+				"animation": "die",
+				"animationSpeed": 1,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4,
+				"triggeredBy": { "defaultAnim": true }
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 60
+			},
+			{
+				"code": "health",
+				"currenthealth": 0.1,
+				"maxhealth": 0.1
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "breathe" },
+			{
+				"code": "grow",
+				"hoursToGrow": 672,
+				"adultEntityCodes": [ "crocodile-hatchling" ]
+			},
+			{
+				"code": "taskai",
+				"aitasks": []
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 0.0075,
+					"var": 0
+				},
+				"tryOnlySurface": true,
+				"minLightLevel": 0,
+				"maxLightLevel": 18,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 0
+				},
+				"insideBlockCodes": [ "water-*" ],
+				"minTemp": 25,
+				"maxTemp": 38
+			},
+			"runtime": {
+				"group": "neutral",
+				"chance": 0.0008,
+				"tryOnlySurface": true,
+				"minLightLevel": 0,
+				"maxLightLevel": 18,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 0
+				},
+				"insideBlockCodes": [ "water-*" ],
+				"minTemp": 25,
+				"maxTemp": 38
+			}
+		}
+	}
+}

@@ -1,0 +1,156 @@
+{
+	"code": "gecko",
+	"class": "EntityAgent",
+	"canClimb": true,
+	"canClimbAnywhere": true,
+	"climbTouchDistance": 0.01,
+	"rotateModelOnClimb": true,
+	"fallDamage": false,
+	"hitboxSize": {
+		"x": 0.2,
+		"y": 0.12
+	},
+	"deadHitboxSize": {
+		"x": 0.2,
+		"y": 0.12
+	},
+	"eyeHeight": 0.1,
+	"attributes": {
+		"reckless": true
+	},
+	"drops": [
+		{
+			"type": "item",
+			"code": "game:geckomeat-raw",
+			"quantity": { "avg": 1 }
+		}
+	],
+	"client": {
+		"renderer": "Shape",
+		"size": 0.45,
+		"shape": { "base": "entity/land/gecko" },
+		"texture": { "base": "gecko" },
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			}
+		],
+		"animations": [
+			{
+				"code": "die",
+				"animation": "die",
+				"animationSpeed": 1,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4,
+				"triggeredBy": { "defaultAnim": true }
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			},
+			{
+				"code": "health",
+				"currenthealth": 1,
+				"maxhealth": 1
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "breathe" },
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player" ],
+						"priority": 1.31,
+						"movespeed": 0.04,
+						"animationSpeed": 3,
+						"seekingRange": 2,
+						"animation": "walk"
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.02,
+						"animationSpeed": 2.7,
+						"animation": "walk",
+						"preferredLightLevel": 4
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"group": "passive",
+				"TriesPerChunk": {
+					"avg": 0.0025,
+					"var": 0
+				},
+				"minLightLevel": 2,
+				"maxLightLevel": 5,
+				"groupSize": {
+					"dist": "invexp",
+					"avg": 2,
+					"var": 1
+				},
+				"insideBlockCodes": [ "game:air" ],
+				"minTemp": 15,
+				"maxTemp": 40,
+				"maxY": 0.7
+			},
+			"runtime": {
+				"group": "passive",
+				"maxQuantity": 3,
+				"minLightLevel": 2,
+				"maxLightLevel": 5,
+				"chance": 0.0015,
+				"minTemp": 15,
+				"maxTemp": 40,
+				"lightLevelType": "MaxTimeOfDayLight",
+				"groupSize": {
+					"dist": "invexp",
+					"avg": 2,
+					"var": 1
+				},
+				"insideBlockCodes": [ "game:air" ],
+				"maxY": 0.7
+			}
+		}
+	}
+}

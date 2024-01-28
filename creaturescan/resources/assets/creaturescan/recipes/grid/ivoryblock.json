@@ -1,0 +1,16 @@
+{
+	"ingredientPattern": "GGG, GGG",
+	"ingredients": {
+		"G": {
+			"type": "item",
+			"code": "elephanttusk-normal"
+		}
+	},
+	"width": 3,
+	"height": 2,
+	"output": {
+		"type": "block",
+		"code": "game:ivoryblock",
+		"quantity": 1
+	}
+}

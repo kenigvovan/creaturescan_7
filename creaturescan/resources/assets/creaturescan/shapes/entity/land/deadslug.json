@@ -1,0 +1,44 @@
+{
+	"editor": {
+		"allAngles": true,
+		"entityTextureMode": false
+	},
+	"textureWidth": 8,
+	"textureHeight": 8,
+	"textureSizes": {
+	},
+	"textures": {
+		"slug": "slug"
+	},
+	"elements": [
+		{
+			"name": "origin",
+			"from": [ 8.0, 0.0, 8.0 ], 
+			"to": [ 8.0, 0.0, 8.0 ], 
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "enabled": false },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "enabled": false },
+				"south": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "enabled": false },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "enabled": false },
+				"up": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "enabled": false },
+				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "enabled": false }
+			},
+			"children": [
+				{
+					"name": "slug1",
+					"from": [ -1.0, 0.0, -0.4 ], 
+					"to": [ 1.0, 0.8, 0.4 ], 
+					"rotationOrigin": [ 0.0, 0.0, 0.1 ],
+					"faces": {
+						"north": { "texture": "#slug", "uv": [ 2.5, 2.0, 3.0, 4.0 ], "rotation": 90 },
+						"east": { "texture": "#slug", "uv": [ 1.5, 6.5, 2.0, 7.0 ] },
+						"south": { "texture": "#slug", "uv": [ 3.0, 2.0, 3.5, 4.0 ], "rotation": 270 },
+						"west": { "texture": "#slug", "uv": [ 0.5, 3.5, 1.0, 4.0 ] },
+						"up": { "texture": "#slug", "uv": [ 1.5, 2.0, 2.0, 4.0 ], "rotation": 270 },
+						"down": { "texture": "#slug", "uv": [ 2.0, 2.0, 2.5, 4.0 ], "rotation": 90 }
+					}
+				}
+			]
+		}
+	]}

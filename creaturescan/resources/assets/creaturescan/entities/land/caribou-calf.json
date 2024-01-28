@@ -1,0 +1,241 @@
+{
+	"code": "caribou-calf",
+	"class": "EntityAgent",
+	"hitboxSize": {
+		"x": 0.8,
+		"y": 0.5
+	},
+	"deadHitboxSize": {
+		"x": 0.6,
+		"y": 0.35
+	},
+	"eyeHeight": 0.4,
+	"weight": 30,
+	"drops": [],
+	"client": {
+		"renderer": "Shape",
+		"shape": { "base": "entity/land/reindeer-calf" },
+		"texture": {
+			"base": "reindeerbaby1",
+			"alternates": [ { "base": "reindeerbaby2" } ]
+		},
+		"size": 1,
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{ "code": "harvestable" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			}
+		],
+		"animations": [
+			{
+				"code": "hurt",
+				"animation": "hurt",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "die",
+				"animation": "death",
+				"animationSpeed": 0.5,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"animationSpeed": 0.35,
+				"triggeredBy": { "defaultAnim": true }
+			},
+			{
+				"code": "sleep",
+				"animation": "sleep",
+				"easeInSpeed": 1,
+				"easeOutSpeed": 1,
+				"blendMode": "Average"
+			}
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 180,
+				"maxTurnAnglePerSec": 360
+			}
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealth": 10,
+				"maxhealth": 10
+			},
+			{
+				"code": "deaddecay",
+				"hoursToDecay": 96,
+				"decayedBlock": "carcass-small"
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "harvestable",
+				"drops": [
+					{
+						"type": "item",
+						"code": "redmeat-raw",
+						"quantity": {
+							"avg": 4,
+							"var": 0.8
+						}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-small",
+						"quantity": {
+							"avg": 1,
+							"var": 0
+						}
+					},
+					{
+						"type": "item",
+						"code": "fat",
+						"quantity": {
+							"avg": 3,
+							"var": 0.9
+						}
+					}
+				]
+			},
+			{ "code": "breathe" },
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "alarmherdondamage",
+						"chance": 1,
+						"slot": 1,
+						"priority": 1,
+						"accumType": "max"
+					}
+				]
+			},
+			{
+				"code": "grow",
+				"hoursToGrow": 792,
+				"adultEntityCodes": [ "caribou-male", "caribou-female" ]
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player", "wolf-*", "puma-*", "bear-*" ],
+						"priority": 1.5,
+						"movespeed": 0.025,
+						"seekingRange": 11,
+						"animationSpeed": 2,
+						"animation": "Run",
+						"sound": "creature/caribou/caribouhurt"
+					},
+					{
+						"code": "getoutofwater",
+						"priority": 1.4,
+						"movespeed": 0.015,
+						"animation": "Walk",
+						"animationSpeed": 4
+					},
+					{
+						"code": "stayclosetoentity",
+						"priority": 1.4,
+						"entityCode": "caribou-female",
+						"movespeed": 0.025,
+						"maxDistance": 7,
+						"searchRange": 25,
+						"animation": "Run",
+						"animationSpeed": 2
+					},
+					{
+						"code": "idle",
+						"priority": 1.35,
+						"priorityForCancel": 1.35,
+						"minduration": 5000000,
+						"maxduration": 5000000,
+						"mincooldown": 10000,
+						"maxcooldown": 30000,
+						"animation": "Sleep",
+						"duringDayTimeFrames": [
+							{
+								"fromHour": 22,
+								"toHour": 24
+							},
+							{
+								"fromHour": 0,
+								"toHour": 5
+							}
+						],
+						"stopOnNearbyEntityCodes": [ "player", "wolf-*", "puma-*", "bear-*" ],
+						"stopRange": 8,
+						"stopOnHurt": true
+					},
+					{
+						"code": "idle",
+						"priority": 1.2,
+						"priorityForCancel": 1.35,
+						"minduration": 1500,
+						"maxduration": 1500,
+						"mincooldown": 6000,
+						"maxcooldown": 20000,
+						"animation": "Eat",
+						"animationSpeed": 0.6
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.0085,
+						"animationSpeed": 1.3,
+						"animation": "Walk",
+						"preferredLightLevel": 24
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			}
+		]
+	},
+	"sounds": {
+		"hurt": "creature/caribou/caribouhurt",
+		"death": "creature/caribou/caribouhurt",
+		"idle": "creature/caribou/cariboucalfcall"
+	},
+	"idleSoundChance": 0.01
+}

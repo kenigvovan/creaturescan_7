@@ -1,0 +1,109 @@
+{
+	"code": "creature-snail",
+	"class": "ItemCreature",
+	"maxstacksize": 64,
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "sundial", "turritella", "conch", "volute" ]
+		},
+		{
+			"code": "color",
+			"states": [ "latte", "plain", "seafoam", "darkpurple", "cinnamon", "turquoise" ]
+		}
+	],
+	"shape": { "base": "entity/water/snail/{type}" },
+	"textures": {
+		"color": { "base": "game:block/creature/seashell/{color}" },
+		"skin": { "base": "game:block/coal/charcoal" }
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ],
+		"creatures": [ "*" ]
+	},
+	"materialDensity": 600,
+	"guiTransformByType": {
+		"*": {
+			"translation": {
+				"x": 2,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -20,
+				"y": -127,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0.5
+			},
+			"scale": 1.88
+		}
+	},
+
+	"tpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": -1.1,
+				"y": -0.3,
+				"z": -0.7
+			},
+			"rotation": {
+				"x": -159,
+				"y": -21,
+				"z": -89
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0.5
+			},
+			"scale": 0.53
+		}
+	},
+
+	"fpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0.3,
+				"y": 0.09,
+				"z": 0
+			},
+			"rotation": {
+				"x": -149,
+				"y": -115,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 1.65
+		}
+	},
+
+	"groundTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0.5299
+			},
+			"scale": 1.95
+		}
+	}
+}

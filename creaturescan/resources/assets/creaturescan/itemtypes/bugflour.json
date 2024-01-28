@@ -1,0 +1,31 @@
+{
+	"code": "bugflour",
+	"maxstacksize": 64,
+	"attributes": {
+		"dissolveInWater": true
+	},
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "cricket", "grasshopper" ]
+		}
+	],
+	"texture": { "base": "creaturescan:item/food/buggrain/{type}-flour" },
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"materialDensity": 600,
+	"transitionableProps": [
+		{
+			"type": "Perish",
+			"freshHours": { "avg": 4320 },
+			"transitionHours": { "avg": 336 },
+			"transitionedStack": {
+				"type": "item",
+				"code": "game:rot"
+			},
+			"transitionRatio": 0.25
+		}
+	]
+}

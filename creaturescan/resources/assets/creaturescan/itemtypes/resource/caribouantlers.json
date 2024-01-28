@@ -1,0 +1,96 @@
+{
+	"code": "caribouantlers",
+	"shape": { "base": "item/caribouantlers" },
+	"behaviors": [
+		{
+			"name": "GroundStorable",
+			"properties": { "layout": "Quadrants" }
+		}
+	],
+	"textures": {
+		"reindeerantlers": { "base": "reindeerantlers" }
+	},
+	"attributes": {},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ],
+		"tools": [ "*" ]
+	},
+	"guiTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0,
+				"y": 0.2,
+				"z": 0
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 0.55,
+				"z": 0.55
+			},
+			"scale": 1.25
+		}
+	},
+	"fpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0.1,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -13,
+				"y": 15,
+				"z": 93
+			},
+			"scale": 2
+		}
+	},
+	"tpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": -0.9,
+				"y": -0.6,
+				"z": -1.1
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": 180
+			},
+			"scale": 0.85
+		}
+	},
+	"groundTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 90,
+				"z": 0
+			},
+			"origin": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"scale": 5
+		}
+	},
+	"grindingProps": {
+		"grindedStack": {
+			"type": "item",
+			"code": "game:bonemeal",
+			"stackSize": 5
+		}
+	}
+}

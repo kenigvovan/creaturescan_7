@@ -1,0 +1,169 @@
+{
+	"code": "snail",
+	"class": "EntityFish",
+	"habitat": "Underwater",
+	"variantgroups": [
+		{
+			"code": "shell",
+			"states": [ "sundial", "turritella", "conch", "volute" ]
+		},
+		{
+			"code": "color",
+			"states": [ "latte", "plain", "seafoam", "darkpurple", "cinnamon", "turquoise" ]
+		}
+	],
+	"hitboxSize": {
+		"x": 0.25,
+		"y": 0.2
+	},
+	"attributes": {
+		"seafloor": true
+	},
+	"eyeHeight": 0.1,
+	"canClimb": true,
+	"canClimbAnywhere": true,
+	"climbTouchDistance": 0.01,
+	"rotateModelOnClimb": true,
+	"drops": [
+		{
+			"type": "item",
+			"code": "game:snailwithshell-{shell}-{color}",
+			"quantity": {
+				"avg": 1,
+				"var": 0
+			}
+		}
+	],
+	"client": {
+		"renderer": "Shape",
+		"size": 0.7,
+		"shape": { "base": "entity/water/snail/{shell}" },
+		"textures": {
+			"color": { "base": "game:block/creature/seashell/{color}" },
+			"skin": { "base": "block/coal/charcoal" }
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 0.30
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			}
+		],
+		"animations": [
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "Average",
+				"triggeredBy": { "defaultAnim": true }
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 0.30
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealth": 2,
+				"maxhealth": 2
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "fishoutofwater",
+						"priority": 1.9,
+						"priorityForCancel": 1.99,
+						"movespeed": 0.004,
+						"animation": "walk",
+						"animationSpeed": 4
+					},
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player" ],
+						"priority": 2,
+						"movespeed": 0.004,
+						"seekingRange": 1,
+						"animation": "hurt",
+						"animationSpeed": 4
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.005,
+						"animationSpeed": 0.5,
+						"animation": "walk",
+						"preferredLightLevel": 3
+					},
+					{
+						"code": "idle",
+						"priority": 0.9,
+						"minduration": 5000,
+						"maxduration": 30000,
+						"mincooldown": 2000,
+						"maxcooldown": 120000,
+						"priorityForCancel": 1.28,
+						"animation": "Idle"
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 0.015,
+					"var": 0
+				},
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:water-*" ],
+				"minTemp": 10,
+				"maxTemp": 40
+			},
+			"runtime": {
+				"group": "neutral",
+				"chance": 0.001,
+				"maxQuantity": 1,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:water-*" ],
+				"minTemp": 10,
+				"maxTemp": 40
+			}
+		}
+	},
+	"sounds": {
+	},
+	"idleSoundChance": 0.03
+}

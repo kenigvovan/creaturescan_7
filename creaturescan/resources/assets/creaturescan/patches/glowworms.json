@@ -1,0 +1,14 @@
+[
+  {
+    "op": "add",
+    "path": "/drops/0",
+    "value": {
+      "type": "item",
+      "code": "game:creature-glowworm",
+      "quantity": {
+        "avg": 4
+      }
+    },
+    "file": "blocktypes/plant/glowworms.json"
+  }
+]

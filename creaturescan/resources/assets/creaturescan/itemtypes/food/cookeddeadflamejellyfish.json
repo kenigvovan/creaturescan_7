@@ -1,0 +1,103 @@
+{
+	"code": "cookeddeadflamejellyfish",
+	"heldTpIdleAnimation": "holdbothhands",
+	"shape": { "base": "entity/water/cookeddeadflamejellyfish" },
+	"texture": { "base": "cookedflamejellyfish" },
+	"attributes": {
+		"inFirePitProps": {
+			"transform": {
+				"scale": 0.4,
+				"translation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"origin": {
+					"x": 0.5,
+					"y": 0.05,
+					"z": 0.48
+				},
+				"rotation": {
+					"x": 0,
+					"y": -10,
+					"z": 90
+				}
+			},
+			"useFirepitModel": "spit"
+		}
+	},
+	"nutritionProps": {
+		"saturation": 40,
+		"foodcategory": "Protein"
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"maxstacksize": 64,
+	"materialDensity": 500,
+	"transitionableProps": [
+		{
+			"type": "Perish",
+			"freshHours": { "avg": 36 },
+			"transitionHours": { "avg": 24 },
+			"transitionedStack": {
+				"type": "item",
+				"code": "game:rot"
+			},
+			"transitionRatio": 1
+		}
+	],
+	"guiTransform": {
+		"translation": {
+			"x": 2,
+			"y": 1,
+			"z": 0
+		},
+		"rotation": {
+			"x": 4,
+			"y": -59,
+			"z": -180
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.3,
+			"z": 0.5
+		},
+		"scale": 1.3
+	},
+	"fpHandTransform": {
+		"rotation": {
+			"x": 54,
+			"y": 99,
+			"z": -30
+		},
+		"scale": 2
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -1.67,
+			"y": -1.25,
+			"z": -0.8
+		},
+		"rotation": {
+			"x": 70,
+			"y": 11,
+			"z": -65
+		},
+		"scale": 0.41
+	},
+	"groundTransform": {
+		"rotation": {
+			"x": -20,
+			"y": 0,
+			"z": -180
+		},
+		"origin": {
+			"x": 0.47,
+			"y": 0.2,
+			"z": 0.5
+		},
+		"scale": 2
+	}
+}

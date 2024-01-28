@@ -1,0 +1,323 @@
+{
+	"code": "kiwi-rooster",
+	"class": "EntityAgent",
+	"hitboxSize": {
+		"x": 0.5,
+		"y": 0.6
+	},
+	"deadHitboxSize": {
+		"x": 0.5,
+		"y": 0.25
+	},
+	"eyeHeight": 0.5,
+	"weight": 1,
+	"drops": [],
+	"client": {
+		"renderer": "Shape",
+		"size": 0.8,
+		"shape": { "base": "entity/land/kiwi-rooster" },
+		"texture": { "base": "entity/kiwi/hen" },
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{ "code": "harvestable" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			}
+		],
+		"animations": [
+			{
+				"code": "hurt",
+				"animation": "hurt",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "die",
+				"animation": "death",
+				"animationSpeed": 1.25,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4,
+				"triggeredBy": { "defaultAnim": true }
+			},
+			{
+				"code": "sleep",
+				"animation": "sleep",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			},
+			{
+				"code": "sit",
+				"animation": "sit",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			}
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 720,
+				"maxTurnAnglePerSec": 1440
+			}
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			},
+			{
+				"code": "health",
+				"currenthealth": 3,
+				"maxhealth": 3
+			},
+			{
+				"code": "deaddecay",
+				"hoursToDecay": 96,
+				"decayedBlock": "carcass-tiny"
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "harvestable",
+				"drops": [
+					{
+						"type": "item",
+						"code": "poultry-raw",
+						"quantity": {
+							"avg": 1.75,
+							"var": 0.25
+						}
+					},
+					{
+						"type": "item",
+						"code": "feather",
+						"quantity": {
+							"avg": 12,
+							"var": 4
+						}
+					},
+					{
+						"type": "item",
+						"code": "bone",
+						"quantity": {
+							"avg": 0.5,
+							"var": 0
+						}
+					}
+				]
+			},
+			{ "code": "breathe" },
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "aggressiveondamage",
+						"duration": 20,
+						"chance": 0.4,
+						"slot": 0,
+						"priority": 2,
+						"accumType": "noaccum"
+					}
+				]
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player", "wolf-male", "wolf-female", "fox-*", "hyena-male", "hyena-female", "puma-*", "tiger-*", "crocodile", "komododragon" ],
+						"priority": 1.8,
+						"movespeed": 0.037,
+						"animationSpeed": 2.4,
+						"seekingRange": 10,
+						"animation": "Run",
+						"animationSpeed": 2,
+						"whenInEmotionState": "fleeondamage"
+					},
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player", "wolf-male", "wolf-female", "fox-*", "hyena-male", "hyena-female", "puma-*", "tiger-*", "crocodile", "komododragon" ],
+						"priority": 1.5,
+						"movespeed": 0.037,
+						"seekingRange": 10,
+						"animation": "Run",
+						"animationSpeed": 2.4
+					},
+					{
+						"code": "getoutofwater",
+						"priority": 1.4,
+						"movespeed": 0.02,
+						"animation": "Run"
+					},
+					{
+						"code": "seekfoodandeat",
+						"priority": 1.3,
+						"eatSound": "player/eat",
+						"eatTime": 1.5,
+						"movespeed": 0.0025,
+						"animation": "Walk",
+						"mincooldownHours": 1,
+						"maxcooldownHours": 4
+					},
+					{
+						"code": "meleeattack",
+						"entityCodes": [ "insect-cricket", "insect-grasshopper" ],
+						"priority": 1.28,
+						"damage": 1,
+						"slot": 1,
+						"mincooldown": 1500,
+						"maxcooldown": 1500,
+						"attackDurationMs": 800,
+						"damagePlayerAtMs": 500,
+						"animation": "Eat",
+						"animationSpeed": 2.5
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "insect-cricket", "insect-grasshopper" ],
+						"priority": 1.26,
+						"movespeed": 0.03,
+						"animationSpeed": 2,
+						"seekingRange": 20,
+						"animation": "Run"
+					},
+					{
+						"code": "idle",
+						"priority": 1.27,
+						"minduration": 5000000,
+						"maxduration": 5000000,
+						"mincooldown": 5000,
+						"maxcooldown": 15000,
+						"priorityForCancel": 1.38,
+						"animation": "Sleep",
+						"duringDayTimeFrames": [
+							{
+								"fromHour": 20,
+								"toHour": 24
+							},
+							{
+								"fromHour": 0,
+								"toHour": 6
+							}
+						],
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "fox-*", "hyena-male", "hyena-female", "puma-*", "tiger-*", "crocodile", "komododragon" ],
+						"stopRange": 8,
+						"stopOnHurt": true
+					},
+					{
+						"code": "idle",
+						"priority": 1.2,
+						"minduration": 2500,
+						"maxduration": 2500,
+						"mincooldown": 1000,
+						"maxcooldown": 10000,
+						"priorityForCancel": 1.29,
+						"animation": "Eat"
+					},
+					{
+						"code": "idle",
+						"priority": 1.1,
+						"minduration": 1000,
+						"maxduration": 3000,
+						"mincooldown": 2000,
+						"maxcooldown": 30000,
+						"priorityForCancel": 1.29,
+						"animation": "Idle"
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"movespeed": 0.006,
+						"animation": "Walk",
+						"wanderChance": 0.02,
+						"preferredLightLevel": 19
+					},
+					{
+						"code": "idle",
+						"priority": 0.9,
+						"minduration": 6000,
+						"maxduration": 40000,
+						"mincooldown": 2000,
+						"maxcooldown": 120000,
+						"priorityForCancel": 1.29,
+						"animation": "Sit"
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 0.025,
+					"var": 0
+				},
+				"tryOnlySurface": true,
+				"minLightLevel": 12,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 4,
+					"var": 5
+				},
+				"insideBlockCodes": [ "game:air", "game:tallgrass-*" ],
+				"minTemp": 30,
+				"maxTemp": 40,
+				"minRain": 0.18,
+				"minShrubs": 0.8,
+				"companions": [ "kiwi-hen", "kiwi-baby" ]
+			},
+			"runtime": {
+				"group": "passive",
+				"tryOnlySurface": true,
+				"chance": 0.001,
+				"maxQuantity": 4,
+				"minLightLevel": 12,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 4,
+					"var": 5
+				},
+				"insideBlockCodes": [ "game:air", "game:tallgrass-*" ],
+				"minTemp": 30,
+				"maxTemp": 40,
+				"minRain": 0.18,
+				"minShrubs": 0.8,
+				"companions": [ "kiwi-hen", "kiwi-baby" ]
+			}
+		}
+	},
+	"sounds": {
+	}
+}

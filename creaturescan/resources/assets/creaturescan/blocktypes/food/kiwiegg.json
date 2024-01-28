@@ -1,0 +1,128 @@
+{
+	code: "egg",
+	behaviors: [{name: "UnstableFalling"}, {name: "RightClickPickup", properties: { dropsPickupMode: true}} ],
+	entityClass: "Transient",
+	attributes: {
+		transientProps: {
+			convertFrom: "*", 
+			convertTo: "air", 
+			inGameHours: "72",
+		},
+		handbook: {
+			groupBy: ["egg-*"]
+		}
+	},
+	variantgroups: [
+		{ code:"creature", states: ["kiwi"] },
+		{ code:"amount", states: ["1", "2", "3", "broken"] },
+	],	
+	creativeinventory: { general: ["*"], decorative: ["*"] },
+	blockmaterial: "Soil",
+	drawtype: "json",
+	shapebytype: {
+		"*-1": {
+			"base": "creaturescan:block/egg/1kiwiegg",
+			"alternates": [
+				{
+					"base": "creaturescan:block/egg/1kiwiegg",
+					"rotateY": 90
+				},
+				{
+					"base": "creaturescan:block/egg/1kiwiegg",
+					"rotateY": 180
+				},
+				{
+					"base": "creaturescan:block/egg/1kiwiegg",
+					"rotateY": 270
+				}
+			]
+		},
+		"*-2": {
+			"base": "creaturescan:block/egg/2kiwieggs",
+			"alternates": [
+				{
+					"base": "creaturescan:block/egg/2kiwieggs",
+					"rotateY": 90
+				},
+				{
+					"base": "creaturescan:block/egg/2kiwieggs",
+					"rotateY": 180
+				},
+				{
+					"base": "creaturescan:block/egg/2kiwieggs",
+					"rotateY": 270
+				}
+			]
+		},
+		"*-3": {
+			"base": "creaturescan:block/egg/3kiwieggs",
+			"alternates": [
+				{
+					"base": "creaturescan:block/egg/3kiwieggs",
+					"rotateY": 90
+				},
+				{
+					"base": "creaturescan:block/egg/3kiwieggs",
+					"rotateY": 180
+				},
+				{
+					"base": "creaturescan:block/egg/3kiwieggs",
+					"rotateY": 270
+				}
+			]
+		},
+		"*-broken": {
+			"base": "creaturescan:block/egg/brokenkiwiegg",
+			"alternates": [
+				{
+					"base": "creaturescan:block/egg/brokenkiwiegg",
+					"rotateY": 90
+				},
+				{
+					"base": "creaturescan:block/egg/brokenkiwiegg",
+					"rotateY": 180
+				},
+				{
+					"base": "creaturescan:block/egg/brokenkiwiegg",
+					"rotateY": 270
+				}
+			]
+		},
+	},
+	doNotRenderAtLod2: true,
+	lightAbsorption: 0,
+	sidesolid: { all: false },
+	sideopaque: { all: false },
+	replaceable: 100,
+	resistance: 0.25,
+	selectionbox: { x1: 0, y1: 0, x2: 1, y2: 0.125, z2: 1 },
+	collisionbox: null,
+	dropsByType: {
+		"*-1": [
+			{
+				"type": "item",
+				"code": "creaturescan:egg-kiwi-raw",
+				"quantity": { "avg": 1 }
+			}
+		],
+		"*-2": [
+			{
+				"type": "item",
+				"code": "creaturescan:egg-kiwi-raw",
+				"quantity": { "avg": 2 }
+			}
+		],
+		"*-3": [
+			{
+				"type": "item",
+				"code": "creaturescan:egg-kiwi-raw",
+				"quantity": { "avg": 3 }
+			}
+		],
+	},
+	materialDensity: 300,
+	guiTransform: {
+		origin: { x: 0.5, y: 0.15, z: 0.5 },
+		scale: 2.5
+	}
+}

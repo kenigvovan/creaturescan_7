@@ -1,0 +1,122 @@
+[
+  {
+    "op": "add",
+    "path": "/ingredients/4/validStacks/7",
+    "value": {
+      "type": "item",
+      "code": "egg-kiwi-raw",
+      "shapeElement": "bowl/meat/*"
+    },
+    "file": "recipes/cooking/soup.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/4/validStacks/8",
+    "value": {
+      "type": "item",
+      "code": "crawfishmeat-raw",
+      "shapeElement": "bowl/meat/*"
+    },
+    "file": "recipes/cooking/soup.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/4/validStacks/9",
+    "value": {
+      "type": "item",
+      "code": "creaturescan:crawfishmeat-cured",
+      "shapeElement": "bowl/meat/*"
+    },
+    "file": "recipes/cooking/soup.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/4/validStacks/10",
+    "value": {
+      "type": "item",
+      "code": "insect-shelledseasnail",
+      "shapeElement": "bowl/meat/*"
+    },
+    "file": "recipes/cooking/soup.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/4/validStacks/11",
+    "value": {
+      "type": "item",
+      "code": "insect-slug",
+      "shapeElement": "bowl/meat/*"
+    },
+    "file": "recipes/cooking/soup.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/4/validStacks/12",
+    "value": {
+      "type": "item",
+      "code": "insect-cricket",
+      "shapeElement": "bowl/meat/*"
+    },
+    "file": "recipes/cooking/soup.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/4/validStacks/13",
+    "value": {
+      "type": "item",
+      "code": "insect-grasshopper",
+      "shapeElement": "bowl/meat/*"
+    },
+    "file": "recipes/cooking/soup.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/4/validStacks/14",
+    "value": {
+      "type": "item",
+      "code": "turtlemeat-raw",
+      "shapeElement": "bowl/meat/*"
+    },
+    "file": "recipes/cooking/soup.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/4/validStacks/15",
+    "value": {
+      "type": "item",
+      "code": "turtlemeat-cured",
+      "shapeElement": "bowl/meat/*"
+    },
+    "file": "recipes/cooking/soup.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/4/validStacks/16",
+    "value": {
+      "type": "item",
+      "code": "creaturescan:tortoiseegg-tortoise-raw",
+      "shapeElement": "bowl/meat/*"
+    },
+    "file": "recipes/cooking/soup.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/4/validStacks/17",
+    "value": {
+      "type": "item",
+      "code": "creature-cassowary-egg-raw",
+      "shapeElement": "bowl/meat/*"
+    },
+    "file": "recipes/cooking/soup.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/4/validStacks/18",
+    "value": {
+      "type": "item",
+      "code": "creature-crocodile-egg-raw",
+      "shapeElement": "bowl/meat/*"
+    },
+    "file": "recipes/cooking/soup.json"
+  }
+]

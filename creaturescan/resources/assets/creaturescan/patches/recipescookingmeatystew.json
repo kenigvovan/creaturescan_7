@@ -1,0 +1,386 @@
+[
+  {
+    "op": "add",
+    "path": "/ingredients/0/validStacks/6",
+    "value": {
+      "type": "item",
+      "code": "crawfishmeat-raw",
+      "shapeElement": "bowl/meat stew/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/0/validStacks/7",
+    "value": {
+      "type": "item",
+      "code": "creaturescan:crawfishmeat-cured",
+      "shapeElement": "bowl/meat stew/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/0/validStacks/8",
+    "value": {
+      "type": "item",
+      "code": "insect-shelledseasnail",
+      "shapeElement": "bowl/meat stew/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/0/validStacks/9",
+    "value": {
+      "type": "item",
+      "code": "insect-slug",
+      "shapeElement": "bowl/meat stew/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/0/validStacks/10",
+    "value": {
+      "type": "item",
+      "code": "insect-cricket",
+      "shapeElement": "bowl/meat stew/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/0/validStacks/11",
+    "value": {
+      "type": "item",
+      "code": "insect-grasshopper",
+      "shapeElement": "bowl/meat stew/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/0/validStacks/12",
+    "value": {
+      "type": "item",
+      "code": "turtlemeat-raw",
+      "shapeElement": "bowl/meat stew/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/0/validStacks/13",
+    "value": {
+      "type": "item",
+      "code": "turtlemeat-cured",
+      "shapeElement": "bowl/meat stew/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/1/validStacks/1",
+    "value": {
+      "type": "item",
+      "code": "egg-kiwi-raw",
+      "shapeElement": "bowl/egg/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/1/validStacks/2",
+    "value": {
+      "type": "item",
+      "code": "creaturescan:tortoiseegg-tortoise-raw",
+      "shapeElement": "bowl/egg/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/1/validStacks/3",
+    "value": {
+      "type": "item",
+      "code": "creature-cassowary-egg-raw",
+      "shapeElement": "bowl/egg/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/1/validStacks/4",
+    "value": {
+      "type": "item",
+      "code": "creature-crocodile-egg-raw",
+      "shapeElement": "bowl/egg/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/7",
+    "value": {
+      "type": "item",
+      "code": "egg-kiwi-raw",
+      "shapeElement": "bowl/egg2/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/8",
+    "value": {
+      "type": "item",
+      "code": "crawfishmeat-raw",
+      "shapeElement": "bowl/tail 1/*",
+      "textureMapping": [
+        "crawfishcooked",
+        "crawfishcooked"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/9",
+    "value": {
+      "type": "item",
+      "code": "creaturescan:crawfishmeat-cured",
+      "shapeElement": "bowl/tail 1/*",
+      "textureMapping": [
+        "crawfishcooked",
+        "crawfishcured"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/10",
+    "value": {
+      "type": "item",
+      "code": "insect-shelledseasnail",
+      "shapeElement": "bowl/escargot 1/*",
+      "textureMapping": [
+        "escargot",
+        "escargot"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/11",
+    "value": {
+      "type": "item",
+      "code": "insect-slug",
+      "shapeElement": "bowl/escargot 1/*",
+      "textureMapping": [
+        "escargot",
+        "escargot"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/12",
+    "value": {
+      "type": "item",
+      "code": "insect-cricket",
+      "shapeElement": "bowl/cricket 1/*",
+      "textureMapping": [
+        "cookedcricket",
+        "cookedcricket"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/13",
+    "value": {
+      "type": "item",
+      "code": "insect-grasshopper",
+      "shapeElement": "bowl/grasshopper 1/*",
+      "textureMapping": [
+        "cookedgrasshopper",
+        "cookedgrasshopper"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/14",
+    "value": {
+      "type": "item",
+      "code": "turtlemeat-raw",
+      "shapeElement": "bowl/red meat/*",
+      "textureMapping": [
+        "meat",
+        "turtlemeatcooked"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/15",
+    "value": {
+      "type": "item",
+      "code": "turtlemeat-cured",
+      "shapeElement": "bowl/red meat/*",
+      "textureMapping": [
+        "meat",
+        "turtlemeatcooked"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/16",
+    "value": {
+      "type": "item",
+      "code": "creaturescan:tortoiseegg-tortoise-raw",
+      "shapeElement": "bowl/egg2/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/17",
+    "value": {
+      "type": "item",
+      "code": "creature-cassowary-egg-raw",
+      "shapeElement": "bowl/egg2/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/18",
+    "value": {
+      "type": "item",
+      "code": "creature-crocodile-egg-raw",
+      "shapeElement": "bowl/egg2/*"
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/6",
+    "value": {
+      "type": "item",
+      "code": "crawfishmeat-raw",
+      "shapeElement": "bowl/tail 2/*",
+      "textureMapping": [
+        "crawfishcooked",
+        "crawfishcooked"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/7",
+    "value": {
+      "type": "item",
+      "code": "creaturescan:crawfishmeat-cured",
+      "shapeElement": "bowl/tail 2/*",
+      "textureMapping": [
+        "crawfishcooked",
+        "crawfishcured"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/8",
+    "value": {
+      "type": "item",
+      "code": "insect-shelledseasnail",
+      "shapeElement": "bowl/escargot 2/*",
+      "textureMapping": [
+        "escargot",
+        "escargot"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/9",
+    "value": {
+      "type": "item",
+      "code": "insect-slug",
+      "shapeElement": "bowl/escargot 2/*",
+      "textureMapping": [
+        "escargot",
+        "escargot"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/10",
+    "value": {
+      "type": "item",
+      "code": "insect-cricket",
+      "shapeElement": "bowl/cricket 2/*",
+      "textureMapping": [
+        "cookedcricket",
+        "cookedcricket"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/11",
+    "value": {
+      "type": "item",
+      "code": "insect-grasshopper",
+      "shapeElement": "bowl/grasshopper 2/*",
+      "textureMapping": [
+        "cookedgrasshopper",
+        "cookedgrasshopper"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/12",
+    "value": {
+      "type": "item",
+      "code": "turtlemeat-raw",
+      "shapeElement": "bowl/red meat 2/*",
+      "textureMapping": [
+        "meat",
+        "turtlemeatcooked"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/13",
+    "value": {
+      "type": "item",
+      "code": "turtlemeat-cured",
+      "shapeElement": "bowl/red meat 2/*",
+      "textureMapping": [
+        "meat",
+        "turtlemeatcooked"
+      ]
+    },
+    "file": "recipes/cooking/meatystew.json"
+  }
+]

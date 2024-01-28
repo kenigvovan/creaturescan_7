@@ -1,0 +1,49 @@
+[
+	{
+		"ingredientPattern": "CB",
+		"ingredients": {
+			"C": {
+				"type": "item",
+				"code": "cookedinsect-cricket"
+			},
+			"B": {
+				"type": "block",
+				"code": "game:bowl-fired"
+			}
+		},
+		"attributes": {
+			"liquidContainerProps": {
+				"requiresContent": {
+					"type": "item",
+					"code": "game:honeyportion"
+				},
+				"requiresLitres": 0.1
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"shapeless": true,
+		"output": {
+			"type": "item",
+			"code": "cookedinsecthoneyglazed-cricketglazed",
+			"quantity": 1
+		}
+	},
+		{
+		ingredientPattern: "GB",
+		ingredients: {
+			"G": { type: "item", code: "cookedinsect-grasshopper" },
+			"B": { type: "block", code: "game:bowl-fired" }
+		},
+		attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "game:honeyportion" },
+				requiresLitres: 0.1
+			}
+		},		
+		width: 2,
+		height: 1,
+		shapeless: true,
+		output: { type: "item", code: "cookedinsecthoneyglazed-grasshopperglazed", quantity: 1  }
+	}
+]

@@ -1,0 +1,11 @@
+{
+  "type": "code",
+  "modid": "creaturescan",
+  "name": "Creatures & Critters (Unofficial)",
+  "author": [ "Minni6in", "KenigVovan" ],
+  "description": "Adds more creatures & critters to Vintage Story",
+  "version": "1.0.4",
+  "dependenciec": {
+    "game": ""
+  }
+}

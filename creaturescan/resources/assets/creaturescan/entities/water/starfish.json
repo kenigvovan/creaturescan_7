@@ -1,0 +1,147 @@
+{
+	"code": "starfish",
+	"class": "EntityFish",
+	"habitat": "Underwater",
+	"variantgroups": [
+		{
+			"code": "color",
+			"states": [ "latte", "plain", "seafoam", "darkpurple", "cinnamon", "turquoise" ]
+		}
+	],
+	"hitboxSize": {
+		"x": 0.25,
+		"y": 0.2
+	},
+	"attributes": {
+		"seafloor": true
+	},
+	"eyeHeight": 0.1,
+	"canClimb": true,
+	"canClimbAnywhere": true,
+	"climbTouchDistance": 0.05,
+	"rotateModelOnClimb": true,
+	"drops": [
+		{
+			"type": "block",
+			"code": "game:seashell-seastar-{color}",
+			"quantity": {
+				"avg": 1,
+				"var": 0
+			}
+		}
+	],
+	"client": {
+		"renderer": "Shape",
+		"shape": { "base": "entity/water/starfish" },
+		"textures": {
+			"color": { "base": "game:block/creature/seashell/{color}" }
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 0
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			}
+		],
+		"animations": [
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 0
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealth": 3,
+				"maxhealth": 3
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "fishoutofwater",
+						"priority": 1.9,
+						"priorityForCancel": 1.99,
+						"movespeed": 0.0005,
+						"animation": "walk",
+						"animationSpeed": 4
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.0001,
+						"mincooldown": 2000,
+						"maxcooldown": 120000,
+						"animationSpeed": 0.1,
+						"animation": "Walk"
+					},
+					{
+						"code": "idle",
+						"priority": 0.9,
+						"minduration": 5000,
+						"maxduration": 30000,
+						"priorityForCancel": 1.28,
+						"animation": "Sit"
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 0.015,
+					"var": 0
+				},
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:water-*" ],
+				"minTemp": 5,
+				"maxTemp": 40
+			},
+			"runtime": {
+				"group": "neutral",
+				"chance": 0.001,
+				"maxQuantity": 4,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:water-*" ],
+				"minTemp": 5,
+				"maxTemp": 40
+			}
+		}
+	},
+	"sounds": {
+	},
+	"idleSoundChance": 0.03
+}

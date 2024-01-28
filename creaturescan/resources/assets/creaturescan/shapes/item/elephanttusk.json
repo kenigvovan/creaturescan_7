@@ -1,0 +1,46 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"elephant": "elephant"
+	},
+	"elements": [
+		{
+			"name": "tusk handle",
+			"from": [ -6.0, 1.0, 7.5 ], 
+			"to": [ -3.7, 12.0, 9.8 ], 
+			"rotationOrigin": [ 0.5, 1.5, 8.0 ],
+			"rotationZ": -90.0,
+			"faces": {
+				"north": { "texture": "#elephant", "uv": [ 0.9375, 0.2813, 1.3125, 0.5938 ], "autoUv": false },
+				"east": { "texture": "#elephant", "uv": [ 0.75, 1.1875, 1.0, 1.3125 ], "autoUv": false },
+				"south": { "texture": "#elephant", "uv": [ 0.75, 1.0625, 1.0625, 1.375 ], "autoUv": false },
+				"west": { "texture": "#elephant", "uv": [ 0.6875, 1.0938, 1.0625, 1.4375 ], "autoUv": false },
+				"up": { "texture": "#elephant", "uv": [ 0.875, 0.3438, 1.375, 0.625 ], "autoUv": false },
+				"down": { "texture": "#elephant", "uv": [ 0.625, 1.0625, 1.0625, 1.4063 ], "autoUv": false }
+			},
+			"children": [
+				{
+					"name": "tusk top",
+					"from": [ 12.8079, 6.8819, -0.1 ], 
+					"to": [ 15.3079, 14.8819, 2.4 ], 
+					"rotationOrigin": [ 4.1779, -6.6181, 0.4 ],
+					"rotationZ": 45.0,
+					"faces": {
+						"north": { "texture": "#elephant", "uv": [ 0.9375, 0.2813, 1.3125, 0.5938 ], "autoUv": false },
+						"east": { "texture": "#elephant", "uv": [ 0.6875, 1.125, 1.125, 1.375 ], "autoUv": false },
+						"south": { "texture": "#elephant", "uv": [ 0.625, 1.0625, 1.0625, 1.375 ], "autoUv": false },
+						"west": { "texture": "#elephant", "uv": [ 0.6875, 1.0938, 1.0625, 1.4375 ], "autoUv": false },
+						"up": { "texture": "#elephant", "uv": [ 0.875, 0.3438, 1.375, 0.625 ], "autoUv": false },
+						"down": { "texture": "#elephant", "uv": [ 0.625, 1.0625, 1.0625, 1.4063 ], "autoUv": false }
+					}
+				}
+			]
+		}
+	]}

@@ -1,0 +1,79 @@
+[
+  {
+    "op": "remove",
+    "path": "/attributes",
+    "file": "itemtypes/food/egg.json"
+  },
+  {
+    "op": "remove",
+    "path": "/texture",
+    "file": "itemtypes/food/egg.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType",
+    "value": {
+      "egg-chicken-raw": {
+        "inContainerTexture": {
+          "base": "game:block/wood/barrel/contents-chickenegg"
+        },
+        "nutritionPropsWhenInMeal": {
+          "satiety": 200,
+          "foodcategory": "Protein"
+        }
+      },
+      "egg-kiwi-raw": {
+        "inContainerTexture": {
+          "base": "game:block/wood/barrel/contents-kiwiegg"
+        },
+        "nutritionPropsWhenInMeal": {
+          "satiety": 600,
+          "foodcategory": "Protein"
+        }
+      }
+    },
+    "file": "itemtypes/food/egg.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturebytype",
+    "value": {
+      "*-chicken-raw": {
+        "base": "game:item/food/egg/chicken"
+      },
+      "*-kiwi-raw": {
+        "base": "game:kiwi"
+      }
+    },
+    "file": "itemtypes/food/egg.json"
+  },
+  {
+    "op": "remove",
+    "path": "/nutritionPropsByType/*-boiled",
+    "file": "itemtypes/food/egg.json"
+  },
+  {
+    "op": "add",
+    "path": "/nutritionPropsByType/egg-chicken-boiled",
+    "value": {
+      "saturation": 160,
+      "foodcategory": "Protein"
+    },
+    "file": "itemtypes/food/egg.json"
+  },
+  {
+    "op": "add",
+    "path": "/nutritionPropsByType/egg-kiwi-boiled",
+    "value": {
+      "saturation": 480,
+      "foodcategory": "Protein"
+    },
+    "file": "itemtypes/food/egg.json"
+  },
+  {
+    "op": "add",
+    "path": "/variantgroups/0/states/1",
+    "value": "kiwi",
+    "file": "itemtypes/food/egg.json"
+  }
+]

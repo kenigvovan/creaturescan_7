@@ -1,0 +1,226 @@
+{
+	"code": "toad",
+	"class": "EntityAgent",
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "tan", "grey", "dark", "light" ]
+		}
+	],
+	"hitboxSize": {
+		"x": 0.25,
+		"y": 0.2
+	},
+	"deadHitboxSize": {
+		"x": 0.25,
+		"y": 0.2
+	},
+	"eyeHeight": 0.1,
+	"drops": [
+		{
+			"type": "item",
+			"code": "deadtoad-{type}",
+			"quantity": { "avg": 1 }
+		}
+	],
+	"client": {
+		"renderer": "Shape",
+		"size": 0.8,
+		"shape": { "base": "entity/land/toad" },
+		"textures": {
+			"toad": { "base": "toad-{type}" }
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			}
+		],
+		"animations": [
+			{
+				"code": "die",
+				"animation": "die",
+				"animationSpeed": 1,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "eat",
+				"animation": "eat",
+				"animationSpeed": 1,
+				"weight": 1,
+				"blendMode": "Add"
+			},
+			{
+				"code": "sleep",
+				"animation": "sleep",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			}
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 1440,
+				"maxTurnAnglePerSec": 2880
+			}
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			},
+			{
+				"code": "health",
+				"currenthealth": 3,
+				"maxhealth": 3
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player" ],
+						"priority": 1.5,
+						"movespeed": 0.01,
+						"animationSpeed": 3.5,
+						"seekingRange": 2,
+						"animation": "walk"
+					},
+					{
+						"code": "meleeattack",
+						"entityCodes": [ "cricket", "grasshopper", "rolypoly" ],
+						"priority": 1.6,
+						"damage": 1.5,
+						"slot": 1,
+						"mincooldown": 1500,
+						"maxcooldown": 1500,
+						"attackDurationMs": 800,
+						"damagePlayerAtMs": 500,
+						"animation": "Eat",
+						"animationSpeed": 1
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "cricket", "grasshopper", "rolypoly" ],
+						"priority": 1.5,
+						"movespeed": 0.005,
+						"animationSpeed": 3,
+						"seekingRange": 20,
+						"animation": "walk"
+					},
+					{
+						"code": "seekfoodandeat",
+						"movespeed": 0.005,
+						"priority": 1.6,
+						"animationSpeed": 3,
+						"eatTime": 2,
+						"eatLooseItems": true,
+						"eatItemCategories": [ "protein" ],
+						"eatItemCodes": [ "insect-cricket", "insect-grasshopper", "insect-rolypoly" ],
+						"animation": "walk",
+						"eatAnimation": "eat",
+						"eatAnimationLooseItems": "eat"
+					},
+					{
+						"code": "wander",
+						"priority": 1.2,
+						"minduration": 2500,
+						"maxduration": 2500,
+						"mincooldown": 1000,
+						"maxcooldown": 1000,
+						"priorityForCancel": 1.29,
+						"movespeed": 0.0025,
+						"animationSpeed": 1.6,
+						"animation": "walk"
+					},
+					{
+						"code": "wander",
+						"priority": 0.6,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.0025,
+						"animationSpeed": 1.6,
+						"animation": "walk",
+						"preferredLightLevel": 3,
+						"sound": "creature/toadcroak",
+						"soundRange": 6
+					},
+					{
+						"code": "getoutofwater",
+						"priority": 1.4,
+						"movespeed": 0.015,
+						"animation": "walk"
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 0.0125,
+					"var": 0
+				},
+				"minLightLevel": 0,
+				"maxLightLevel": 14,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:air", "game:flower-*", "game:tallgrass-*" ],
+				"maxY": 2,
+				"minY": 0,
+				"minTemp": 5,
+				"maxTemp": 40,
+				"minRain": 0.1,
+				"maxRain": 0.39
+			},
+			"runtime": {
+				"group": "passive",
+				"chance": 0.009,
+				"minLightLevel": 0,
+				"maxLightLevel": 14,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 1,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:air", "game:flower-*", "game:tallgrass-*" ],
+				"maxY": 2,
+				"minY": 0,
+				"minTemp": 5,
+				"maxTemp": 40,
+				"minRain": 0.1,
+				"maxRain": 0.39
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"ingredientPattern": "KF",
+	"ingredients": {
+		"K": {
+			"type": "item",
+			"code": "game:knife-*",
+			"isTool": true,
+			"toolDurabilityCost": 2
+		},
+		"F": {
+			"type": "item",
+			"code": "creaturescan:deadbullfrog"
+		}
+	},
+	"shapeless": true,
+	"width": 2,
+	"height": 1,
+	"output": {
+		"type": "item",
+		"code": "creaturescan:froglegs-raw"
+	}
+}

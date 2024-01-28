@@ -1,0 +1,98 @@
+{
+	"code": "deadtoad",
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "tan", "grey", "dark", "light" ]
+		}
+	],
+	"heldTpIdleAnimation": "holdbothhands",
+	"shape": { "base": "entity/land/deadtoad" },
+	"texturesbytype": {
+		"*": {
+			"toad": { "base": "toad-{type}" }
+		}
+	},
+	"attributes": {},
+	"nutritionProps": {
+		"saturation": 80,
+		"intoxication": 10.0,
+		"health": -15,
+		"foodcategory": "Protein"
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"maxstacksize": 64,
+	"materialDensity": 500,
+	"transitionableProps": [
+		{
+			"type": "Perish",
+			"freshHours": { "avg": 36 },
+			"transitionHours": { "avg": 24 },
+			"transitionedStack": {
+				"type": "item",
+				"code": "game:rot"
+			},
+			"transitionRatio": 1
+		}
+	],
+	"guiTransform": {
+		"translation": {
+			"x": 0,
+			"y": 3,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 135,
+			"z": -180
+		},
+		"origin": {
+			"x": 0.57,
+			"y": 0.05,
+			"z": 0.4
+		},
+		"scale": 5
+	},
+	"fpHandTransform": {
+		"rotation": {
+			"x": 54,
+			"y": 99,
+			"z": -30
+		},
+		"scale": 4
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -1.67,
+			"y": -1.25,
+			"z": -0.8
+		},
+		"rotation": {
+			"x": 70,
+			"y": 11,
+			"z": -65
+		},
+		"scale": 0.41
+	},
+	"groundTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": -3
+		},
+		"origin": {
+			"x": 0,
+			"y": -0.03,
+			"z": 0
+		},
+		"scale": 4
+	}
+}

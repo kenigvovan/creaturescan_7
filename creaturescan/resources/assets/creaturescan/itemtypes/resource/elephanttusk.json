@@ -1,0 +1,117 @@
+{
+	"code": "elephanttusk",
+	"damagedby": [ "blockbreaking", "attacking" ],
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "normal" ]
+		}
+	],
+	"shapeByType": {
+		"*-normal": { "base": "item/elephanttusk" }
+	},
+	"heldTpHitAnimation": "breaktool",
+	"textures": {
+		"elephant": { "base": "elephant" }
+	},
+	"attackRange": 2,
+	"attributes": {
+		"rackable": true,
+		"toolrackTransformByType": {
+			"*-normal": {
+				"scale": 1,
+				"translation": {
+					"x": -0.2,
+					"y": 0.1,
+					"z": -0.1
+				},
+				"rotation": {
+					"x": 90,
+					"y": 1,
+					"z": 180
+				}
+			}
+		}
+	},
+	"durabilitybytype": {
+		"elephanttusk-normal": 1000
+	},
+	"attackpowerbytype": {
+		"elephanttusk-normal": 3.5
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ],
+		"tools": [ "*" ]
+	},
+	"fpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0.1,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -13,
+				"y": 15,
+				"z": 93
+			},
+			"scale": 2
+		}
+	},
+	"guiTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -66,
+				"y": -128,
+				"z": 164
+			},
+			"origin": {
+				"x": 0.55,
+				"y": 0.51,
+				"z": 0.57
+			},
+			"scale": 1.8
+		}
+	},
+	"groundTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0.2,
+				"y": 0.09,
+				"z": 0
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.45,
+				"z": 0.5
+			},
+			"scale": 3.6
+		}
+	},
+	"tpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": -0.9,
+				"y": -0.6,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": 90,
+				"y": 1,
+				"z": 0
+			},
+			"scale": 0.85
+		}
+	}
+}

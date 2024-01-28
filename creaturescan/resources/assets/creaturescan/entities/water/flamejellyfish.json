@@ -1,0 +1,242 @@
+{
+	"code": "flamejellyfish",
+	"class": "EntityFish",
+	"hitboxSize": {
+		"x": 0.3,
+		"y": 0.3,
+		"z": 0.3
+	},
+	"eyeHeight": 0.2,
+	"drops": [
+		{
+			"type": "item",
+			"code": "deadflamejellyfish",
+			"quantity": { "avg": 1 }
+		}
+	],
+	"habitat": "Underwater",
+	"attributes": {
+		"seafloor": true
+	},
+	"client": {
+		"renderer": "Shape",
+		"size": 0.3,
+		"shape": { "base": "entity/water/flamejellyfish" },
+		"texture": { "base": "flamejelly" },
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 0.0
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			}
+		],
+		"animations": [
+			{
+				"code": "hurt",
+				"animation": "hurt",
+				"animationSpeed": 1,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "swim",
+				"animation": "swim",
+				"triggeredBy": { "defaultAnim": true }
+			},
+			{
+				"code": "swimfast",
+				"animation": "swim"
+			},
+			{
+				"code": "die",
+				"animation": "dead-floating"
+			},
+			{
+				"code": "flop",
+				"animation": "flop"
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 0.0
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealth": 4,
+				"maxhealth": 4
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "fleeondamage",
+						"duration": 10,
+						"chance": 0.8,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "max"
+					},
+					{
+						"code": "aggressiveondamage",
+						"duration": 30,
+						"chance": 0.9,
+						"slot": 2,
+						"priority": 2,
+						"accumType": "noaccum"
+					},
+					{
+						"code": "alarmherdondamage",
+						"chance": 1,
+						"slot": 1,
+						"priority": 1,
+						"accumType": "max"
+					}
+				]
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "meleeattack",
+						"entityCodes": [ "player" ],
+						"priority": 2,
+						"movespeed": 0.004,
+						"damage": 2,
+						"damageTier": 1,
+						"damageType": "SlashingAttack",
+						"slot": 1,
+						"minduration": 1000,
+						"maxduration": 3000,
+						"mincooldown": 2000,
+						"maxcooldown": 30000,
+						"attackDurationMs": 800,
+						"damagePlayerAtMs": 310,
+						"animation": "swim",
+						"animationSpeed": 2
+					},
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player", "crocodile" ],
+						"priority": 2,
+						"movespeed": 0.005,
+						"seekingRange": 14,
+						"animation": "swim",
+						"animationSpeed": 1.6
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "player" ],
+						"priority": 1.5,
+						"mincooldown": 1000,
+						"maxcooldown": 1500,
+						"seekingRange": 20,
+						"movespeed": 0.004,
+						"animation": "swim",
+						"animationSpeed": 1.5,
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "idle",
+						"priority": 1.1,
+						"minduration": 1000,
+						"maxduration": 3000,
+						"mincooldown": 2000,
+						"maxcooldown": 30000,
+						"animation": "idle"
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.003,
+						"animation": "swim",
+						"animationSpeed": 1.45
+					},
+					{
+						"code": "fishmovefast",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.004,
+						"animation": "swim",
+						"animationSpeed": 1.7
+					},
+					{
+						"code": "fishoutofwater",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.005,
+						"animation": "flop",
+						"animationSpeed": 1.9
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 0.009,
+					"var": 0
+				},
+				"tryOnlySurface": true,
+				"minLightLevel": 0,
+				"maxLightLevel": 3,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 15,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:water-*" ],
+				"maxY": 0.7,
+				"minTemp": 3,
+				"maxTemp": 40
+			},
+			"runtime": {
+				"group": "neutral",
+				"chance": 0.0009,
+				"tryOnlySurface": true,
+				"minLightLevel": 0,
+				"maxLightLevel": 3,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 15,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:water-*" ],
+				"maxY": 0.7,
+				"minTemp": 3,
+				"maxTemp": 40
+			}
+		}
+	}
+}

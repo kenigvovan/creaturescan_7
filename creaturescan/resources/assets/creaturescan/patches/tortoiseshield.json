@@ -1,0 +1,104 @@
+[
+  {
+    "op": "remove",
+    "path": "/guiTransformByType",
+    "file": "itemtypes/tool/shield.json"
+  },
+  {
+    "op": "add",
+    "path": "/guiTransformByType",
+    "value": {
+      "*": {
+        "translation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 34,
+          "y": 32,
+          "z": -163
+        },
+        "origin": {
+          "x": 0.21,
+          "y": -0.21,
+          "z": 0.49
+        },
+        "scale": 1.8
+      },
+      "shield-crude": {
+        "translation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 34,
+          "y": 32,
+          "z": -163
+        },
+        "origin": {
+          "x": 0.28,
+          "y": -0.28,
+          "z": 0.47
+        },
+        "scale": 1.8
+      },
+      "shield-tortoise": {
+        "translation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 34,
+          "y": 32,
+          "z": -163
+        },
+        "origin": {
+          "x": 0.52,
+          "y": 0.1,
+          "z": 0.47
+        },
+        "scale": 5
+      }
+    },
+    "file": "itemtypes/tool/shield.json"
+  },
+
+  {
+    "op": "add",
+    "path": "/attributes/shield/damageAbsorptionByType/*-tortoise",
+    "value": {
+      "passive": 2,
+      "active": 3
+    },
+    "file": "itemtypes/tool/shield.json"
+  },
+  {
+    "op": "add",
+    "path": "/durabilitybytype/shield-tortoise",
+    "value": 250,
+    "file": "itemtypes/tool/shield.json"
+  },
+  {
+    "op": "add",
+    "path": "/shapeByType/shield-tortoise",
+    "value": {
+      "base": "tortoiseshellshield"
+    },
+    "file": "itemtypes/tool/shield.json"
+  },
+  /*{
+    "op": "add",
+    "path": "/variantgroups/0/states/-",
+    "value": "tortoise",
+    "file": "itemtypes/tool/shield.json"
+  },*/
+  {
+    "op": "add",
+    "path": "/creativeinventory/general/-",
+    "value": "shield-tortoise",
+    "file": "itemtypes/tool/shield.json"
+  }
+]

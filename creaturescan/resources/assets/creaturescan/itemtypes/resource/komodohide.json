@@ -1,0 +1,44 @@
+{
+	"code": "komodohide",
+	"maxstacksize": 16,
+	"materialDensity": 620,
+	"attributes": {
+		"handbook": {
+			"groupBy": [ "komodohide" ]
+		}
+	},
+
+	"tpHandTransform": {
+		"translation": {
+			"x": -0.86,
+			"y": -0.3,
+			"z": -0.68
+		},
+		"rotation": {
+			"x": 0,
+			"y": -2,
+			"z": 18
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0,
+			"z": 0.5
+		},
+		"scale": 0.67
+	},
+
+	"guiTransform": {
+		"scale": 1.15
+	},
+	"groundTransform": {
+		"scale": 2.85
+	},
+	"fpHandTransform": {
+		"scale": 1.15
+	},
+	"texture": { "base": "komodohide" },
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	}
+}

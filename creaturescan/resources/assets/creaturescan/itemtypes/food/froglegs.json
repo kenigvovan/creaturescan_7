@@ -1,0 +1,178 @@
+{
+	"code": "froglegs",
+	"maxstacksize": 64,
+	"attributes": {
+		"inFirePitProps": {
+			"transform": {
+				"scale": 0.85,
+				"translation": {
+					"x": 0,
+					"y": 0.19,
+					"z": 0
+				},
+				"origin": {
+					"x": 0.5,
+					"y": 0.15,
+					"z": 0.5
+				},
+				"rotation": {
+					"x": 180,
+					"y": 90,
+					"z": 90
+				}
+			},
+			"useFirepitModel": "spit"
+		}
+	},
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "raw", "cooked" ]
+		}
+	],
+	"shapeByType": {
+		"froglegs-raw": { "base": "item/food/meat/froglegsraw" },
+		"froglegs-cooked": { "base": "item/food/meat/froglegscooked" }
+	},
+	"texturesbytype": {
+		"froglegs-raw": {
+			"bullfrog": { "base": "bullfrog" }
+		},
+		"froglegs-cooked": {
+			"bullfrog": { "base": "item/food/meat/rawturtlemeat" }
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"nutritionPropsByType": {
+		"froglegs-cooked": {
+			"satiety": 160,
+			"health": 0,
+			"foodcategory": "Protein"
+		}
+	},
+	"transitionablePropsByType": {
+		"*-raw": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 36 },
+				"transitionHours": { "avg": 24 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 1
+			}
+		],
+		"*-cooked": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 120 },
+				"spoilHours": { "avg": 36 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 1
+			}
+		]
+	},
+	"materialDensity": 600,
+	"tpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 5,
+				"y": 41,
+				"z": -31
+			},
+			"origin": {
+				"x": 0.23,
+				"y": 0,
+				"z": 0.13
+			},
+			"scale": 0.75
+		}
+	},
+
+	"guiTransformByType": {
+		"*": {
+			"rotate": false,
+			"translation": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 171,
+				"y": -122,
+				"z": 33
+			},
+			"origin": {
+				"x": 0.5,
+				"y": -0.03,
+				"z": 0.49
+			},
+			"scale": 4
+		}
+	},
+	"groundTransformByType": {
+		"*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 180,
+				"y": 33,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 3
+		}
+	},
+	"fpHandTransformByType": {
+		"*": {
+			"translation": {
+				"x": -0.06,
+				"y": 0.36,
+				"z": 0.23
+			},
+			"rotation": {
+				"x": 40,
+				"y": 91,
+				"z": 15
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.1,
+				"z": 0.5
+			},
+			"scale": 2.5
+		}
+	},
+	"combustiblePropsByType": {
+		"froglegs-raw": {
+			"meltingPoint": 200,
+			"meltingDuration": 30,
+			"smeltedRatio": 1,
+			"smeltingType": "cook",
+			"smeltedStack": {
+				"type": "item",
+				"code": "froglegs-cooked"
+			},
+			"requiresContainer": false
+		}
+	}
+}

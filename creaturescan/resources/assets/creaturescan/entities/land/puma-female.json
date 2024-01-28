@@ -1,0 +1,332 @@
+{
+	"code": "puma-female",
+	"class": "EntityAgent",
+	"hitboxSize": {
+		"x": 1,
+		"y": 0.6
+	},
+	"deadHitboxSize": {
+		"x": 0.9,
+		"y": 0.5
+	},
+	"eyeHeight": 1,
+	"drops": [],
+	"attributes": {},
+	"client": {
+		"renderer": "Shape",
+		"size": 0.92,
+		"shape": { "base": "entity/land/puma" },
+		"textures": {
+			"pumabelly": { "base": "pumabelly" },
+			"puma": { "base": "puma" }
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.15
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{ "code": "harvestable" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			}
+		],
+		"animations": [
+			{
+				"code": "hurt",
+				"animation": "hurt",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "die",
+				"animation": "death",
+				"animationSpeed": 1.25,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4,
+				"animationSpeed": 0.5,
+				"triggeredBy": { "defaultAnim": true }
+			},
+			{
+				"code": "sleep",
+				"animation": "sleep",
+				"easeInSpeed": 2,
+				"easeOutSpeed": 10,
+				"blendMode": "Average"
+			},
+			{
+				"code": "lie",
+				"animation": "lie",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.15
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			},
+			{
+				"code": "health",
+				"currenthealth": 20,
+				"maxhealth": 20
+			},
+			{
+				"code": "deaddecay",
+				"hoursToDecay": 96,
+				"decayedBlock": "carcass-medium"
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "harvestable",
+				"drops": [
+					{
+						"type": "item",
+						"code": "bushmeat-raw",
+						"quantity": {
+							"avg": 7,
+							"var": 1
+						}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-medium",
+						"quantity": {
+							"avg": 1,
+							"var": 0
+						}
+					},
+					{
+						"type": "item",
+						"code": "fat",
+						"quantity": {
+							"avg": 1.15,
+							"var": 0
+						}
+					},
+					{
+						"type": "item",
+						"code": "bone",
+						"quantity": {
+							"avg": 3,
+							"var": 0.5
+						}
+					}
+				]
+			},
+			{ "code": "breathe" },
+			{
+				"code": "multiply",
+				"quantityPerDay": 0,
+				"spawnEntityCode": "puma-cub",
+				"spawnQuantityMin": 1,
+				"spawnQuantityMax": 1,
+				"growthCapEntityCodes": [ "puma-female", "puma-male" ],
+				"requiresNearbyEntityCode": "puma-male",
+				"requiresNearbyEntityRange": 10,
+				"multiplyCooldownDaysMin": 20,
+				"multiplyCooldownDaysMax": 24
+			},
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "fleeondamage",
+						"duration": 60,
+						"chance": 0.75,
+						"slot": 2,
+						"priority": 5,
+						"accumType": "max",
+						"whenHealthRelBelow": 0.7
+					},
+					{
+						"code": "saturated",
+						"duration": 2500,
+						"chance": 1,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "sum"
+					},
+					{
+						"code": "aggressiveondamage",
+						"duration": 30,
+						"chance": 1,
+						"slot": 2,
+						"priority": 2,
+						"accumType": "noaccum"
+					},
+					{
+						"code": "alarmherdondamage",
+						"chance": 1,
+						"slot": 1,
+						"priority": 1,
+						"accumType": "max"
+					}
+				]
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "meleeattack",
+						"entityCodes": [ "player", "chicken-*", "hare-*", "kiwi-*", "Squirrel-*", "fox-*", "pig-*", "raccoon-*", "sheep-*" ],
+						"priority": 2,
+						"damage": 10,
+						"damageTier": 1,
+						"damageType": "SlashingAttack",
+						"slot": 1,
+						"mincooldown": 500,
+						"maxcooldown": 750,
+						"attackDurationMs": 800,
+						"damagePlayerAtMs": 310,
+						"animation": "Attack",
+						"animationSpeed": 3,
+						"sound": "creature/puma/pumaroar"
+					},
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player" ],
+						"priority": 1.6,
+						"movespeed": 0.07,
+						"seekingRange": 20,
+						"animation": "Run",
+						"animationSpeed": 2,
+						"whenInEmotionState": "fleeondamage"
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "player" ],
+						"priority": 1.51,
+						"movespeed": 0.05,
+						"seekingRange": 14,
+						"animation": "Walk",
+						"animationSpeed": 2.2,
+						"whenNotInEmotionState": "saturated"
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "player", "chicken-*", "hare-*", "kiwi-*", "Squirrel-*", "fox-*", "pig-*", "raccoon-*", "sheep-*" ],
+						"priority": 1.5,
+						"movespeed": 0.05,
+						"seekingRange": 18,
+						"animation": "Run",
+						"animationSpeed": 2,
+						"whenNotInEmotionState": "saturated"
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "player" ],
+						"priority": 1.49,
+						"movespeed": 0.05,
+						"seekingRange": 15,
+						"animation": "Walk",
+						"animationSpeed": 1.4,
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "idle",
+						"priority": 1.45,
+						"priorityForCancel": 1.55,
+						"minduration": 200000,
+						"maxduration": 800000,
+						"mincooldown": 10000,
+						"maxcooldown": 30000,
+						"animation": "Sleep",
+						"whenNotInEmotionState": "aggressiveondamage",
+						"duringDayTimeFrames": [
+							{
+								"fromHour": 11,
+								"toHour": 13
+							},
+							{
+								"fromHour": 2,
+								"toHour": 7
+							}
+						],
+						"stopOnNearbyEntityCodes": [ "player" ],
+						"sound": "creature/puma/pumaroar",
+						"stopRange": 10,
+						"stopOnHurt": true
+					},
+					{
+						"code": "getoutofwater",
+						"priority": 1.4,
+						"movespeed": 0.015,
+						"animation": "Run",
+						"animationSpeed": 1.7
+					},
+					{
+						"code": "idle",
+						"priority": 1.2,
+						"priorityForCancel": 1.35,
+						"minduration": 2500,
+						"maxduration": 2500,
+						"mincooldown": 6000,
+						"maxcooldown": 20000,
+						"animation": "Sniff",
+						"animationSpeed": 1.25,
+						"whenNotInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.007,
+						"animation": "Walk",
+						"animationSpeed": 0.5,
+						"preferredLightLevel": 12
+					},
+					{
+						"code": "idle",
+						"priority": 0.5,
+						"priorityForCancel": 1.35,
+						"minduration": 2500,
+						"maxduration": 2500,
+						"mincooldown": 6000,
+						"maxcooldown": 20000,
+						"animation": "Growl",
+						"animationSpeed": 1.25,
+						"whenNotInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			}
+		]
+	},
+	"sounds": {
+		"hurt": "creature/puma/pumahurt",
+		"death": "creature/puma/pumagrowl",
+		"idle": "creature/puma/pumaroar"
+	},
+	"idleSoundChance": 0.05
+}

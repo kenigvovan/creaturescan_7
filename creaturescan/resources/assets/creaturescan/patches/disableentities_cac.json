@@ -1,0 +1,478 @@
+[
+{
+    "file": "entities/water/seasnail.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "SeaSnailEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/water/starfish.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "StarfishEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/air/hummingbird.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "HummingbirdEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/air/dragonfly.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "DragonflyEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/glowworm.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "GlowwormEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/cochineal.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CochinealEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/cricket.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CricketEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/grasshopper.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "GrasshopperEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/kiwi-rooster.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "KiwiEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/kiwi-hen.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "KiwiEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/kiwi-henpoult.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "KiwiEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/kiwi-roosterpoult.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "KiwiEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/kiwi-baby.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "KiwiEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/water/crawfish.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CrawfishEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/slug.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "SlugEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/gardensnail.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "GardenSnailEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/gardensnail.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "GardenSnailEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/squirrel-male.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "SquirrelEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/squirrel-female.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "SquirrelEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/squirrel-baby.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "SquirrelEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/tortoise-male.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "TortoiseEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/tortoise-female.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "TortoiseEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/tortoise-baby.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "TortoiseEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/air/sparrow.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "SparrowEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/rolypoly.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "RolypolyEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/toad.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "ToadEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/water/bullfrog.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "FrogEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/tiger-male.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "TigerEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/tiger-female.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "TigerEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/tiger-cub.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "TigerEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/hamster-male.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "HamsterEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/hamster-female.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "HamsterEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/hamster-baby.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "HamsterEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/gecko.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "GeckoEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/water/crocodile.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CrocodileEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/water/crocodile-hatchling.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CrocodileEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/water/flamejellyfish.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "JellyfishEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/alpaca-male.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "AlpacaEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/alpaca-female.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "AlpacaEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/alpaca-lamb.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "AlpacaEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/elephant-male.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "ElephantEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/elephant-female.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "ElephantEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/elephant-baby.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "ElephantEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/water/hippo-male.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "HippoEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/water/hippo-female.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "HippoEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/water/hippo-baby.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "HippoEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/komododragon.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "KomododragonEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/puma-male.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "PumaEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/puma-female.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "PumaEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/puma-cub.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "PumaEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/salamander.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "SalamanderEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/air/moth.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "MothEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/cassowary-male.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CassowaryEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/cassowary-female.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CassowaryEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/cassowary-youngling.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CassowaryEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/cassowary-chick.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CassowaryEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/camel-male.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CamelEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/camel-female.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CamelEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/camel-calf.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CamelEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/caribou-male.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CaribouEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/caribou-female.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CaribouEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/caribou-calf.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CaribouEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/water/crocodileegg.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CrocodileEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/cassowaryegg.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "CassowaryEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/honeybadger-male.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "HoneybadgerEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/honeybadger-female.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "HoneybadgerEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/land/honeybadger-pup.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "HoneybadgerEnabled", "isValue": "false"}
+},
+{
+    "file": "entities/air/mosquitoswarm.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "condition": {"when": "MosquitoEnabled", "isValue": "false"}
+}
+]

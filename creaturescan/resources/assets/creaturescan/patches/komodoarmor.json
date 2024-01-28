@@ -1,0 +1,80 @@
+[
+  {
+    "op": "add",
+    "path": "/allowedVariants/-",
+    "value": "armor-*-sewn-komodohide",
+    "file": "itemtypes/wearable/armor.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/protectionModifiersByType/armor-*-sewn-komodohide",
+    "value": {
+      "relativeProtection": 0.7,
+      "flatDamageReduction": 0.7,
+      "protectionTier": 2,
+      "perTierRelativeProtectionLoss": [
+        0.015,
+        0.075
+      ],
+      "perTierFlatDamageReductionLoss": [
+        0.05,
+        0.1
+      ]
+    },
+    "file": "itemtypes/wearable/armor.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/statModifiersByType/armor-*-sewn-komodohide",
+    "value": {
+      "walkSpeed": -0.02,
+      "healingeffectivness": -0.07,
+      "hungerrate": 0.02
+    },
+    "file": "itemtypes/wearable/armor.json"
+  },
+  {
+    "op": "add",
+    "path": "/durabilityByType/armor-*-sewn-komodohide",
+    "value": 850,
+    "file": "itemtypes/wearable/armor.json"
+  },
+  {
+    "op": "add",
+    "path": "/shapeByType/armor-*-sewn-komodohide",
+    "value": {
+      "base": "entity/humanoid/seraph/armor/{construction}/{bodypart}"
+    },
+    "file": "itemtypes/wearable/armor.json"
+  },
+  {
+    "op": "add",
+    "path": "/skipVariants/-",
+    "value": "armor-*-brigandine-komodohide",
+    "file": "itemtypes/wearable/armor.json"
+  },
+  {
+    "op": "add",
+    "path": "/skipVariants/-",
+    "value": "armor-*-chain-komodohide",
+    "file": "itemtypes/wearable/armor.json"
+  },
+  {
+    "op": "add",
+    "path": "/skipVariants/-",
+    "value": "armor-*-scale-komodohide",
+    "file": "itemtypes/wearable/armor.json"
+  },
+  {
+    "op": "add",
+    "path": "/skipVariants/-",
+    "value": "armor-*-plate-komodohide",
+    "file": "itemtypes/wearable/armor.json"
+  },
+  {
+    "op": "add",
+    "path": "/variantgroups/2/states/-",
+    "value": "komodohide",
+    "file": "itemtypes/wearable/armor.json"
+  }
+]

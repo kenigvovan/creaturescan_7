@@ -1,0 +1,29 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"egg": "game:block/henbox/egg"
+	},
+	"elements": [
+		{
+			"name": "egg 2",
+			"from": [ 9.5, -0.1, 9.8 ], 
+			"to": [ 13.0, 1.4, 13.3 ], 
+			"rotationOrigin": [ 10.5, 1.0, 10.8 ],
+			"rotationY": 45.0,
+			"faces": {
+				"north": { "texture": "#egg", "uv": [ 10.0, 11.0, 13.5, 12.5 ], "autoUv": false },
+				"east": { "texture": "#egg", "uv": [ 10.5, 12.0, 14.0, 13.5 ] },
+				"south": { "texture": "#egg", "uv": [ 11.5, 11.5, 15.0, 13.0 ] },
+				"west": { "texture": "#egg", "uv": [ 11.5, 14.0, 15.0, 15.5 ] },
+				"up": { "texture": "#egg", "uv": [ 10.5, 10.5, 14.0, 14.0 ] },
+				"down": { "texture": "#egg", "uv": [ 11.0, 10.5, 14.5, 14.0 ] }
+			}
+		}
+	]}

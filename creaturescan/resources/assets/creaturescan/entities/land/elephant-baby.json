@@ -1,0 +1,280 @@
+{
+	"code": "elephant-baby",
+	"class": "EntityAgent",
+	"collisionBoxSize": {
+		"x": 0.9,
+		"y": 1
+	},
+	"deadCollisionBoxSize": {
+		"x": 0.7,
+		"y": 1
+	},
+	"eyeHeight": 0.7,
+	"attributes": {},
+	"drops": [],
+	"client": {
+		"renderer": "Shape",
+		"size": 0.4,
+		"shape": { "base": "entity/land/elephant-baby" },
+		"texture": { "base": "elephantbaby" },
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{ "code": "harvestable" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			}
+		],
+		"animations": [
+			{
+				"code": "hurt",
+				"animation": "idle",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "die",
+				"animation": "death",
+				"animationSpeed": 2,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 1
+			},
+			{
+				"code": "idle",
+				"animation": "blink",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 10,
+				"triggeredBy": { "defaultAnim": true }
+			},
+			{
+				"code": "sleep",
+				"animation": "sleep",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealth": 25,
+				"maxhealth": 25
+			},
+			{
+				"code": "deaddecay",
+				"hoursToDecay": 96,
+				"decayedBlock": "carcass-medium"
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "harvestable",
+				"drops": [
+					{
+						"type": "item",
+						"code": "redmeat-raw",
+						"quantity": {
+							"avg": 12,
+							"var": 1.5
+						}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-large",
+						"quantity": {
+							"avg": 1,
+							"var": 0
+						}
+					},
+					{
+						"type": "item",
+						"code": "fat",
+						"quantity": {
+							"avg": 4,
+							"var": 0
+						}
+					},
+					{
+						"type": "item",
+						"code": "bone",
+						"quantity": {
+							"avg": 8,
+							"var": 0.5
+						}
+					}
+				]
+			},
+			{ "code": "breathe" },
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "fleeondamage",
+						"duration": 60,
+						"chance": 0.8,
+						"slot": 0,
+						"priority": 5,
+						"accumType": "max",
+						"whenHealthRelBelow": 0.4
+					},
+					{
+						"code": "fleeondamage",
+						"duration": 10,
+						"chance": 1,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "max"
+					},
+					{
+						"code": "alarmherdondamage",
+						"chance": 1,
+						"slot": 1,
+						"priority": 1,
+						"accumType": "max"
+					}
+				]
+			},
+			{
+				"code": "grow",
+				"hoursToGrow": 2400,
+				"adultEntityCodes": [ "elephant-male", "elephant-female" ]
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player" ],
+						"priority": 1.8,
+						"movespeed": 0.05,
+						"seekingRange": 12,
+						"animation": "Run",
+						"animationSpeed": 2.5,
+						"sound": "creature/elephant/elephantafraid",
+						"whenInEmotionState": "fleeondamage"
+					},
+					{
+						"code": "stayclosetoentity",
+						"priority": 1.4,
+						"entityCode": "elephant-female",
+						"movespeed": 0.015,
+						"maxDistance": 7,
+						"searchRange": 25,
+						"animation": "Walk",
+						"animationSpeed": 2,
+						"sound": "creature/elephant/elephantsnort"
+					},
+					{
+						"code": "getoutofwater",
+						"priority": 1.4,
+						"movespeed": 0.02,
+						"animation": "Walk",
+						"animationSpeed": 0.75
+					},
+					{
+						"code": "idle",
+						"priority": 1.35,
+						"minduration": 200000,
+						"maxduration": 800000,
+						"mincooldown": 10000,
+						"maxcooldown": 30000,
+						"priorityForCancel": 1.35,
+						"animation": "Sleep",
+						"animationSpeed": 0.5,
+						"duringDayTimeFrames": [
+							{
+								"fromHour": 21,
+								"toHour": 24
+							},
+							{
+								"fromHour": 0,
+								"toHour": 6
+							}
+						],
+						"stopOnNearbyEntityCodes": [ "player" ],
+						"stopRange": 6,
+						"stopOnHurt": true
+					},
+					{
+						"code": "idle",
+						"priority": 1.2,
+						"priorityForCancel": 1.35,
+						"minduration": 3200,
+						"maxduration": 3200,
+						"mincooldown": 6000,
+						"maxcooldown": 20000,
+						"animation": "idle",
+						"animationSpeed": 1.5,
+						"sound": "creature/elephant/elephantsnort"
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"movespeed": 0.01,
+						"animationSpeed": 2,
+						"animation": "Walk",
+						"preferredLightLevel": 20,
+						"priorityForCancel": 1.35
+					},
+					{
+						"code": "idle",
+						"priority": 0.9,
+						"minduration": 5000,
+						"maxduration": 30000,
+						"mincooldown": 2000,
+						"maxcooldown": 120000,
+						"priorityForCancel": 1.28,
+						"animation": "idle",
+						"stopOnNearbyEntityCodes": [ "player" ],
+						"stopRange": 5,
+						"sound": "creature/elephant/elephantsnort"
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			}
+		]
+	},
+	"sounds": {
+		"hurt": "creature/elephant/elephantafraid",
+		"death": "creature/elephant/elephantangry",
+		"idle": "creature/elephant/elephantsnort"
+	},
+	"idleSoundChance": 0.01
+}

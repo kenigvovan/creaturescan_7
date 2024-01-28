@@ -1,0 +1,492 @@
+[
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 10.0025,
+		"file": "entities/land/alpaca-male.json",
+		"condition": { "when": "AlpacaChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0006,
+		"file": "entities/land/alpaca-male.json",
+		"condition": { "when": "AlpacaRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.0025,
+		"file": "entities/land/camel-male.json",
+		"condition": { "when": "CamelChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0006,
+		"file": "entities/land/camel-male.json",
+		"condition": { "when": "CamelRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.0035,
+		"file": "entities/land/caribou-male.json",
+		"condition": { "when": "CaribouChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0006,
+		"file": "entities/land/caribou-male.json",
+		"condition": { "when": "CaribouRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.015,
+		"file": "entities/land/cassowary-male.json",
+		"condition": { "when": "CassowaryMaleChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.001,
+		"file": "entities/land/cassowary-male.json",
+		"condition": { "when": "CassowaryMaleRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.015,
+		"file": "entities/land/cassowary-female.json",
+		"condition": { "when": "CassowaryFemaleChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.001,
+		"file": "entities/land/cassowary-female.json",
+		"condition": { "when": "CassowaryFemaleRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.0009,
+		"file": "entities/land/cochineal.json",
+		"condition": { "when": "CochinealChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0001,
+		"file": "entities/land/cochineal.json",
+		"condition": { "when": "CochinealRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 1.0,
+		"file": "entities/water/crawfish.json",
+		"condition": { "when": "CrawfishChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 1.0,
+		"file": "entities/water/crawfish.json",
+		"condition": { "when": "CrawfishRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.0125,
+		"file": "entities/land/cricket.json",
+		"condition": { "when": "CricketChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.009,
+		"file": "entities/land/cricket.json",
+		"condition": { "when": "CricketRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.015,
+		"file": "entities/water/crocodile.json",
+		"condition": { "when": "CrocodileChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.001,
+		"file": "entities/water/crocodile.json",
+		"condition": { "when": "CrocodileRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.015,
+		"file": "entities/water/crocodileegg.json",
+		"condition": { "when": "CrocodileEggChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.001,
+		"file": "entities/water/crocodileegg.json",
+		"condition": { "when": "CrocodileEggRuntimeSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.13,
+		"file": "entities/air/dragonfly.json",
+		"condition": { "when": "DragonflyRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.015,
+		"file": "entities/land/elephant-male.json",
+		"condition": { "when": "ElephantChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0009,
+		"file": "entities/land/elephant-male.json",
+		"condition": { "when": "ElephantRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.01,
+		"file": "entities/water/bullfrog.json",
+		"condition": { "when": "FrogChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0001,
+		"file": "entities/water/bullfrog.json",
+		"condition": { "when": "FrogRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.01,
+		"file": "entities/land/gardensnail.json",
+		"condition": { "when": "GardenSnailChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.009,
+		"file": "entities/land/gardensnail.json",
+		"condition": { "when": "GardenSnailRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.0025,
+		"file": "entities/land/gecko.json",
+		"condition": { "when": "GeckoChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0015,
+		"file": "entities/land/gecko.json",
+		"condition": { "when": "GeckoRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.0025,
+		"file": "entities/land/grasshopper.json",
+		"condition": { "when": "GrasshopperChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.009,
+		"file": "entities/land/grasshopper.json",
+		"condition": { "when": "GrasshopperRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.012,
+		"file": "entities/land/hamster-male.json",
+		"condition": { "when": "HamsterChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.002,
+		"file": "entities/land/hamster-male.json",
+		"condition": { "when": "HamsterRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.009,
+		"file": "entities/water/hippo-male.json",
+		"condition": { "when": "HippoChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.001,
+		"file": "entities/water/hippo-male.json",
+		"condition": { "when": "HippoRuntimeSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.2,
+		"file": "entities/air/hummingbird.json",
+		"condition": { "when": "HummingbirdRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.009,
+		"file": "entities/water/flamejellyfish.json",
+		"condition": { "when": "JellyfishChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0009,
+		"file": "entities/water/flamejellyfish.json",
+		"condition": { "when": "JellyfishRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.025,
+		"file": "entities/land/kiwi-rooster.json",
+		"condition": { "when": "KiwiChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.001,
+		"file": "entities/land/kiwi-rooster.json",
+		"condition": { "when": "KiwiRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.009,
+		"file": "entities/land/komododragon.json",
+		"condition": { "when": "KomododragonChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.001,
+		"file": "entities/land/komododragon.json",
+		"condition": { "when": "KomododragonRuntimeSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.009,
+		"file": "entities/air/moth.json",
+		"condition": { "when": "MothRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.015,
+		"file": "entities/land/puma-male.json",
+		"condition": { "when": "PumaChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.001,
+		"file": "entities/land/puma-male.json",
+		"condition": { "when": "PumaRuntimeSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0015,
+		"file": "entities/land/rolypoly.json",
+		"condition": { "when": "RolypolyRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditionsByType/*/worldgen/TriesPerChunk/avg",
+		"value": 0.0025,
+		"file": "entities/land/salamander.json",
+		"condition": { "when": "SalamanderForestChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditionsByType/*/runtime/chance",
+		"value": 0.0015,
+		"file": "entities/land/salamander.json",
+		"condition": { "when": "SalamanderForestChunkSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditionsByType/creature-salamander-tennesseecave/worldgen/TriesPerChunk/avg",
+		"value": 0.0025,
+		"file": "entities/land/salamander.json",
+		"condition": { "when": "SalamanderCaveChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditionsByType/creature-salamander-tennesseecave/runtime/chance",
+		"value": 0.0015,
+		"file": "entities/land/salamander.json",
+		"condition": { "when": "SalamanderCaveRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.015,
+		"file": "entities/water/seasnail.json",
+		"condition": { "when": "SeaSnailChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.001,
+		"file": "entities/water/seasnail.json",
+		"condition": { "when": "SeaSnailRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.0025,
+		"file": "entities/land/slug.json",
+		"condition": { "when": "SlugChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.009,
+		"file": "entities/land/slug.json",
+		"condition": { "when": "SlugRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.095,
+		"file": "entities/air/sparrow.json",
+		"condition": { "when": "SparrowChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0015,
+		"file": "entities/air/sparrow.json",
+		"condition": { "when": "SparrowRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditionsByType/*/worldgen/TriesPerChunk/avg",
+		"value": 0.075,
+		"file": "entities/land/squirrel-male.json",
+		"condition": { "when": "SquirrelChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditionsByType/*/runtime/chance",
+		"value": 0.001,
+		"file": "entities/land/squirrel-male.json",
+		"condition": { "when": "SquirrelRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.015,
+		"file": "entities/water/starfish.json",
+		"condition": { "when": "StarfishChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.001,
+		"file": "entities/water/starfish.json",
+		"condition": { "when": "StarfishRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.009,
+		"file": "entities/land/tiger-male.json",
+		"condition": { "when": "TigerChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0008,
+		"file": "entities/land/tiger-male.json",
+		"condition": { "when": "TigerRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.0125,
+		"file": "entities/land/toad.json",
+		"condition": { "when": "ToadChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.009,
+		"file": "entities/land/toad.json",
+		"condition": { "when": "ToadRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.015,
+		"file": "entities/land/tortoise-male.json",
+		"condition": { "when": "TortoiseChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0009,
+		"file": "entities/land/tortoise-male.json",
+		"condition": { "when": "TortoiseRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.015,
+		"file": "entities/land/honeybadger-male.json",
+		"condition": { "when": "HoneybadgerChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0009,
+		"file": "entities/land/honeybadger-male.json",
+		"condition": { "when": "HoneybadgerRuntimeSpawn", "useValue": true }
+	},
+	{
+		"op": "replace",
+		"path": "/server/spawnconditions/worldgen/TriesPerChunk/avg",
+		"value": 0.015,
+		"file": "entities/air/mosquitoswarm.json",
+		"condition": { "when": "MosquitoChunkSpawn", "useValue": true }
+	},
+    {
+		"op": "replace",
+		"path": "/server/spawnconditions/runtime/chance",
+		"value": 0.0015,
+		"file": "entities/air/mosquitoswarm.json",
+		"condition": { "when": "MosquitoRuntimeSpawn", "useValue": true }
+	}
+]

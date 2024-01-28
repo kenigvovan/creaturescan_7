@@ -1,0 +1,129 @@
+{
+	"code": "mosquitoswarm",
+	"class": "EntityBeeMob",
+	"habitat": "Air",
+	"hitboxSize": {
+		"x": 0.5,
+		"y": 0.5
+	},
+	"client": {
+		"renderer": "Shape",
+		"size": 0.4,
+		"shape": { "base": "entity/air/mosquitoswarm" },
+		"behaviors": [
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.0001
+			},
+			{ "code": "interpolateposition" }
+		],
+		"animations": [
+			{
+				"code": "enraged",
+				"animation": "enraged",
+				"animationSpeed": 4.5,
+				"weight": 1,
+				"blendMode": "Average"
+			}
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 1900,
+				"maxTurnAnglePerSec": 2400
+			}
+		},
+		"behaviors": [
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.0001
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "meleeattack",
+						"entityCodes": [ "*" ],
+						"priority": 2,
+						"damageTier": 1,
+						"damage": 0.01,
+						"mincooldown": 300,
+						"maxcooldown": 400,
+						"damagePlayerAtMs": 1,
+						"attackDurationMs": 1,
+						"minHorDist": 0.5,
+						"minVerDist": 0.5,
+						"sound": "creature/mosquitohum"
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "*" ],
+						"priority": 1.5,
+						"mincooldown": 100,
+						"maxcooldown": 200,
+						"movespeed": 0.08,
+						"seekingRange": 7
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"movespeed": 0.04,
+						"wanderChance": 0.5,
+						"maxHeight": 3,
+						"awaitReached": true
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"group": "hostile",
+				"TriesPerChunk": {
+					"avg": 0.015,
+					"var": 0
+				},
+				"tryOnlySurface": true,
+				"groupSize": {
+					"dist": "invexp",
+					"avg": 1,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:tallplant-coopersreed-*", "game:tallplant-papyrus-*" ],
+				"minTemp": 15,
+				"maxTemp": 32,
+				"minRain": 0.1,
+				"maxRain": 0.99,
+				"minForestOrShrubs": 0.1,
+				"maxForest": 0.99,
+				"maxShrubs": 0.99
+			},
+			"runtime": {
+				"group": "hostile",
+				"tryOnlySurface": true,
+				"maxQuantity": 1,
+				"chance": 0.0015,
+				"groupSize": {
+					"dist": "invexp",
+					"avg": 1,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:tallplant-coopersreed-*", "game:tallplant-papyrus-*" ],
+				"minTemp": 15,
+				"maxTemp": 32,
+				"minRain": 0.1,
+				"maxRain": 0.99,
+				"minForestOrShrubs": 0.1,
+				"maxForest": 0.99,
+				"maxShrubs": 0.99
+			}
+		}
+	},
+	"sounds": {
+	}
+}

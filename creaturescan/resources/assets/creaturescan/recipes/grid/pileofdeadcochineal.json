@@ -1,0 +1,18 @@
+{
+	"ingredientPattern": "C",
+	"ingredients": {
+		"C": {
+			"type": "item",
+			"code": "insect-cochineal",
+			"quantity": 5
+		}
+	},
+	"width": 1,
+	"height": 1,
+	"shapeless": true,
+	"output": {
+		"type": "item",
+		"code": "creaturescan:pileofdeadcochineal",
+		"quantity": 1
+	}
+}

@@ -1,0 +1,368 @@
+{
+	"code": "tiger-male",
+	"class": "EntityAgent",
+	"hitboxSize": {
+		"x": 1.9,
+		"y": 0.9
+	},
+	"deadHitboxSize": {
+		"x": 1.8,
+		"y": 0.8
+	},
+	"eyeHeight": 1.5,
+	"knockbackresistance": 0.5,
+	"fallDamage": false,
+	"drops": [],
+	"attributes": {
+		"reckless": true,
+		"extraSplashParticlesMul": 2
+	},
+	"client": {
+		"renderer": "Shape",
+		"size": 1.55,
+		"shape": { "base": "entity/land/tiger-male" },
+		"texture": {
+			"base": "tiger1",
+			"alternates": [ { "base": "tiger2" } ]
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.15
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{ "code": "harvestable" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 15,
+				"minSeconds": 120
+			}
+		],
+		"animations": [
+			{
+				"code": "hurt",
+				"animation": "hurt",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "die",
+				"animation": "death",
+				"animationSpeed": 1.25,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4,
+				"animationSpeed": 0.5,
+				"triggeredBy": { "defaultAnim": true }
+			},
+			{
+				"code": "sleep",
+				"animation": "sleep",
+				"easeInSpeed": 2,
+				"easeOutSpeed": 10,
+				"blendMode": "Average"
+			},
+			{
+				"code": "lie",
+				"animation": "lie",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.15
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealth": 45,
+				"maxhealth": 45
+			},
+			{
+				"code": "deaddecay",
+				"hoursToDecay": 96,
+				"decayedBlock": "carcass-large"
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "harvestable",
+				"drops": [
+					{
+						"type": "item",
+						"code": "bushmeat-raw",
+						"quantity": {
+							"avg": 14,
+							"var": 1
+						}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-large",
+						"quantity": {
+							"avg": 1,
+							"var": 0
+						}
+					},
+					{
+						"type": "item",
+						"code": "fat",
+						"quantity": {
+							"avg": 1.75,
+							"var": 0
+						}
+					},
+					{
+						"type": "item",
+						"code": "bone",
+						"quantity": {
+							"avg": 6,
+							"var": 0.5
+						}
+					}
+				]
+			},
+			{ "code": "breathe" },
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "fleeondamage",
+						"duration": 60,
+						"chance": 0.75,
+						"slot": 2,
+						"priority": 5,
+						"accumType": "max",
+						"whenHealthRelBelow": 0.1
+					},
+					{
+						"code": "saturated",
+						"duration": 2500,
+						"chance": 1,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "sum"
+					},
+					{
+						"code": "aggressiveondamage",
+						"duration": 30,
+						"chance": 1,
+						"slot": 2,
+						"priority": 2,
+						"accumType": "noaccum"
+					},
+					{
+						"code": "alarmherdondamage",
+						"chance": 1,
+						"slot": 1,
+						"priority": 1,
+						"accumType": "max"
+					}
+				]
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "meleeattack",
+						"entityCodes": [ "player", "chicken-*", "hare-*", "kiwi-*", "Squirrel-*", "fox-*", "wolf-*", "pig-*", "raccoon-*", "hyena-*", "sheep-*" ],
+						"priority": 2,
+						"damage": 20,
+						"damageTier": 3,
+						"damageType": "SlashingAttack",
+						"slot": 1,
+						"mincooldown": 500,
+						"maxcooldown": 750,
+						"attackDurationMs": 800,
+						"damagePlayerAtMs": 310,
+						"animation": "Attack",
+						"animationSpeed": 3,
+						"sound": "creature/tiger/tigerroar"
+					},
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player" ],
+						"priority": 1.6,
+						"movespeed": 0.07,
+						"seekingRange": 20,
+						"animation": "Run",
+						"animationSpeed": 2,
+						"sound": "creature/tiger/tigerhiss",
+						"whenInEmotionState": "fleeondamage"
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "player" ],
+						"priority": 1.51,
+						"movespeed": 0.06,
+						"seekingRange": 14,
+						"animation": "Walk",
+						"animationSpeed": 2.2,
+						"whenNotInEmotionState": "saturated"
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "player", "chicken-*", "hare-*", "kiwi-*", "Squirrel-*", "fox-*", "wolf-*", "pig-*", "raccoon-*", "hyena-*", "sheep-*" ],
+						"priority": 1.5,
+						"movespeed": 0.06,
+						"seekingRange": 18,
+						"animation": "Run",
+						"animationSpeed": 2,
+						"whenNotInEmotionState": "saturated"
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": [ "player" ],
+						"priority": 1.49,
+						"movespeed": 0.06,
+						"seekingRange": 15,
+						"animation": "Walk",
+						"animationSpeed": 1.4,
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "idle",
+						"priority": 1.45,
+						"priorityForCancel": 1.55,
+						"minduration": 200000,
+						"maxduration": 800000,
+						"mincooldown": 10000,
+						"maxcooldown": 30000,
+						"animation": "Sleep",
+						"whenNotInEmotionState": "aggressiveondamage",
+						"duringDayTimeFrames": [
+							{
+								"fromHour": 11,
+								"toHour": 13
+							},
+							{
+								"fromHour": 2,
+								"toHour": 7
+							}
+						],
+						"stopOnNearbyEntityCodes": [ "player" ],
+						"sound": "creature/tiger/tigergrumble",
+						"stopRange": 10,
+						"stopOnHurt": true
+					},
+					{
+						"code": "getoutofwater",
+						"priority": 1.4,
+						"movespeed": 0.015,
+						"animation": "Run",
+						"animationSpeed": 1.7
+					},
+					{
+						"code": "idle",
+						"priority": 1.2,
+						"priorityForCancel": 1.35,
+						"minduration": 2500,
+						"maxduration": 2500,
+						"mincooldown": 6000,
+						"maxcooldown": 20000,
+						"animation": "Sniff",
+						"animationSpeed": 1.25,
+						"sound": "creature/tiger/tigergrumble",
+						"whenNotInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.007,
+						"animation": "Walk",
+						"animationSpeed": 0.5,
+						"preferredLightLevel": 12
+					},
+					{
+						"code": "idle",
+						"priority": 0.5,
+						"priorityForCancel": 1.35,
+						"minduration": 2500,
+						"maxduration": 2500,
+						"mincooldown": 6000,
+						"maxcooldown": 20000,
+						"animation": "Growl",
+						"animationSpeed": 1.25,
+						"sound": "creature/tiger/tigergrumble",
+						"whenNotInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 0.009,
+					"var": 0
+				},
+				"tryOnlySurface": true,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 3,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:air", "game:tallgrass-*" ],
+				"minTemp": 28,
+				"maxTemp": 45,
+				"minRain": 0.35,
+				"minForest": 0.75,
+				"companions": [ "tiger-female", "tiger-cub" ]
+			},
+			"runtime": {
+				"group": "hostile",
+				"tryOnlySurface": true,
+				"chance": 0.0008,
+				"maxQuantity": 3,
+				"maxLightLevel": 7,
+				"lightLevelType": "onlyBlockLight",
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 3,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:air", "game:tallgrass-*" ],
+				"minTemp": 28,
+				"maxTemp": 45,
+				"minRain": 0.35,
+				"minForest": 0.75,
+				"companions": [ "tiger-female", "tiger-cub" ]
+			}
+		}
+	},
+	"sounds": {
+		"hurt": "creature/tiger/tigerhiss",
+		"death": "creature/tiger/tigersnarl",
+		"idle": "creature/tiger/tigergrumble"
+	},
+	"idleSoundChance": 0
+}

@@ -1,0 +1,196 @@
+{
+	"code": "crawfish",
+	"class": "EntityFish",
+	"habitat": "Underwater",
+	"hitboxSize": {
+		"x": 0.3,
+		"y": 0.25
+	},
+	"eyeHeight": 0.6,
+	"drops": [
+		{
+			"type": "item",
+			"code": "insect-crawfish",
+			"quantity": { "avg": 1 }
+		}
+	],
+	"client": {
+		"renderer": "Shape",
+		"size": 0.7,
+		"shape": { "base": "entity/water/crawfish" },
+		"texture": { "base": "entity/water/crawfish" },
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 0.125
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			}
+		],
+		"animations": [
+			{
+				"code": "hurt",
+				"animation": "hurt",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "die",
+				"animation": "death",
+				"animationSpeed": 1.25,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"animationSpeed": 0.8,
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 0.125
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealth": 2,
+				"maxhealth": 2
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "fleeondamage",
+						"duration": 10,
+						"chance": 1,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "max"
+					}
+				]
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player" ],
+						"priority": 2,
+						"movespeed": 0.01,
+						"seekingRange": 3,
+						"animation": "Run",
+						"animationSpeed": 4
+					},
+					{
+						"code": "fishoutofwater",
+						"priority": 1.9,
+						"priorityForCancel": 1.99,
+						"movespeed": 0.009,
+						"animation": "walk",
+						"animationSpeed": 4
+					},
+					{
+						"code": "idle",
+						"priority": 1.38,
+						"minduration": 200000,
+						"maxduration": 800000,
+						"mincooldown": 10000,
+						"maxcooldown": 30000,
+						"priorityForCancel": 1.38,
+						"animation": "Sleep",
+						"duringDayTimeFrames": [
+							{
+								"fromHour": 7,
+								"toHour": 18
+							}
+						],
+						"stopOnNearbyEntityCodes": [ "player" ],
+						"stopRange": 8,
+						"stopOnHurt": true
+					},
+					{
+						"code": "idle",
+						"priority": 1.1,
+						"minduration": 1000,
+						"maxduration": 3000,
+						"mincooldown": 2000,
+						"maxcooldown": 30000,
+						"animation": "Idle"
+					},
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.007,
+						"animation": "Walk",
+						"preferredLightLevel": 8,
+						"animationSpeed": 4
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 1,
+					"var": 0
+				},
+				"tryOnlySurface": true,
+				"minLightLevel": 3,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 2,
+					"var": 2
+				},
+				"insideBlockCodes": [ "game:water-*", "game:tallplant-coopersreed-land-normal-free" ],
+				"minTemp": 1,
+				"maxTemp": 35
+			},
+			"runtime": {
+				"group": "neutral",
+				"chance": 1,
+				"tryOnlySurface": true,
+				"minLightLevel": 3,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 2,
+					"var": 2
+				},
+				"insideBlockCodes": [ "game:water-*", "game:tallplant-coopersreed-land-normal-free" ],
+				"minTemp": 1,
+				"maxTemp": 35
+			}
+		},
+		"sounds": {
+		},
+		"idleSoundChance": 0.03
+	}
+}

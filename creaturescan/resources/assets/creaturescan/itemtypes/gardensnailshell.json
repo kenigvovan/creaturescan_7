@@ -1,0 +1,88 @@
+{
+	"code": "gardensnailshell",
+	"heldTpIdleAnimation": "holdbothhands",
+	"shape": { "base": "entity/land/gardensnailshell" },
+	"texture": { "base": "game:block/creature/seashell/latte" },
+	"attributes": {
+		"displaycaseable": true,
+		"shelvable": true,
+		"onDisplayTransform": {
+			"translation": {
+				"x": 0.05,
+				"y": 0,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 0.65
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"maxstacksize": 64,
+	"materialDensity": 500,
+	"guiTransform": {
+		"rotation": {
+			"x": 51,
+			"y": -10,
+			"z": 137
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.07,
+			"z": 0.5
+		},
+		"scale": 6
+	},
+	"fpHandTransform": {
+		"rotation": {
+			"x": 54,
+			"y": 99,
+			"z": -30
+		},
+		"scale": 1.34
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -1.67,
+			"y": -1.25,
+			"z": -0.8
+		},
+		"rotation": {
+			"x": 70,
+			"y": 11,
+			"z": -65
+		},
+		"scale": 0.41
+	},
+	"groundTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": -3
+		},
+		"origin": {
+			"x": 0.47,
+			"y": 0,
+			"z": 0.5
+		},
+		"scale": 4
+	},
+	"grindingProps": {
+		"grindedStack": {
+			"type": "item",
+			"code": "game:lime",
+			"stacksize": 1
+		}
+	}
+}

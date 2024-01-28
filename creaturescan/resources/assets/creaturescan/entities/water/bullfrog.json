@@ -1,0 +1,211 @@
+{
+	"code": "bullfrog",
+	"class": "EntityFish",
+	"habitat": "Underwater",
+	"hitboxSize": {
+		"x": 0.25,
+		"y": 0.15
+	},
+	"eyeHeight": 0.2,
+	"attributes": {
+		"seafloor": true
+	},
+	"drops": [
+		{
+			"type": "item",
+			"code": "deadbullfrog",
+			"quantity": { "avg": 1 }
+		}
+	],
+	"client": {
+		"renderer": "Shape",
+		"shape": { "base": "entity/water/bullfrog" },
+		"texture": { "base": "bullfrog" },
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 0.01
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			}
+		],
+		"animations": [
+			{
+				"code": "hurt",
+				"animation": "hurt",
+				"animationSpeed": 1,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "die",
+				"animation": "dead-floating"
+			},
+			{
+				"code": "run",
+				"animation": "run",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 0.01
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealth": 3,
+				"maxhealth": 3
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "fleeondamage",
+						"duration": 0.5,
+						"chance": 1,
+						"slot": 0,
+						"priority": 5.0,
+						"accumType": "max"
+					}
+				]
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "fishoutofwater",
+						"priority": 1.5,
+						"priorityForCancel": 3,
+						"movespeed": 0.01,
+						"animation": "walk",
+						"animationSpeed": 1
+					},
+					{
+						"code": "fleeentity",
+						"entityCodes": [ "player", "crocodile" ],
+						"priority": 5.0,
+						"movespeed": 0.03,
+						"seekingRange": 2,
+						"animation": "Run",
+						"animationSpeed": 4,
+						"whenInEmotionState": "fleeondamage"
+					},
+					{
+						"code": "fishmovefast",
+						"priority": 3.5,
+						"minduration": 1000,
+						"maxduration": 3000,
+						"mincooldown": 25000,
+						"maxcooldown": 30000,
+						"animation": "Run"
+					},
+					{
+						"code": "idle",
+						"priority": 2,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.01,
+						"mincooldown": 5000,
+						"maxcooldown": 15000,
+						"animationSpeed": 1,
+						"animation": "Run",
+						"preferredLightLevel": 3,
+						"sound": "creature/bullfrog",
+						"soundRange": 9
+					},
+					{
+						"code": "idle",
+						"priority": 3.0,
+						"minduration": 5000000,
+						"maxduration": 5000000,
+						"mincooldown": 5000,
+						"maxcooldown": 15000,
+						"priorityForCancel": 1.38,
+						"animation": "idle",
+						"duringDayTimeFrames": [
+							{
+								"fromHour": 20,
+								"toHour": 6
+							}
+						],
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "fox-*" ],
+						"stopRange": 8,
+						"stopOnHurt": true
+					},
+					{
+						"code": "idle",
+						"priority": 3.0,
+						"minduration": 5000,
+						"maxduration": 5000,
+						"mincooldown": 12000,
+						"maxcooldown": 15000,
+						"priorityForCancel": 1.38,
+						"animation": "Run"
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"TriesPerChunk": {
+					"avg": 0.01,
+					"var": 0
+				},
+				"tryOnlySurface": true,
+				"minLightLevel": 3,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 2,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:water-*", "game:tallplant-coopersreed-*" ],
+				"minTemp": 6,
+				"maxTemp": 35
+			},
+			"runtime": {
+				"group": "neutral",
+				"chance": 0.0001,
+				"tryOnlySurface": true,
+				"minLightLevel": 3,
+				"groupSize": {
+					"dist": "verynarrowgaussian",
+					"avg": 2,
+					"var": 0
+				},
+				"insideBlockCodes": [ "game:water-*", "game:tallplant-coopersreed-*" ],
+				"minTemp": 6,
+				"maxTemp": 35
+			}
+		}
+	}
+}

@@ -1,0 +1,267 @@
+{
+	"code": "bugbread",
+	"maxstacksizeByType": {
+		"*-charred": 48,
+		"*": 32
+	},
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "cricket", "grasshopper" ]
+		},
+		{
+			"code": "state",
+			"states": [ "partbaked", "perfect", "charred" ]
+		}
+	],
+	"shape": { "base": "creaturescan:item/food/buggrain/{type}bread" },
+	"texturesbytype": {
+		"*-partbaked": { "bread": { "base": "creaturescan:item/food/buggrain/{type}bread2" } },
+		"*-perfect": { "bread": { "base": "creaturescan:item/food/buggrain/{type}bread" } },
+		"*-charred": { "bread": { "base": "creaturescan:item/food/buggrain/{type}bread1" } }
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"attributesByType": {
+		"bugbread-cricket-partbaked": {
+			"displaycaseable": true,
+			"shelvable": true,
+			"bakingProperties": {
+				"temp": 160,
+				"levelFrom": 0.25,
+				"levelTo": 0.5,
+				"startScaleY": 0.95,
+				"endScaleY": 1.10,
+				"resultCode": "creaturescan:bugbread-cricket-perfect",
+				"initialCode": "creaturescan:bugdough-cricket"
+			}
+		},
+		"bugbread-cricket-perfect": {
+			"displaycaseable": true,
+			"shelvable": true,
+			"bakingProperties": {
+				"temp": 160,
+				"levelFrom": 0.5,
+				"levelTo": 0.75,
+				"startScaleY": 1.10,
+				"endScaleY": 1.13,
+				"resultCode": "creaturescan:bugbread-cricket-charred",
+				"initialCode": "creaturescan:bugbread-cricket-partbaked"
+			}
+		},
+		"bugbread-cricket-charred": {
+			"displaycaseable": true,
+			"shelvable": true,
+			"bakingProperties": {
+				"temp": 160,
+				"levelFrom": 0.75,
+				"levelTo": 1,
+				"startScaleY": 1.13,
+				"endScaleY": 1.10,
+				"initialCode": "creaturescan:bugbread-cricket-perfect"
+			}
+		},
+		"bugbread-grasshopper-partbaked": {
+			"displaycaseable": true,
+			"shelvable": true,
+			"bakingProperties": {
+				"temp": 160,
+				"levelFrom": 0.25,
+				"levelTo": 0.5,
+				"startScaleY": 0.95,
+				"endScaleY": 1.10,
+				"resultCode": "creaturescan:bugbread-grasshopper-perfect",
+				"initialCode": "creaturescan:bugdough-grasshopper"
+			}
+		},
+		"bugbread-grasshopper-perfect": {
+			"displaycaseable": true,
+			"shelvable": true,
+			"bakingProperties": {
+				"temp": 160,
+				"levelFrom": 0.5,
+				"levelTo": 0.75,
+				"startScaleY": 1.10,
+				"endScaleY": 1.13,
+				"resultCode": "creaturescan:bugbread-grasshopper-charred",
+				"initialCode": "creaturescan:bugbread-grasshopper-partbaked"
+			}
+		},
+		"bugbread-grasshopper-charred": {
+			"displaycaseable": true,
+			"shelvable": true,
+			"bakingProperties": {
+				"temp": 160,
+				"levelFrom": 0.75,
+				"levelTo": 1,
+				"startScaleY": 1.13,
+				"endScaleY": 1.10,
+				"initialCode": "creaturescan:bugbread-grasshopper-perfect"
+			}
+		}
+	},
+	"combustiblePropsByType": {
+		"*-partbaked": {
+			"meltingPoint": 200,
+			"meltingDuration": 15,
+			"smeltedRatio": 1,
+			"smeltingType": "bake",
+			"smeltedStack": {
+				"type": "item",
+				"code": "creaturescan:bugbread-{type}-charred"
+			},
+			"requiresContainer": false
+		},
+		"*-perfect": {
+			"meltingPoint": 200,
+			"meltingDuration": 15,
+			"smeltedRatio": 1,
+			"smeltingType": "bake",
+			"smeltedStack": {
+				"type": "item",
+				"code": "creaturescan:bugbread-{type}-charred"
+			},
+			"requiresContainer": false
+		}
+	},
+	"nutritionPropsByType": {
+		"*-cricket-partbaked": {
+			"saturation": 90,
+			"foodcategory": "Protein"
+		},
+		"*-cricket-perfect": {
+			"saturation": 120,
+			"foodcategory": "Protein"
+		},
+		"*-cricket-charred": {
+			"saturation": 110,
+			"foodcategory": "Protein"
+		},
+
+		"*-grasshopper-partbaked": {
+			"saturation": 100,
+			"foodcategory": "Protein"
+		},
+		"*-grasshopper-perfect": {
+			"saturation": 130,
+			"foodcategory": "Protein"
+		},
+		"*-grasshopper-charred": {
+			"saturation": 120,
+			"foodcategory": "Protein"
+		}
+	},
+	"transitionablePropsByType": {
+		"*-partbaked": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 120 },
+				"transitionHours": { "avg": 24 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 1
+			}
+		],
+		"*-perfect": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 192 },
+				"transitionHours": { "avg": 36 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 1
+			}
+		],
+		"*-charred": [
+			{
+				"type": "Perish",
+				"freshHours": { "avg": 420 },
+				"transitionHours": { "avg": 60 },
+				"transitionedStack": {
+					"type": "item",
+					"code": "game:rot"
+				},
+				"transitionRatio": 1
+			}
+		]
+	},
+	"materialDensity": 200,
+	"guiTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": -30,
+			"y": 26,
+			"z": 180
+		},
+		"origin": {
+			"x": 0.52,
+			"y": 0.07,
+			"z": 0.5
+		},
+		"scale": 4.9
+	},
+	"groundTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 1
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0,
+			"z": 0.5
+		},
+		"scale": 4.5
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -0.54,
+			"y": -0.16,
+			"z": -0.4
+		},
+		"rotation": {
+			"x": 44,
+			"y": -69,
+			"z": 2
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.13,
+			"z": 0.5
+		},
+		"scale": 1
+	},
+	"fpHandTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0.24,
+			"z": 0.3
+		},
+		"rotation": {
+			"x": 104,
+			"y": 0,
+			"z": 71
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.1,
+			"z": 0.5
+		},
+		"scale": 2.5
+	}
+}
