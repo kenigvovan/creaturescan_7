@@ -9,6 +9,11 @@
 		"x": 0.9,
 		"y": 0.35
 	},
+	"attributes": {
+		"creatureDiet": {
+			"foodTags": [ "meat" ]
+		}
+	},
 	"eyeHeight": 0.3,
 	"drops": [],
 	"client": {
@@ -105,7 +110,7 @@
 					},
 					{
 						"type": "item",
-						"code": "komodohide",
+						"code": "creaturescan:komodohide",
 						"quantity": {
 							"avg": 1,
 							"var": 0

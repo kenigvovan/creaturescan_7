@@ -12,12 +12,17 @@
 	"eyeHeight": 4,
 	"weight": 2000,
 	"attributes": {
-		"extraSplashParticlesMul": 8
+		"extraSplashParticlesMul": 8,
+		"creatureDiet": {
+			"foodCategories": [ "Vegetable" ],
+			"foodTags": [ "nibbleCrop", "grass", "fruitmash" ],
+			"skipFoodTags": [ "parsnip" ]
+		}
 	},
 	"drops": [
 		{
 			"type": "item",
-			"code": "game:elephanttusk-normal",
+			"code": "creaturescan:elephanttusk-normal",
 			"quantity": { "avg": 2 }
 		}
 	],

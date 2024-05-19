@@ -79,7 +79,7 @@
 		"scale": 4
 	},
 	"grindingProps": {
-		"grindedStack": {
+		"groundStack": {
 			"type": "item",
 			"code": "game:lime",
 			"stacksize": 1

@@ -12,7 +12,9 @@
 	"eyeHeight": 0.1,
 	"drops": [],
 	"attributes": {
-		"blockDiet": [ "crop-flax*", "crop-rye*", "crop-spelt*", "crop-sunflower*", "crop-rice*", "crop-amaranth*", "crop-peanuts*" ]
+		"creatureDiet": {
+			"foodCategories": [ "Grain" ]
+		},
 	},
 	"client": {
 		"renderer": "Shape",
@@ -169,7 +171,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 336,
-				"adultEntityCodes": [ "hamster-male", "hamster-female" ]
+				"adultEntityCodes": [ "creaturescan:hamster-male", "creaturescan:hamster-female" ]
 			},
 			{
 				"code": "taskai",
@@ -219,7 +221,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "hamster-female",
+						"entityCode": "creaturescan:hamster-female",
 						"movespeed": 0.02,
 						"animationSpeed": 4,
 						"maxDistance": 1,

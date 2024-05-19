@@ -8,8 +8,8 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"camel2": "camel2",
-		"camel": "camel"
+		"camel2": "creaturescan:camel2",
+		"camel": "creaturescan:camel"
 	},
 	"elements": [
 		{

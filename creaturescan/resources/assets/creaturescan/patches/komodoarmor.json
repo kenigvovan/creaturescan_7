@@ -3,7 +3,7 @@
     "op": "add",
     "path": "/allowedVariants/-",
     "value": "armor-*-sewn-komodohide",
-    "file": "itemtypes/wearable/armor.json"
+    "file": "game:itemtypes/wearable/armor.json"
   },
   {
     "op": "add",
@@ -21,7 +21,7 @@
         0.1
       ]
     },
-    "file": "itemtypes/wearable/armor.json"
+    "file": "game:itemtypes/wearable/armor.json"
   },
   {
     "op": "add",
@@ -31,50 +31,50 @@
       "healingeffectivness": -0.07,
       "hungerrate": 0.02
     },
-    "file": "itemtypes/wearable/armor.json"
+    "file": "game:itemtypes/wearable/armor.json"
   },
   {
     "op": "add",
     "path": "/durabilityByType/armor-*-sewn-komodohide",
     "value": 850,
-    "file": "itemtypes/wearable/armor.json"
+    "file": "game:itemtypes/wearable/armor.json"
   },
   {
     "op": "add",
     "path": "/shapeByType/armor-*-sewn-komodohide",
     "value": {
-      "base": "entity/humanoid/seraph/armor/{construction}/{bodypart}"
+      "base": "creaturescan:entity/humanoid/seraph/armor/{construction}/{bodypart}"
     },
-    "file": "itemtypes/wearable/armor.json"
+    "file": "game:itemtypes/wearable/armor.json"
   },
   {
     "op": "add",
     "path": "/skipVariants/-",
     "value": "armor-*-brigandine-komodohide",
-    "file": "itemtypes/wearable/armor.json"
+    "file": "game:itemtypes/wearable/armor.json"
   },
   {
     "op": "add",
     "path": "/skipVariants/-",
     "value": "armor-*-chain-komodohide",
-    "file": "itemtypes/wearable/armor.json"
+    "file": "game:itemtypes/wearable/armor.json"
   },
   {
     "op": "add",
     "path": "/skipVariants/-",
     "value": "armor-*-scale-komodohide",
-    "file": "itemtypes/wearable/armor.json"
+    "file": "game:itemtypes/wearable/armor.json"
   },
   {
     "op": "add",
     "path": "/skipVariants/-",
     "value": "armor-*-plate-komodohide",
-    "file": "itemtypes/wearable/armor.json"
+    "file": "game:itemtypes/wearable/armor.json"
   },
   {
     "op": "add",
     "path": "/variantgroups/2/states/-",
     "value": "komodohide",
-    "file": "itemtypes/wearable/armor.json"
+    "file": "game:itemtypes/wearable/armor.json"
   }
 ]

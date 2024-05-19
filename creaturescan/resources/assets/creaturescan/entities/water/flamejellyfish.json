@@ -16,7 +16,10 @@
 	],
 	"habitat": "Underwater",
 	"attributes": {
-		"seafloor": true
+		"seafloor": true,
+			"creatureDiet": {
+			}
+		
 	},
 	"client": {
 		"renderer": "Shape",

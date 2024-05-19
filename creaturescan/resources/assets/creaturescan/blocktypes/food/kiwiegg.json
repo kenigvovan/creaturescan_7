@@ -101,21 +101,21 @@
 		"*-1": [
 			{
 				"type": "item",
-				"code": "creaturescan:egg-kiwi-raw",
+				"code": "creaturescan:kiwi-egg-raw",
 				"quantity": { "avg": 1 }
 			}
 		],
 		"*-2": [
 			{
 				"type": "item",
-				"code": "creaturescan:egg-kiwi-raw",
+				"code": "creaturescan:kiwi-egg-raw",
 				"quantity": { "avg": 2 }
 			}
 		],
 		"*-3": [
 			{
 				"type": "item",
-				"code": "creaturescan:egg-kiwi-raw",
+				"code": "creaturescan:kiwi-egg-raw",
 				"quantity": { "avg": 3 }
 			}
 		],

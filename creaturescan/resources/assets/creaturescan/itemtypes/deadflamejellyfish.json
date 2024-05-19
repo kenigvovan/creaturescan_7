@@ -2,7 +2,7 @@
 	"code": "deadflamejellyfish",
 	"heldTpIdleAnimation": "holdbothhands",
 	"shape": { "base": "entity/water/deadflamejellyfish" },
-	"texture": { "base": "flamejellyfish" },
+	"texture": { "base": "flamejelly" },
 	"attributes": {
 		"inFirePitProps": {
 			"transform": {
@@ -108,7 +108,7 @@
 		"smeltingType": "cook",
 		"smeltedStack": {
 			"type": "item",
-			"code": "cookeddeadflamejellyfish"
+			"code": "creaturescan:cookeddeadflamejellyfish"
 		},
 		"requiresContainer": false
 	}

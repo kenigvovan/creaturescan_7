@@ -11,6 +11,8 @@
 	"attributes": {
 		"physics": {
 			"airMovingStrength": 2.0
+		},
+		"creatureDiet": {
 		}
 	},
 	"client": {

@@ -12,7 +12,11 @@
 	},
 	"eyeHeight": 0.7,
 	"attributes": {
-		"blockDiet": [ "crop-cabbage*" ]
+		"creatureDiet": {
+			"foodCategories": [ "Vegetable" ],
+			"foodTags": [ "nibbleCrop", "fruitmash" ],
+			"skipFoodTags": [ "parsnip" ]
+		}
 	},
 	"drops": [],
 	"client": {
@@ -102,7 +106,7 @@
 				"drops": [
 					{
 						"type": "item",
-						"code": "game:turtlemeat-raw",
+						"code": "creaturescan:turtlemeat-raw",
 						"quantity": {
 							"avg": 1,
 							"var": 0
@@ -114,7 +118,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 600,
-				"adultEntityCodes": [ "tortoise-male", "tortoise-female" ]
+				"adultEntityCodes": [ "creaturescan:tortoise-male", "creaturescan:tortoise-female" ]
 			},
 			{
 				"code": "taskai",

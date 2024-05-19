@@ -10,6 +10,10 @@
 		"y": 0.3
 	},
 	"eyeHeight": 0.1,
+	"attributes": {
+		"creatureDiet": {
+		}
+	},
 	"knockbackresistance": 2,
 	"drops": [
 		{
@@ -80,7 +84,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 336,
-				"adultEntityCodes": [ "cassowary-chick" ]
+				"adultEntityCodes": [ "creaturescan:cassowary-chick" ]
 			},
 			{
 				"code": "taskai",

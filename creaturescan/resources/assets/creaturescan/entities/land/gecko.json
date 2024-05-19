@@ -16,12 +16,14 @@
 	},
 	"eyeHeight": 0.1,
 	"attributes": {
-		"reckless": true
+		"reckless": true,
+		"creatureDiet": {
+		}
 	},
 	"drops": [
 		{
 			"type": "item",
-			"code": "game:geckomeat-raw",
+			"code": "creaturescan:geckomeat-raw",
 			"quantity": { "avg": 1 }
 		}
 	],

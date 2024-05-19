@@ -8,7 +8,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"skin": "block/coal/charcoal"
+		"skin": "game:block/coal/charcoal"
 	},
 	"elements": [
 		{

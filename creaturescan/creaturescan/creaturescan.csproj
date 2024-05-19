@@ -48,6 +48,10 @@
 </ItemGroup>
 
 <ItemGroup>
+  <Content Remove="..\resources\assets\creaturescan\patches\komodoarmor.json" />
+</ItemGroup>
+
+<ItemGroup>
   <Folder Include="src\Items\" />
 </ItemGroup>
 

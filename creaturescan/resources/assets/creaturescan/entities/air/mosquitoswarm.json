@@ -32,6 +32,8 @@
 			"pathfinder": {
 				"minTurnAnglePerSec": 1900,
 				"maxTurnAnglePerSec": 2400
+			},
+			"creatureDiet": {
 			}
 		},
 		"behaviors": [

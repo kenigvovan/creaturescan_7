@@ -11,6 +11,10 @@
 	},
 	"eyeHeight": 0.5,
 	"weight": 1,
+	"attributes": {
+		"creatureDiet": {
+		}
+	},
 	"drops": [],
 	"client": {
 		"renderer": "Shape",

@@ -12,7 +12,9 @@
 	"eyeHeight": 0.3,
 	"drops": [],
 	"attributes": {
-		"reckless": true
+		"reckless": true,
+		"creatureDiet": {
+		}
 	},
 	"client": {
 		"renderer": "Shape",
@@ -146,7 +148,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 336,
-				"adultEntityCodes": [ "cassowary-youngling" ]
+				"adultEntityCodes": [ "creaturescan:cassowary-youngling" ]
 			},
 			{
 				"code": "emotionstates",
@@ -230,7 +232,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "cassowary-male",
+						"entityCode": "creaturescan:cassowary-male",
 						"movespeed": 0.01,
 						"animationSpeed": 1.5,
 						"maxDistance": 2,

@@ -12,7 +12,7 @@
 	},
 	"texturesbytype": {
 		"*-gardensnail": {
-			"snail": { "base": "game:snail" },
+			"snail": { "base": "slug" },
 			"latte": { "base": "game:block/creature/seashell/latte" }
 		}
 	},

@@ -11,6 +11,10 @@
 		"x": 0.25,
 		"y": 0.2
 	},
+	"attributes": {
+		"creatureDiet": {
+		}
+	},
 	"deadHitboxSize": {
 		"x": 0.25,
 		"y": 0.2
@@ -189,7 +193,7 @@
 					"var": 0
 				},
 				"minLightLevel": 0,
-				"maxLightLevel": 14,
+				"maxLightLevel": 5,
 				"groupSize": {
 					"dist": "verynarrowgaussian",
 					"avg": 1,

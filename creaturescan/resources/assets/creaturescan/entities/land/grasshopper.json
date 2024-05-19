@@ -24,11 +24,8 @@
 	],
 	"attributes": {
 		"creatureDiet": {
-			"foodCategories": [ "Grain" ],
-			"foodTags": [ "nibbleCrop", "grass", "fruitmash" ],
-			"skipFoodTags": [ "rice", "parsnip" ]
+			"foodCategories": [ "Grain" ]
 		},
-		"blockDiet": [ "crop-flax*", "crop-rye*", "crop-spelt*", "crop-sunflower*", "crop-rice*", "crop-amaranth*" ]
 	},
 	"client": {
 		"renderer": "Shape",

@@ -12,7 +12,9 @@
 	"eyeHeight": 1.2,
 	"drops": [],
 	"attributes": {
-		"reckless": true
+		"reckless": true,
+		"creatureDiet": {
+		}
 	},
 	"client": {
 		"renderer": "Shape",
@@ -289,7 +291,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "cassowary-egg-raw",
+						"entityCode": "creaturescan:cassowary-egg-raw",
 						"movespeed": 0.007,
 						"animationSpeed": 0.5,
 						"maxDistance": 5,

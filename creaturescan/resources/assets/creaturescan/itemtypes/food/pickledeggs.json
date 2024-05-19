@@ -34,7 +34,7 @@
 			"tortoiseegg-pickled": { "base": "tortoiseegg-pickled" }
 		},
 		"pickledegg-crocodile-pickled": {
-			"crocodileegg-pickled": { "base": "crocodileegg-pickled" }
+			"crocodileegg-pickled": { "base": "crocodileeggpickled" }
 		}
 	},
 	"creativeinventory": {

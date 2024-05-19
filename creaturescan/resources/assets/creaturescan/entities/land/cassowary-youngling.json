@@ -11,6 +11,10 @@
 	},
 	"eyeHeight": 0.6,
 	"drops": [],
+	"attributes": {
+		"creatureDiet": {
+		}
+	},
 	"client": {
 		"renderer": "Shape",
 		"size": 0.95,
@@ -143,7 +147,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 480,
-				"adultEntityCodes": [ "cassowary-male", "cassowary-female" ]
+				"adultEntityCodes": [ "creaturescan:cassowary-male", "creaturescan:cassowary-female" ]
 			},
 			{
 				"code": "emotionstates",
@@ -227,7 +231,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "cassowary-male",
+						"entityCode": "creaturescan:cassowary-male",
 						"movespeed": 0.015,
 						"animationSpeed": 1.6,
 						"maxDistance": 5,

@@ -14,11 +14,15 @@
 		"x": 0.5,
 		"y": 0.3
 	},
+	"attributes": {
+		"creatureDiet": {
+		}
+	},
 	"eyeHeight": 0.1,
 	"drops": [
 		{
 			"type": "item",
-			"code": "game:insect-slug",
+			"code": "creaturescan:insect-slug",
 			"quantity": {
 				"avg": 1,
 				"var": 0

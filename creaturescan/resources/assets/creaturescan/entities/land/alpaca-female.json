@@ -1,5 +1,5 @@
 {
-	"code" :"alpaca-female",
+	"code": "alpaca-female",
 	"class": "EntityAgent",
 	"hitboxSize": {
 		"x": 1.25,
@@ -10,6 +10,13 @@
 		"y": 0.7
 	},
 	"eyeHeight": 1.4,
+	"attributes": {
+		"creatureDiet": {
+			"foodCategories": [ "Grain", "Vegetable" ],
+			"foodTags": [ "nibbleCrop", "grass", "fruitmash" ],
+			"skipFoodTags": [ "rice", "parsnip" ]
+		}
+	},
 	"weight": 130,
 	"drops": [],
 	"client": {
@@ -248,7 +255,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.3,
-						"entityCode": "alpaca-male",
+						"entityCode": "creaturescan:alpaca-male",
 						"maxDistance": 10,
 						"searchRange": 25,
 						"movespeed": 0.035,

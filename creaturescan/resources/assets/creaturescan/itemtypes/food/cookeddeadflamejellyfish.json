@@ -2,7 +2,7 @@
 	"code": "cookeddeadflamejellyfish",
 	"heldTpIdleAnimation": "holdbothhands",
 	"shape": { "base": "entity/water/cookeddeadflamejellyfish" },
-	"texture": { "base": "cookedflamejellyfish" },
+	"texture": { "base": "cookedflamejelly" },
 	"attributes": {
 		"inFirePitProps": {
 			"transform": {

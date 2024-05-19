@@ -11,7 +11,11 @@
 	},
 	"eyeHeight": 1,
 	"drops": [],
-	"attributes": {},
+	"attributes": {
+		"creatureDiet": {
+			"foodTags": [ "meat" ]
+		}
+	},
 	"client": {
 		"renderer": "Shape",
 		"size": 0.92,

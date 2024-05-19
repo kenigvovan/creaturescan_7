@@ -737,7 +737,7 @@
         }
       ]
     },
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   },
   {
     "op": "add",
@@ -1477,7 +1477,7 @@
         }
       ]
     },
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   },
   {
     "op": "add",
@@ -2279,7 +2279,7 @@
         }
       ]
     },
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   },
   {
     "op": "add",
@@ -3081,7 +3081,7 @@
         }
       ]
     },
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   },
   {
     "op": "add",
@@ -3964,7 +3964,7 @@
         }
       ]
     },
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   },
   {
     "op": "add",
@@ -4847,7 +4847,7 @@
         }
       ]
     },
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   },
   {
     "op": "add",
@@ -4926,7 +4926,7 @@
         }
       }
     },
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   },
   {
     "op": "add",
@@ -5005,31 +5005,31 @@
         }
       }
     },
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   },
   {
     "op": "remove",
     "path": "/textures/egg",
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   },
   {
     "op": "remove",
     "path": "/textures/fruit",
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   },
   {
     "op": "remove",
     "path": "/textures/meat",
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   },
   {
     "op": "remove",
     "path": "/textures/topping",
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   },
   {
     "op": "remove",
     "path": "/textures/vegetable",
-    "file": "shapes/block/food/meal/meaty-stew.json"
+    "file": "game:shapes/block/food/meal/meaty-stew.json"
   }
 ]

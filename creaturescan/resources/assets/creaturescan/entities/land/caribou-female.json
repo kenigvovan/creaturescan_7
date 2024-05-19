@@ -12,6 +12,13 @@
 	"eyeHeight": 1.45,
 	"weight": 150,
 	"drops": [],
+	"attributes": {
+		"creatureDiet": {
+			"foodCategories": [ "Grain" ],
+			"foodTags": [ "nibbleCrop", "grass", "fruitmash" ],
+			"skipFoodTags": [ "rice" ]
+		}
+	},
 	"client": {
 		"renderer": "Shape",
 		"size": 1.1,
@@ -239,7 +246,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.3,
-						"entityCode": "caribou-male",
+						"entityCode": "creaturescan:caribou-male",
 						"maxDistance": 10,
 						"searchRange": 25,
 						"movespeed": 0.0085,

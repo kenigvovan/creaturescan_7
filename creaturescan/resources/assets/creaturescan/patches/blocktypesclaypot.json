@@ -6,7 +6,7 @@
       "meat",
       "group16"
     ],
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -15,7 +15,7 @@
       "meat",
       "group16"
     ],
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -24,7 +24,7 @@
       "egg",
       "group6"
     ],
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -33,7 +33,7 @@
       "egg",
       "group6"
     ],
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -42,7 +42,7 @@
       "egg",
       "group6"
     ],
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -51,7 +51,7 @@
       "meat",
       "group17"
     ],
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -60,7 +60,7 @@
       "meat",
       "group18"
     ],
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -69,7 +69,7 @@
       "meat",
       "group19"
     ],
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -78,7 +78,7 @@
       "meat",
       "group19"
     ],
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -87,7 +87,7 @@
       "egg",
       "group6"
     ],
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -96,7 +96,7 @@
       "meat",
       "group20"
     ],
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -105,7 +105,7 @@
       "meat",
       "group20"
     ],
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -113,7 +113,7 @@
     "value": {
       "base": "game:cookedcricket"
     },
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -121,7 +121,7 @@
     "value": {
       "base": "game:cookedgrasshopper"
     },
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -129,7 +129,7 @@
     "value": {
       "base": "item/food/meat/crawfishcooked"
     },
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -137,7 +137,7 @@
     "value": {
       "base": "game:block/transparent"
     },
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -145,7 +145,7 @@
     "value": {
       "base": "game:crawfishstew"
     },
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -153,7 +153,7 @@
     "value": {
       "base": "game:cricketstew"
     },
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -161,7 +161,7 @@
     "value": {
       "base": "game:grasshopperstew"
     },
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -169,7 +169,7 @@
     "value": {
       "base": "game:escargotstew"
     },
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -177,7 +177,7 @@
     "value": {
       "base": "game:turtlestew"
     },
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   },
   {
     "op": "add",
@@ -185,6 +185,6 @@
     "value": {
       "base": "game:item/food/meat/cookedturtlemeat"
     },
-    "file": "blocktypes/clay/pot.json"
+    "file": "game:blocktypes/clay/pot.json"
   }
 ]

@@ -9,6 +9,13 @@
 		"x": 0.6,
 		"y": 0.35
 	},
+	"attributes": {
+		"creatureDiet": {
+			"foodCategories": [ "Grain", "Vegetable" ],
+			"foodTags": [ "nibbleCrop", "grass", "fruitmash" ],
+			"skipFoodTags": [ "rice", "parsnip" ]
+		}
+	},
 	"eyeHeight": 0.4,
 	"weight": 30,
 	"drops": [],
@@ -168,7 +175,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 336,
-				"adultEntityCodes": [ "alpaca-male", "alpaca-female" ]
+				"adultEntityCodes": [ "creaturescan:alpaca-male", "creaturescan:alpaca-female" ]
 			},
 			{
 				"code": "taskai",
@@ -193,7 +200,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "alpaca-female",
+						"entityCode": "creaturescan:alpaca-female",
 						"movespeed": 0.025,
 						"maxDistance": 7,
 						"searchRange": 25,

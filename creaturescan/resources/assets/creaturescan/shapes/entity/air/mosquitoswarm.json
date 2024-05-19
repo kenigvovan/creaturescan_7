@@ -8,7 +8,8 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"bituminous": "game:block/coal/bituminous"
+		"bituminous": "game:block/coal/bituminous",
+		"wild": "game:block/metal/sheet/gold1"
 	},
 	"elements": [
 		{

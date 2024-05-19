@@ -18,6 +18,10 @@
 			"quantity": { "avg": 1 }
 		}
 	],
+	"attributes": {
+		"creatureDiet": {
+		}
+	},
 	"client": {
 		"renderer": "Shape",
 		"size": 1,
@@ -81,7 +85,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 672,
-				"adultEntityCodes": [ "crocodile-hatchling" ]
+				"adultEntityCodes": [ "creaturescan:crocodile-hatchling" ]
 			},
 			{
 				"code": "taskai",
@@ -102,7 +106,7 @@
 					"avg": 1,
 					"var": 0
 				},
-				"insideBlockCodes": [ "water-*" ],
+				"insideBlockCodes": [ "game:water-*" ],
 				"minTemp": 25,
 				"maxTemp": 38
 			},
@@ -117,7 +121,7 @@
 					"avg": 1,
 					"var": 0
 				},
-				"insideBlockCodes": [ "water-*" ],
+				"insideBlockCodes": [ "game:water-*" ],
 				"minTemp": 25,
 				"maxTemp": 38
 			}

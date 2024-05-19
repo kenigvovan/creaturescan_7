@@ -23,7 +23,9 @@
 		}
 	],
 	"attributes": {
-		"reckless": true
+		"reckless": true,
+		"creatureDiet": {
+		}
 	},
 	"client": {
 		"renderer": "Shape",

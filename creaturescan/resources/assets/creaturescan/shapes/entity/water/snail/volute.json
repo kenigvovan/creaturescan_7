@@ -9,7 +9,7 @@
 	},
 	"textures": {
 		"color": "game:block/creature/seashell/plain",
-		"skin": "block/coal/charcoal"
+		"skin": "game:block/coal/charcoal"
 	},
 	"elements": [
 		{

@@ -12,6 +12,13 @@
 	"eyeHeight": 0.4,
 	"weight": 30,
 	"drops": [],
+	"attributes": {
+		"creatureDiet": {
+			"foodCategories": [ "Grain" ],
+			"foodTags": [ "nibbleCrop", "grass", "fruitmash" ],
+			"skipFoodTags": [ "rice"]
+		}
+	},
 	"client": {
 		"renderer": "Shape",
 		"shape": { "base": "entity/land/camel-calf" },
@@ -154,7 +161,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 768,
-				"adultEntityCodes": [ "camel-male", "camel-female" ]
+				"adultEntityCodes": [ "creaturescan:camel-male", "creaturescan:camel-female" ]
 			},
 			{
 				"code": "taskai",
@@ -179,7 +186,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "camel-female",
+						"entityCode": "creaturescan:camel-female",
 						"movespeed": 0.025,
 						"maxDistance": 7,
 						"searchRange": 25,

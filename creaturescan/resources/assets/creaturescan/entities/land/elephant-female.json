@@ -11,7 +11,12 @@
 	},
 	"eyeHeight": 4,
 	"attributes": {
-		"extraSplashParticlesMul": 7
+		"extraSplashParticlesMul": 7,
+		"creatureDiet": {
+			"foodCategories": [ "Vegetable" ],
+			"foodTags": [ "nibbleCrop", "grass", "fruitmash" ],
+			"skipFoodTags": [ "parsnip" ]
+		}
 	},
 	"drops": [],
 	"client": {
@@ -236,7 +241,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "elephant-male",
+						"entityCode": "creaturescan:elephant-male",
 						"movespeed": 0.015,
 						"maxDistance": 7,
 						"searchRange": 25,

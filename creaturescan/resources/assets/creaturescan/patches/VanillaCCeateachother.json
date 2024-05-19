@@ -1,495 +1,459 @@
 [
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
+    "path": "/server/behaviors/9/aitasks/0/entityCodesByType/*",
     "value": "kiwi-*",
-    "file": "entities/land/bear-male.json"
+    "file": "game:entities/land/bear.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
+    "path": "/server/behaviors/9/aitasks/0/entityCodesByType/*",
     "value": "squirrel-*",
-    "file": "entities/land/bear-male.json"
+    "file": "game:entities/land/bear.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
+    "path": "/server/behaviors/9/aitasks/0/entityCodesByType/*",
     "value": "caribou-*",
-    "file": "entities/land/bear-male.json"
+    "file": "game:entities/land/bear.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
+    "path": "/server/behaviors/9/aitasks/3/entityCodesByType/*",
     "value": "kiwi-*",
-    "file": "entities/land/bear-male.json"
+    "file": "game:entities/land/bear.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
+    "path": "/server/behaviors/9/aitasks/3/entityCodesByType/*",
     "value": "squirrel-*",
-    "file": "entities/land/bear-male.json"
+    "file": "game:entities/land/bear.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
+    "path": "/server/behaviors/9/aitasks/3/entityCodesByType/*",
     "value": "caribou-*",
-    "file": "entities/land/bear-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
-    "value": "kiwi-*",
-    "file": "entities/land/bear-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
-    "value": "squirrel-*",
-    "file": "entities/land/bear-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
-    "value": "caribou-*",
-    "file": "entities/land/bear-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
-    "value": "kiwi-*",
-    "file": "entities/land/bear-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
-    "value": "squirrel-*",
-    "file": "entities/land/bear-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
-    "value": "caribou-*",
-    "file": "entities/land/bear-female.json"
+    "file": "game:entities/land/bear.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/1/entityCodes/-",
     "value": "chicken-rooster",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/1/entityCodes/-",
     "value": "chicken-hen",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/1/entityCodes/-",
     "value": "chicken-baby",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/1/entityCodes/-",
     "value": "fox-pup",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/1/entityCodes/-",
     "value": "hare-*",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/1/entityCodes/-",
     "value": "hamster-*",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/1/entityCodes/-",
     "value": "squirrel",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/1/entityCodes/-",
     "value": "camel-*",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "chicken-rooster",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "chicken-hen",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "chicken-baby",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "fox-pup",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "hare-*",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "hamster-*",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "squirrel",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "camel-*",
-    "file": "entities/land/hyena-female.json"
+    "file": "game:entities/land/hyena-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/1/entityCodes/-",
     "value": "chicken-rooster",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/1/entityCodes/-",
     "value": "chicken-hen",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/1/entityCodes/-",
     "value": "chicken-baby",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/1/entityCodes/-",
     "value": "fox-pup",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/1/entityCodes/-",
     "value": "hare-*",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/1/entityCodes/-",
     "value": "hamster-*",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/1/entityCodes/-",
     "value": "squirrel",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/1/entityCodes/-",
     "value": "camel-*",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "chicken-rooster",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "chicken-hen",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "chicken-baby",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "fox-pup",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "hare-*",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "hamster-*",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "squirrel",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "camel-*",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/hyena-male.json"
+    "file": "game:entities/land/hyena-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "kiwi-*",
-    "file": "entities/land/wolf-female.json"
+    "file": "game:entities/land/wolf-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "Squirrel-*",
-    "file": "entities/land/wolf-female.json"
+    "file": "game:entities/land/wolf-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "fox-*",
-    "file": "entities/land/wolf-female.json"
+    "file": "game:entities/land/wolf-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "alpaca-*",
-    "file": "entities/land/wolf-female.json"
+    "file": "game:entities/land/wolf-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "caribou-*",
-    "file": "entities/land/wolf-female.json"
+    "file": "game:entities/land/wolf-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "kiwi-*",
-    "file": "entities/land/wolf-female.json"
+    "file": "game:entities/land/wolf-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "Squirrel-*",
-    "file": "entities/land/wolf-female.json"
+    "file": "game:entities/land/wolf-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "fox-*",
-    "file": "entities/land/wolf-female.json"
+    "file": "game:entities/land/wolf-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "alpaca-*",
-    "file": "entities/land/wolf-female.json"
+    "file": "game:entities/land/wolf-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
     "value": "caribou-*",
-    "file": "entities/land/wolf-female.json"
+    "file": "game:entities/land/wolf-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "kiwi-*",
-    "file": "entities/land/wolf-male.json"
+    "file": "game:entities/land/wolf-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "Squirrel-*",
-    "file": "entities/land/wolf-male.json"
+    "file": "game:entities/land/wolf-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "fox-*",
-    "file": "entities/land/wolf-male.json"
+    "file": "game:entities/land/wolf-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "alpaca-*",
-    "file": "entities/land/wolf-male.json"
+    "file": "game:entities/land/wolf-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "caribou-*",
-    "file": "entities/land/wolf-male.json"
+    "file": "game:entities/land/wolf-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "kiwi-*",
-    "file": "entities/land/wolf-male.json"
+    "file": "game:entities/land/wolf-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "Squirrel-*",
-    "file": "entities/land/wolf-male.json"
+    "file": "game:entities/land/wolf-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "fox-*",
-    "file": "entities/land/wolf-male.json"
+    "file": "game:entities/land/wolf-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "alpaca-*",
-    "file": "entities/land/wolf-male.json"
+    "file": "game:entities/land/wolf-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
     "value": "caribou-*",
-    "file": "entities/land/wolf-male.json"
+    "file": "game:entities/land/wolf-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "puma-*",
-    "file": "entities/land/chicken-baby.json"
+    "file": "game:entities/land/chicken-baby.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/chicken-baby.json"
+    "file": "game:entities/land/chicken-baby.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/chicken-baby.json"
+    "file": "game:entities/land/chicken-baby.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "komododragon",
-    "file": "entities/land/chicken-baby.json"
+    "file": "game:entities/land/chicken-baby.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
+    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "puma-*",
-    "file": "entities/land/chicken-baby.json"
+    "file": "game:entities/land/chicken-baby.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
+    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/chicken-baby.json"
+    "file": "game:entities/land/chicken-baby.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
+    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/chicken-baby.json"
+    "file": "game:entities/land/chicken-baby.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/10/aitasks/6/stopOnNearbyEntityCodes/-",
+    "path": "/server/behaviors/10/aitasks/7/stopOnNearbyEntityCodes/-",
     "value": "komododragon",
-    "file": "entities/land/chicken-baby.json"
+    "file": "game:entities/land/chicken-baby.json"
   },
   {
     "op": "add",
@@ -502,7 +466,7 @@
       "priority": 2,
       "accumType": "noaccum"
     },
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "add",
@@ -515,32 +479,32 @@
       "priority": 1,
       "accumType": "sum"
     },
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "remove",
     "path": "/server/behaviors/11/aitasks/0",
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "remove",
     "path": "/server/behaviors/11/aitasks/0",
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "remove",
     "path": "/server/behaviors/11/aitasks/0",
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "remove",
     "path": "/server/behaviors/11/aitasks/0",
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "remove",
     "path": "/server/behaviors/11/aitasks/0",
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "replace",
@@ -564,7 +528,7 @@
       "animation": "Run",
       "sound": "creature/chicken/hen-flee"
     },
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "add",
@@ -576,7 +540,7 @@
       "animation": "Run",
       "sound": "creature/chicken/hen-flee"
     },
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "add",
@@ -603,7 +567,7 @@
       "failBlockCode": "egg-chicken-1",
       "sound": "creature/chicken/hen-lay"
     },
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "add",
@@ -618,7 +582,7 @@
       "mincooldownHours": 1,
       "maxcooldownHours": 4
     },
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "add",
@@ -632,7 +596,7 @@
       "searchRange": 12,
       "animation": "Run"
     },
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "add",
@@ -655,7 +619,7 @@
       "sound": "creature/chicken/hen-idle*",
       "whenNotInEmotionState": "saturated"
     },
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "add",
@@ -674,7 +638,7 @@
       "sound": "creature/chicken/hen-idle*",
       "whenNotInEmotionState": "saturated"
     },
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "add",
@@ -699,7 +663,7 @@
       "mincooldownHours": 6,
       "maxcooldownHours": 12
     },
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "add",
@@ -737,7 +701,7 @@
       "stopRange": 8,
       "stopOnHurt": true
     },
-    "file": "entities/land/chicken-hen.json"
+    "file": "game:entities/land/chicken-hen.json"
   },
   {
     "op": "replace",
@@ -915,7 +879,7 @@
         "maxcooldownHours": 12
       }
     ],
-    "file": "entities/land/chicken-henpoult.json"
+    "file": "game:entities/land/chicken-henpoult.json"
   },
   {
     "op": "add",
@@ -928,12 +892,12 @@
       "priority": 1,
       "accumType": "sum"
     },
-    "file": "entities/land/chicken-rooster.json"
+    "file": "game:entities/land/chicken-rooster.json"
   },
   {
     "op": "remove",
     "path": "/server/behaviors/10/aitasks/2",
-    "file": "entities/land/chicken-rooster.json"
+    "file": "game:entities/land/chicken-rooster.json"
   },
   {
     "op": "replace",
@@ -958,7 +922,7 @@
       "sound": "creature/chicken/hurt",
       "whenInEmotionState": "fleeondamage"
     },
-    "file": "entities/land/chicken-rooster.json"
+    "file": "game:entities/land/chicken-rooster.json"
   },
   {
     "op": "add",
@@ -981,7 +945,7 @@
       "sound": "creature/chicken/hen-idle*",
       "whenNotInEmotionState": "saturated"
     },
-    "file": "entities/land/chicken-rooster.json"
+    "file": "game:entities/land/chicken-rooster.json"
   },
   {
     "op": "add",
@@ -1000,7 +964,7 @@
       "sound": "creature/chicken/hen-idle*",
       "whenNotInEmotionState": "saturated"
     },
-    "file": "entities/land/chicken-rooster.json"
+    "file": "game:entities/land/chicken-rooster.json"
   },
   {
     "op": "add",
@@ -1025,32 +989,32 @@
       "mincooldownHours": 6,
       "maxcooldownHours": 12
     },
-    "file": "entities/land/chicken-rooster.json"
+    "file": "game:entities/land/chicken-rooster.json"
   },
   {
     "op": "remove",
     "path": "/server/behaviors/10/aitasks/0",
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "remove",
     "path": "/server/behaviors/10/aitasks/0",
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "remove",
     "path": "/server/behaviors/10/aitasks/0",
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "remove",
     "path": "/server/behaviors/10/aitasks/0",
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "remove",
     "path": "/server/behaviors/10/aitasks/0",
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "replace",
@@ -1075,7 +1039,7 @@
       "sound": "creature/chicken/hurt",
       "whenInEmotionState": "fleeondamage"
     },
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "add",
@@ -1092,7 +1056,7 @@
       "whenInEmotionState": "aggressiveondamage",
       "sound": "creature/chicken/rooster-alarm"
     },
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "add",
@@ -1116,7 +1080,7 @@
       "animationSpeed": 2.4,
       "sound": "creature/chicken/hurt"
     },
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "add",
@@ -1128,7 +1092,7 @@
       "animation": "Run",
       "sound": "creature/chicken/hen-flee"
     },
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "add",
@@ -1143,7 +1107,7 @@
       "mincooldownHours": 1,
       "maxcooldownHours": 4
     },
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "add",
@@ -1166,7 +1130,7 @@
       "sound": "creature/chicken/hen-idle*",
       "whenNotInEmotionState": "saturated"
     },
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "add",
@@ -1185,7 +1149,7 @@
       "sound": "creature/chicken/hen-idle*",
       "whenNotInEmotionState": "saturated"
     },
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "add",
@@ -1210,7 +1174,7 @@
       "mincooldownHours": 6,
       "maxcooldownHours": 12
     },
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "add",
@@ -1248,914 +1212,180 @@
       "stopRange": 8,
       "stopOnHurt": true
     },
-    "file": "entities/land/chicken-roosterpoult.json"
+    "file": "game:entities/land/chicken-roosterpoult.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/2/entityCodes/-",
-    "value": "wolf-male",
-    "file": "entities/land/fox-arctic-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/2/entityCodes/-",
-    "value": "wolf-female",
-    "file": "entities/land/fox-arctic-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/2/entityCodes/-",
+    "path": "/server/behaviors/11/aitasks/3/entityCodes/-",
     "value": "puma-*",
-    "file": "entities/land/fox-arctic-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "puma-*",
-    "file": "entities/land/fox-arctic-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/2/entityCodes/-",
-    "value": "wolf-male",
-    "file": "entities/land/fox-arctic-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/2/entityCodes/-",
-    "value": "wolf-female",
-    "file": "entities/land/fox-arctic-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/2/entityCodes/-",
-    "value": "puma-*",
-    "file": "entities/land/fox-arctic-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/6/stopOnNearbyEntityCodes/-",
-    "value": "puma-*",
-    "file": "entities/land/fox-arctic-male.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/10/aitasks/2",
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/10/aitasks/2",
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/10/aitasks/2",
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/10/aitasks/2",
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/10/aitasks/2",
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/10/aitasks/2",
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/10/aitasks/2",
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/10/aitasks/2",
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/10/aitasks/2",
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "replace",
-    "path": "/server/behaviors/10/aitasks/2",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "player",
-        "wolf-male",
-        "wolf-female",
-        "puma-*",
-        "tiger-*",
-        "crocodile",
-        "komododragon"
-      ],
-      "priority": 2,
-      "movespeed": 0.03,
-      "seekingRange": 14,
-      "animation": "Run",
-      "animationSpeed": 2.5
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/3",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "chicken-rooster",
-        "chicken-hen",
-        "chicken-baby",
-        "hare-*",
-        "hamster-*",
-        "squirrel"
-      ],
-      "priority": 1.6,
-      "damage": 4,
-      "slot": 1,
-      "mincooldown": 1500,
-      "maxcooldown": 1500,
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 500,
-      "animation": "Attack",
-      "animationSpeed": 2.5,
-      "sound": "creature/fox/attack",
-      "whenNotInEmotionState": "saturated"
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/4",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "chicken-rooster",
-        "chicken-hen",
-        "chicken-baby",
-        "hare-*",
-        "hamster-*",
-        "squirrel"
-      ],
-      "priority": 1.5,
-      "movespeed": 0.04,
-      "animationSpeed": 2,
-      "seekingRange": 20,
-      "animation": "Run",
-      "sound": "creature/fox/growl",
-      "whenNotInEmotionState": "saturated"
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/5",
-    "value": {
-      "code": "getoutofwater",
-      "priority": 1.4,
-      "movespeed": 0.015,
-      "animation": "Walk",
-      "animationSpeed": 2.2
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/6",
-    "value": {
-      "code": "idle",
-      "priority": 1.38,
-      "minduration": 200000,
-      "maxduration": 800000,
-      "mincooldown": 10000,
-      "maxcooldown": 30000,
-      "priorityForCancel": 1.38,
-      "animation": "Sleep",
-      "whenNotInEmotionState": "aggressiveondamage",
-      "duringDayTimeFrames": [
-        {
-          "fromHour": 10,
-          "toHour": 18
-        },
-        {
-          "fromHour": 1,
-          "toHour": 4
-        }
-      ],
-      "stopOnNearbyEntityCodes": [
-        "player",
-        "wolf-male",
-        "wolf-female",
-        "puma-*",
-        "tiger-*",
-        "crocodile",
-        "komododragon"
-      ],
-      "stopRange": 8,
-      "stopOnHurt": true
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/7",
-    "value": {
-      "code": "idle",
-      "onBlockBelowCode": "snowblock",
-      "priority": 1.35,
-      "priorityForCancel": 5,
-      "minduration": 2400,
-      "maxduration": 2400,
-      "mincooldown": 8000,
-      "maxcooldown": 30000,
-      "animation": "Dive",
-      "animationSpeed": 1.25,
-      "sound": "walk/deepsnow1",
-      "soundStartMs": 950
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/8",
-    "value": {
-      "code": "idle",
-      "priority": 1.3,
-      "priorityForCancel": 1.35,
-      "minduration": 4680,
-      "maxduration": 4680,
-      "mincooldown": 80000,
-      "maxcooldown": 400000,
-      "animation": "Yip",
-      "animationSpeed": 0.25,
-      "sound": "creature/fox/yip",
-      "soundRange": 110
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/9",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "insect-cricket",
-        "insect-grasshopper"
-      ],
-      "priority": 1.6,
-      "damage": 1,
-      "slot": 1,
-      "mincooldown": 1500,
-      "maxcooldown": 1500,
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 500,
-      "animation": "Eat",
-      "animationSpeed": 2.5,
-      "whenNotInEmotionState": "saturated"
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/10",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "insect-cricket",
-        "insect-grasshopper"
-      ],
-      "priority": 1.5,
-      "movespeed": 0.04,
-      "animationSpeed": 2,
-      "seekingRange": 20,
-      "animation": "Run",
-      "whenNotInEmotionState": "saturated"
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/11",
-    "value": {
-      "code": "seekfoodandeat",
-      "movespeed": 0.01,
-      "priority": 1.6,
-      "animationSpeed": 1.75,
-      "eatTime": 2,
-      "eatLooseItems": true,
-      "eatItemCategories": [
-        "Protein"
-      ],
-      "eatItemCodes": [
-        "insect-cricket",
-        "insect-grasshopper"
-      ],
-      "animation": "Walk",
-      "eatAnimation": "gather",
-      "eatAnimationLooseItems": "eat",
-      "mincooldownHours": 6,
-      "maxcooldownHours": 12
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/12",
-    "value": {
-      "code": "idle",
-      "priority": 1.2,
-      "priorityForCancel": 1.35,
-      "minduration": 2500,
-      "maxduration": 2500,
-      "mincooldown": 6000,
-      "maxcooldown": 20000,
-      "animation": "Sniff",
-      "animationSpeed": 1.25
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/13",
-    "value": {
-      "code": "wander",
-      "priority": 1.0,
-      "priorityForCancel": 1.35,
-      "movespeed": 0.006,
-      "animation": "Walk",
-      "preferredLightLevel": 20
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/10/aitasks/14",
-    "value": {
-      "code": "idle",
-      "priority": 0.9,
-      "minduration": 5000,
-      "maxduration": 30000,
-      "mincooldown": 2000,
-      "maxcooldown": 120000,
-      "priorityForCancel": 1.38,
-      "animation": "Sit",
-      "stopOnNearbyEntityCodes": [
-        "player",
-        "wolf-male",
-        "wolf-female",
-        "puma-*",
-        "tiger-*",
-        "crocodile",
-        "komododragon"
-      ],
-      "stopRange": 5
-    },
-    "file": "entities/land/fox-female.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/9/aitasks/2",
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/9/aitasks/2",
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/9/aitasks/2",
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/9/aitasks/2",
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/9/aitasks/2",
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/9/aitasks/2",
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/9/aitasks/2",
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/9/aitasks/2",
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "remove",
-    "path": "/server/behaviors/9/aitasks/2",
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "replace",
-    "path": "/server/behaviors/9/aitasks/2",
-    "value": {
-      "code": "fleeentity",
-      "entityCodes": [
-        "player",
-        "wolf-male",
-        "wolf-female",
-        "puma-*",
-        "tiger-*",
-        "crocodile",
-        "komododragon"
-      ],
-      "priority": 2,
-      "movespeed": 0.03,
-      "seekingRange": 14,
-      "animation": "Run",
-      "animationSpeed": 2.5
-    },
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/3",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "chicken-rooster",
-        "chicken-hen",
-        "chicken-baby",
-        "hare-*",
-        "hamster-*",
-        "squirrel"
-      ],
-      "priority": 1.6,
-      "damage": 4,
-      "slot": 1,
-      "mincooldown": 1500,
-      "maxcooldown": 1500,
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 500,
-      "animation": "Attack",
-      "animationSpeed": 2.5,
-      "sound": "creature/fox/attack",
-      "whenNotInEmotionState": "saturated"
-    },
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/4",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "chicken-rooster",
-        "chicken-hen",
-        "chicken-baby",
-        "hare-*",
-        "hamster-*",
-        "squirrel"
-      ],
-      "priority": 1.5,
-      "movespeed": 0.04,
-      "animationSpeed": 2,
-      "seekingRange": 20,
-      "animation": "Run",
-      "sound": "creature/fox/growl",
-      "whenNotInEmotionState": "saturated"
-    },
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/5",
-    "value": {
-      "code": "getoutofwater",
-      "priority": 1.4,
-      "movespeed": 0.015,
-      "animation": "Walk",
-      "animationSpeed": 2.2
-    },
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/6",
-    "value": {
-      "code": "idle",
-      "priority": 1.38,
-      "minduration": 200000,
-      "maxduration": 800000,
-      "mincooldown": 10000,
-      "maxcooldown": 30000,
-      "priorityForCancel": 1.38,
-      "animation": "Sleep",
-      "whenNotInEmotionState": "aggressiveondamage",
-      "duringDayTimeFrames": [
-        {
-          "fromHour": 10,
-          "toHour": 18
-        },
-        {
-          "fromHour": 1,
-          "toHour": 4
-        }
-      ],
-      "stopOnNearbyEntityCodes": [
-        "player",
-        "wolf-male",
-        "wolf-female",
-        "puma-*",
-        "tiger-*",
-        "crocodile",
-        "komododragon"
-      ],
-      "stopRange": 8,
-      "stopOnHurt": true
-    },
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/7",
-    "value": {
-      "code": "idle",
-      "onBlockBelowCode": "snowblock",
-      "priority": 1.35,
-      "priorityForCancel": 5,
-      "minduration": 2400,
-      "maxduration": 2400,
-      "mincooldown": 8000,
-      "maxcooldown": 30000,
-      "animation": "Dive",
-      "animationSpeed": 1.25,
-      "sound": "walk/deepsnow1",
-      "soundStartMs": 950
-    },
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/8",
-    "value": {
-      "code": "idle",
-      "priority": 1.3,
-      "priorityForCancel": 1.35,
-      "minduration": 4680,
-      "maxduration": 4680,
-      "mincooldown": 80000,
-      "maxcooldown": 400000,
-      "animation": "Yip",
-      "animationSpeed": 0.25,
-      "sound": "creature/fox/yip",
-      "soundRange": 110
-    },
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/9",
-    "value": {
-      "code": "idle",
-      "priority": 1.2,
-      "priorityForCancel": 1.35,
-      "minduration": 2500,
-      "maxduration": 2500,
-      "mincooldown": 6000,
-      "maxcooldown": 20000,
-      "animation": "Sniff",
-      "animationSpeed": 1.25
-    },
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/10",
-    "value": {
-      "code": "meleeattack",
-      "entityCodes": [
-        "insect-cricket",
-        "insect-grasshopper"
-      ],
-      "priority": 1.6,
-      "damage": 1,
-      "slot": 1,
-      "mincooldown": 1500,
-      "maxcooldown": 1500,
-      "attackDurationMs": 800,
-      "damagePlayerAtMs": 500,
-      "animation": "Eat",
-      "animationSpeed": 2.5,
-      "whenNotInEmotionState": "saturated"
-    },
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/11",
-    "value": {
-      "code": "seekentity",
-      "entityCodes": [
-        "insect-cricket",
-        "insect-grasshopper"
-      ],
-      "priority": 1.5,
-      "movespeed": 0.04,
-      "animationSpeed": 2,
-      "seekingRange": 20,
-      "animation": "Run",
-      "whenNotInEmotionState": "saturated"
-    },
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/12",
-    "value": {
-      "code": "seekfoodandeat",
-      "movespeed": 0.01,
-      "priority": 1.6,
-      "animationSpeed": 1.75,
-      "eatTime": 2,
-      "eatLooseItems": true,
-      "eatItemCategories": [
-        "Protein"
-      ],
-      "eatItemCodes": [
-        "insect-cricket",
-        "insect-grasshopper"
-      ],
-      "animation": "Walk",
-      "eatAnimation": "gather",
-      "eatAnimationLooseItems": "eat",
-      "mincooldownHours": 6,
-      "maxcooldownHours": 12
-    },
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/13",
-    "value": {
-      "code": "wander",
-      "priority": 1.0,
-      "priorityForCancel": 1.35,
-      "movespeed": 0.006,
-      "animation": "Walk",
-      "preferredLightLevel": 20
-    },
-    "file": "entities/land/fox-male.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/14",
-    "value": {
-      "code": "idle",
-      "priority": 0.9,
-      "minduration": 5000,
-      "maxduration": 30000,
-      "mincooldown": 2000,
-      "maxcooldown": 120000,
-      "priorityForCancel": 1.39,
-      "animation": "Sit",
-      "stopOnNearbyEntityCodes": [
-        "player",
-        "wolf-male",
-        "wolf-female",
-        "puma-*",
-        "tiger-*",
-        "crocodile",
-        "komododragon"
-      ],
-      "stopRange": 5
-    },
-    "file": "entities/land/fox-male.json"
+    "file": "game:entities/land/fox"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "puma-*",
-    "file": "entities/land/fox-pup.json"
+    "file": "game:entities/land/hare-baby.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/fox-pup.json"
+    "file": "game:entities/land/hare-baby.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/fox-pup.json"
+    "file": "game:entities/land/hare-baby.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "komododragon",
-    "file": "entities/land/fox-pup.json"
+    "file": "game:entities/land/hare-baby.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "puma-*",
-    "file": "entities/land/fox-pup.json"
+    "file": "game:entities/land/hare-baby.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/fox-pup.json"
+    "file": "game:entities/land/hare-baby.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/fox-pup.json"
+    "file": "game:entities/land/hare-baby.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "komododragon",
-    "file": "entities/land/fox-pup.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
-    "value": "puma-*",
-    "file": "entities/land/hare-baby.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
-    "value": "tiger-*",
-    "file": "entities/land/hare-baby.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
-    "value": "crocodile",
-    "file": "entities/land/hare-baby.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
-    "value": "komododragon",
-    "file": "entities/land/hare-baby.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "puma-*",
-    "file": "entities/land/hare-baby.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "tiger-*",
-    "file": "entities/land/hare-baby.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "crocodile",
-    "file": "entities/land/hare-baby.json"
-  },
-  {
-    "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
-    "value": "komododragon",
-    "file": "entities/land/hare-baby.json"
+    "file": "game:entities/land/hare-baby.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "puma-*",
-    "file": "entities/land/hare-female.json"
+    "file": "game:entities/land/hare-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/hare-female.json"
+    "file": "game:entities/land/hare-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/hare-female.json"
+    "file": "game:entities/land/hare-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "komododragon",
-    "file": "entities/land/hare-female.json"
+    "file": "game:entities/land/hare-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "puma-*",
-    "file": "entities/land/hare-female.json"
+    "file": "game:entities/land/hare-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/hare-female.json"
+    "file": "game:entities/land/hare-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/hare-female.json"
+    "file": "game:entities/land/hare-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/10/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "komododragon",
-    "file": "entities/land/hare-female.json"
+    "file": "game:entities/land/hare-female.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "puma-*",
-    "file": "entities/land/hare-male.json"
+    "file": "game:entities/land/hare-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/hare-male.json"
+    "file": "game:entities/land/hare-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/hare-male.json"
+    "file": "game:entities/land/hare-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "komododragon",
-    "file": "entities/land/hare-male.json"
+    "file": "game:entities/land/hare-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "puma-*",
-    "file": "entities/land/hare-male.json"
+    "file": "game:entities/land/hare-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/hare-male.json"
+    "file": "game:entities/land/hare-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/hare-male.json"
+    "file": "game:entities/land/hare-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/2/stopOnNearbyEntityCodes/-",
     "value": "komododragon",
-    "file": "entities/land/hare-male.json"
+    "file": "game:entities/land/hare-male.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/hyena-pup.json"
+    "file": "game:entities/land/hyena-pup.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/hyena-pup.json"
+    "file": "game:entities/land/hyena-pup.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "tiger-*",
-    "file": "entities/land/hyena-pup.json"
+    "file": "game:entities/land/hyena-pup.json"
   },
   {
     "op": "add",
     "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "crocodile",
-    "file": "entities/land/hyena-pup.json"
+    "file": "game:entities/land/hyena-pup.json"
   }
 ]

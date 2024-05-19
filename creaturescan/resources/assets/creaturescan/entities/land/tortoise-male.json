@@ -13,7 +13,11 @@
 	"eyeHeight": 0.7,
 	"knockbackresistance": 0.2,
 	"attributes": {
-		"blockDiet": [ "crop-cabbage*" ]
+		"creatureDiet": {
+			"foodCategories": [ "Vegetable" ],
+			"foodTags": [ "nibbleCrop", "fruitmash" ],
+			"skipFoodTags": [ "parsnip" ]
+		}
 	},
 	"drops": [],
 	"client": {
@@ -103,7 +107,7 @@
 				"drops": [
 					{
 						"type": "item",
-						"code": "game:turtlemeat-raw",
+						"code": "creaturescan:turtlemeat-raw",
 						"quantity": {
 							"avg": 5,
 							"var": 1.5

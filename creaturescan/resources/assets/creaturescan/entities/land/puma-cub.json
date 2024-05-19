@@ -11,7 +11,11 @@
 	},
 	"eyeHeight": 1.5,
 	"drops": [],
-	"attributes": {},
+	"attributes": {
+		"creatureDiet": {
+			"foodTags": [ "meat" ]
+		}
+	},
 	"client": {
 		"renderer": "Shape",
 		"size": 0.5,
@@ -182,7 +186,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 336,
-				"adultEntityCodes": [ "puma-male", "puma-female" ]
+				"adultEntityCodes": [ "creaturescan:puma-male", "creaturescan:puma-female" ]
 			},
 			{
 				"code": "taskai",
@@ -258,7 +262,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "puma-female",
+						"entityCode": "creaturescan:puma-female",
 						"movespeed": 0.02,
 						"animationSpeed": 4,
 						"maxDistance": 5,

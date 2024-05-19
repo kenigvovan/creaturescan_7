@@ -22,7 +22,7 @@
         "litres": 4
       }
     },
-    "file": "recipes/barrel/dye/red.json"
+    "file": "game:recipes/barrel/dye/red.json"
   },
   {
     "op": "add",
@@ -47,7 +47,7 @@
         "litres": 2
       }
     },
-    "file": "recipes/barrel/dye/red.json"
+    "file": "game:recipes/barrel/dye/red.json"
   },
   {
     "op": "add",
@@ -72,6 +72,6 @@
         "litres": 3
       }
     },
-    "file": "recipes/barrel/dye/red.json"
+    "file": "game:recipes/barrel/dye/red.json"
   }
 ]

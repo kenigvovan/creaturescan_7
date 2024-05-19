@@ -15,7 +15,10 @@
 	"drops": [],
 	"attributes": {
 		"reckless": true,
-		"extraSplashParticlesMul": 2
+		"extraSplashParticlesMul": 2,
+		"creatureDiet": {
+			"foodTags": [ "meat" ]
+		}
 	},
 	"client": {
 		"renderer": "Shape",

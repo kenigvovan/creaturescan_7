@@ -14,7 +14,10 @@
 	"drops": [],
 	"attributes": {
 		"reckless": true,
-		"blockDiet": [ "Honey", "Berry" ]
+		"creatureDiet": {
+			"foodCategories": [ "Fruit" ],
+			"foodTags": [ "lootableSweet", "sweetBerryBush" ]
+		}
 	},
 	"client": {
 		"renderer": "Shape",

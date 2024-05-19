@@ -2,7 +2,7 @@
 	"code": "pileofdrycochineal",
 	"heldTpIdleAnimation": "holdbothhands",
 	"shape": { "base": "creaturescan:pileofdrycochineal" },
-	"texture": { "base": "game:driedcochineal" },
+	"texture": { "base": "creaturescan:driedcochineal" },
 	"attributes": {
 		"displaycaseable": true,
 		"shelvable": true,
@@ -84,7 +84,7 @@
 		"scale": 1.92
 	},
 	"grindingProps": {
-		"grindedStack": {
+		"groundStack": {
 			"type": "item",
 			"code": "creaturescan:groundcochineal",
 			"stacksize": 1

@@ -8,7 +8,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-	     "toad": "toad",
+		"toad": "creaturescan:toad-dark"
 	},
 	"elements": [
 		{

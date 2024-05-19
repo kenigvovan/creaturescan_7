@@ -12,6 +12,13 @@
 	"eyeHeight": 1.4,
 	"weight": 150,
 	"drops": [],
+	"attributes": {
+		"creatureDiet": {
+			"foodCategories": [ "Grain" ],
+			"foodTags": [ "nibbleCrop", "grass", "fruitmash" ],
+			"skipFoodTags": [ "rice" ]
+		}
+	},
 	"client": {
 		"renderer": "Shape",
 		"shape": { "base": "entity/land/camel-male" },

@@ -17,7 +17,7 @@
 	"texturebytype": {
 		"*-cricket": { "base": "cookedcricket" },
 		"*-grasshopper": { "base": "cookedgrasshopper" },
-		"*-rolypoly": { "base": "game:cookedrolypoly" }
+		"*-rolypoly": { "base": "cookedrolypoly" }
 	},
 	"creativeinventory": {
 		"general": [ "*" ],
@@ -233,14 +233,14 @@
 	},
 	"grindingPropsByType": {
 		"*-cricket": {
-			"grindedStack": {
+			"groundStack": {
 				"type": "item",
 				"code": "creaturescan:bugflour-cricket",
 				"stacksize": 1
 			}
 		},
 		"*-grasshopper": {
-			"grindedStack": {
+			"groundStack": {
 				"type": "item",
 				"code": "creaturescan:bugflour-grasshopper",
 				"stacksize": 1

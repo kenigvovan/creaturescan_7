@@ -14,7 +14,10 @@
 	"drops": [],
 	"attributes": {
 		"reckless": true,
-		"blockDiet": [ "Honey", "Berry" ]
+		"creatureDiet": {
+			"foodCategories": [ "Fruit" ],
+			"foodTags": [ "lootableSweet", "sweetBerryBush" ]
+		}
 	},
 	"client": {
 		"renderer": "Shape",
@@ -153,7 +156,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 600,
-				"adultEntityCodes": [ "honeybadger-male", "honeybadger-female" ]
+				"adultEntityCodes": [ "creaturescan:honeybadger-male", "creaturescan:honeybadger-female" ]
 			},
 			{
 				"code": "emotionstates",
@@ -207,7 +210,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "honeybadger-female",
+						"entityCode": "creaturescan:honeybadger-female",
 						"movespeed": 0.012,
 						"maxDistance": 2,
 						"searchRange": 20,

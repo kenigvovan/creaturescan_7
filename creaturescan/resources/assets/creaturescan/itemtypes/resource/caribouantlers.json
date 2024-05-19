@@ -87,7 +87,7 @@
 		}
 	},
 	"grindingProps": {
-		"grindedStack": {
+		"groundStack": {
 			"type": "item",
 			"code": "game:bonemeal",
 			"stackSize": 5

@@ -12,7 +12,11 @@
 	"eyeHeight": 1.5,
 	"fallDamage": false,
 	"drops": [],
-	"attributes": {},
+	"attributes": {
+		"creatureDiet": {
+			"foodTags": [ "meat" ]
+		}
+	},
 	"client": {
 		"renderer": "Shape",
 		"size": 0.8,
@@ -183,7 +187,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 336,
-				"adultEntityCodes": [ "tiger-male", "tiger-female" ]
+				"adultEntityCodes": [ "creaturescan:tiger-male", "creaturescan:tiger-female" ]
 			},
 			{
 				"code": "taskai",
@@ -260,7 +264,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "tiger-female",
+						"entityCode": "creaturescan:tiger-female",
 						"movespeed": 0.02,
 						"animationSpeed": 2,
 						"maxDistance": 5,

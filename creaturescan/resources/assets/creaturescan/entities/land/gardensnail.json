@@ -25,6 +25,10 @@
 			}
 		}
 	],
+	"attributes": {
+		"creatureDiet": {
+		}
+	},
 	"client": {
 		"renderer": "Shape",
 		"shape": { "base": "entity/land/gardensnail" },

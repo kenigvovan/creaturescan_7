@@ -6,7 +6,7 @@
 	"textureWidth": 16,
 	"textureHeight": 16,
 	"textures": {
-		"bread": "creaturescan:item/food/buggrain/{type}bread"
+		"bread": "item/food/buggrain/cricketbread"
 	},
 	"elements": [
 		{

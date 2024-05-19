@@ -8,8 +8,12 @@
 	},
 	"eyeHeight": 0.2,
 	"attributes": {
-		"seafloor": true
+		"seafloor": true,
+		"creatureDiet": {
+
+		}
 	},
+
 	"drops": [
 		{
 			"type": "item",

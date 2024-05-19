@@ -14,7 +14,10 @@
 	"drops": [],
 	"attributes": {
 		"reckless": true,
-		"blockDiet": [ "Honey", "Berry" ]
+		"creatureDiet": {
+			"foodCategories": [ "Fruit" ],
+			"foodTags": [ "lootableSweet", "sweetBerryBush" ]
+		}
 	},
 	"client": {
 		"renderer": "Shape",
@@ -273,7 +276,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "honeybadger-male",
+						"entityCode": "creaturescan:honeybadger-male",
 						"movespeed": 0.012,
 						"maxDistance": 5,
 						"searchRange": 20,

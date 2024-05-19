@@ -10,7 +10,13 @@
 		"y": 1
 	},
 	"eyeHeight": 0.7,
-	"attributes": {},
+	"attributes": {
+		"creatureDiet": {
+			"foodCategories": [ "Vegetable" ],
+			"foodTags": [ "nibbleCrop", "grass", "fruitmash" ],
+			"skipFoodTags": [  "parsnip" ]
+		}
+	},
 	"drops": [],
 	"client": {
 		"renderer": "Shape",
@@ -171,7 +177,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 2400,
-				"adultEntityCodes": [ "elephant-male", "elephant-female" ]
+				"adultEntityCodes": [ "creaturescan:elephant-male", "creaturescan:elephant-female" ]
 			},
 			{
 				"code": "taskai",
@@ -190,7 +196,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "elephant-female",
+						"entityCode": "creaturescan:elephant-female",
 						"movespeed": 0.015,
 						"maxDistance": 7,
 						"searchRange": 25,

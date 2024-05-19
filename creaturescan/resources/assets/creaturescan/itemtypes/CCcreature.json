@@ -132,7 +132,7 @@
 			"base": "entity/land/slug"
 		},
 		"*-gardensnail": {
-			"base": "entity/land/gardensnail"
+			"base": "entity/land/slug"
 		},
 		"*-squirrel-male": {
 			"base": "entity/land/squirrel-male"
@@ -353,7 +353,7 @@
 			"slug": { "base": "slug" }
 		},
 		"*-gardensnail": {
-			"slug": { "base": "snail" }
+			"slug": { "base": "slug" }
 		},
 		"*-squirrel-male": {
 			"red-squirrel": { "base": "entity/land/squirrel1" }
@@ -374,7 +374,7 @@
 			"tortoise": { "base": "entity/land/tortoise" }
 		},
 		"*-songbird-sparrow": {
-			"songbird-sparrow": { "base": "entity/air/songbird-sparrow" }
+			"songbird-sparrow": { "base": "entity/air/sparrow" }
 		},
 		"*-rolypoly": {
 			"rolypoly": { "base": "entity/rolypoly" }
@@ -422,7 +422,7 @@
 			"crocodile": { "base": "crocodile" }
 		},
 		"*-flamejellyfish": {
-			"flamejellyfish": { "base": "flamejellyfish" }
+			"flamejellyfish": { "base": "flamejelly" }
 		},
 		"*-alpaca-male": {
 			"alpaca": { "base": "alpaca1" }
@@ -506,15 +506,15 @@
 			"cassowary-youngling": { "base": "cassowary-youngling" }
 		},
 		"*-camel-male": {
-			"camel1": { "base": "camel1" },
+			"camel1": { "base": "camel" },
 			"camel2": { "base": "camel2" }
 		},
 		"*-camel-female": {
-			"camel1": { "base": "camel1" },
+			"camel1": { "base": "camel" },
 			"camel2": { "base": "camel2" }
 		},
 		"*-camel-calf": {
-			"camel1": { "base": "camel1" },
+			"camel1": { "base": "camel" },
 			"camel2": { "base": "camel2" }
 		},
 		"*-caribou-male": {
@@ -534,7 +534,7 @@
 			"reindeerantlers": { "base": "reindeerantlers" }
 		},
 		"*-mosquitoswarm": {
-			"mosquitoswarm": { "base": "mosquitoswarm" }
+			"mosquitoswarm": { "base": "game:block/metal/sheet/gold1" }
 		},
 		"*-honeybadger-male": {
 			"honeybadger3": { "base": "honeybadger3" },

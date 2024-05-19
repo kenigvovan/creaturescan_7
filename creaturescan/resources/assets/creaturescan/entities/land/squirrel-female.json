@@ -8,7 +8,10 @@
 	fallDamage: false,
 	hitboxSize: { x: 0.75, y: 0.5 },
 	attributes: {
-		blockDiet: ["crop-peanut*", "Berry"]
+		"creatureDiet": {
+			"foodCategories": [ "Fruit" ],
+			"foodTags": [ "sweetBerryBush" ]
+		}
 	},
 	eyeHeight: 0.6,
 	drops: [

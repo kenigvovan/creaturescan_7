@@ -2,12 +2,12 @@
   {
     "op": "remove",
     "path": "/attributes",
-    "file": "itemtypes/food/egg.json"
+    "file": "game:itemtypes/food/egg.json"
   },
   {
     "op": "remove",
     "path": "/texture",
-    "file": "itemtypes/food/egg.json"
+    "file": "game:itemtypes/food/egg.json"
   },
   {
     "op": "add",
@@ -22,7 +22,7 @@
           "foodcategory": "Protein"
         }
       },
-      "egg-kiwi-raw": {
+      "kiwi-egg-raw": {
         "inContainerTexture": {
           "base": "game:block/wood/barrel/contents-kiwiegg"
         },
@@ -32,7 +32,7 @@
         }
       }
     },
-    "file": "itemtypes/food/egg.json"
+    "file": "game:itemtypes/food/egg.json"
   },
   {
     "op": "add",
@@ -45,12 +45,12 @@
         "base": "game:kiwi"
       }
     },
-    "file": "itemtypes/food/egg.json"
+    "file": "game:itemtypes/food/egg.json"
   },
   {
     "op": "remove",
     "path": "/nutritionPropsByType/*-boiled",
-    "file": "itemtypes/food/egg.json"
+    "file": "game:itemtypes/food/egg.json"
   },
   {
     "op": "add",
@@ -59,7 +59,7 @@
       "saturation": 160,
       "foodcategory": "Protein"
     },
-    "file": "itemtypes/food/egg.json"
+    "file": "game:itemtypes/food/egg.json"
   },
   {
     "op": "add",
@@ -68,12 +68,12 @@
       "saturation": 480,
       "foodcategory": "Protein"
     },
-    "file": "itemtypes/food/egg.json"
+    "file": "game:itemtypes/food/egg.json"
   },
   {
     "op": "add",
     "path": "/variantgroups/0/states/1",
     "value": "kiwi",
-    "file": "itemtypes/food/egg.json"
+    "file": "game:itemtypes/food/egg.json"
   }
 ]

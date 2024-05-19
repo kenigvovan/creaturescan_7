@@ -1,5 +1,5 @@
 {
-	"ingredientPattern": "GGG, GGG",
+	"ingredientPattern": "GGG,GGG",
 	"ingredients": {
 		"G": {
 			"type": "item",
@@ -10,7 +10,7 @@
 	"height": 2,
 	"output": {
 		"type": "block",
-		"code": "game:ivoryblock",
+		"code": "creaturescan:ivoryblock",
 		"quantity": 1
 	}
 }

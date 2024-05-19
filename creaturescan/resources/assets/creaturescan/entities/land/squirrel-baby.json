@@ -11,7 +11,10 @@
 		"y": 0.5
 	},
 	"attributes": {
-		"blockDiet": [ "crop-peanut*", "Berry" ]
+		"creatureDiet": {
+			"foodCategories": [ "Fruit" ],
+			"foodTags": [ "lootableSweet", "sweetBerryBush" ]
+		}
 	},
 	"eyeHeight": 0.6,
 	"drops": [
@@ -185,7 +188,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 336,
-				"adultEntityCodes": [ "squirrel-male", "squirrel-female" ]
+				"adultEntityCodes": [ "creaturescan:squirrel-male", "creaturescan:squirrel-female" ]
 			},
 			{
 				"code": "taskai",
@@ -209,7 +212,7 @@
 					{
 						"code": "stayclosetoentity",
 						"priority": 1.4,
-						"entityCode": "squirrel-female",
+						"entityCode": "creaturescan:squirrel-female",
 						"movespeed": 0.03,
 						"animationSpeed": 3,
 						"maxDistance": 5,

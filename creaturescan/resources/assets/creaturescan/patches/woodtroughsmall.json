@@ -3,36 +3,36 @@
     "op": "add",
     "path": "/attributes/contentConfig/0/foodFor/1",
     "value": "kiwi-*",
-    "file": "blocktypes/wood/trough-small.json"
+    "file": "game:blocktypes/wood/trough-small.json"
   },
   {
     "op": "add",
     "path": "/attributes/contentConfig/1/foodFor/1",
     "value": "kiwi-*",
-    "file": "blocktypes/wood/trough-small.json"
+    "file": "game:blocktypes/wood/trough-small.json"
   },
   {
     "op": "add",
     "path": "/attributes/contentConfig/2/foodFor/1",
     "value": "kiwi-*",
-    "file": "blocktypes/wood/trough-small.json"
+    "file": "game:blocktypes/wood/trough-small.json"
   },
   {
     "op": "add",
     "path": "/attributes/contentConfig/3/foodFor/1",
     "value": "kiwi-*",
-    "file": "blocktypes/wood/trough-small.json"
+    "file": "game:blocktypes/wood/trough-small.json"
   },
   {
     "op": "add",
     "path": "/attributes/contentConfig/4/foodFor/1",
     "value": "kiwi-*",
-    "file": "blocktypes/wood/trough-small.json"
+    "file": "game:blocktypes/wood/trough-small.json"
   },
   {
     "op": "add",
     "path": "/attributes/contentConfig/5/foodFor/1",
     "value": "kiwi-*",
-    "file": "blocktypes/wood/trough-small.json"
+    "file": "game:blocktypes/wood/trough-small.json"
   }
 ]

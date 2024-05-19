@@ -3,6 +3,6 @@
     "op": "add",
     "path": "/variantgroups/0/states/6",
     "value": "elephant",
-    "file": "blocktypes/bone/drycarcass.json"
+    "file": "game:blocktypes/bone/drycarcass.json"
   }
 ]

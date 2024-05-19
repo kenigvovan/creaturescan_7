@@ -11,6 +11,13 @@
 	},
 	"eyeHeight": 1.5,
 	"weight": 150,
+	"attributes": {
+		"creatureDiet": {
+			"foodCategories": [ "Grain" ],
+			"foodTags": [ "nibbleCrop", "grass", "fruitmash" ],
+			"skipFoodTags": [ "rice" ]
+		}
+	},
 	"drops": [
 		{
 			"type": "item",

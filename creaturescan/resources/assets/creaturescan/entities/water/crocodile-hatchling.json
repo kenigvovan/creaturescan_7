@@ -12,7 +12,10 @@
 	"eyeHeight": 0.1,
 	"drops": [],
 	"attributes": {
-		"seafloor": true
+		"seafloor": true,
+			"creatureDiet": {
+			}
+		
 	},
 	"habitat": "Underwater",
 	"client": {
@@ -109,7 +112,7 @@
 			{
 				"code": "grow",
 				"hoursToGrow": 1344,
-				"adultEntityCodes": [ "crocodile" ]
+				"adultEntityCodes": [ "creaturescan:crocodile" ]
 			},
 			{
 				"code": "harvestable",

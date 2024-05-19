@@ -10,10 +10,14 @@
 		"y": 0.3
 	},
 	"eyeHeight": 0.1,
+	"attributes": {
+		"creatureDiet": {
+		}
+	},
 	"drops": [
 		{
 			"type": "item",
-			"code": "game:insect-glowworm",
+			"code": "creaturescan:insect-glowworm",
 			"quantity": { "avg": 1 }
 		}
 	],

@@ -17,7 +17,10 @@
 		"y": 0.2
 	},
 	"attributes": {
-		"seafloor": true
+		"seafloor": true,
+			"creatureDiet": {
+			}
+		
 	},
 	"eyeHeight": 0.1,
 	"canClimb": true,
@@ -27,7 +30,7 @@
 	"drops": [
 		{
 			"type": "item",
-			"code": "game:snailwithshell-{shell}-{color}",
+			"code": "creaturescan:snailwithshell-{shell}-{color}",
 			"quantity": {
 				"avg": 1,
 				"var": 0
@@ -40,7 +43,7 @@
 		"shape": { "base": "entity/water/snail/{shell}" },
 		"textures": {
 			"color": { "base": "game:block/creature/seashell/{color}" },
-			"skin": { "base": "block/coal/charcoal" }
+			"skin": { "base": "game:block/coal/charcoal" }
 		},
 		"behaviors": [
 			{ "code": "repulseagents" },

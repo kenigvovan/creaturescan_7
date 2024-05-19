@@ -2,7 +2,7 @@
 	"code": "pileofdeadcochineal",
 	"heldTpIdleAnimation": "holdbothhands",
 	"shape": { "base": "creaturescan:pileofdeadcochineal" },
-	"texture": { "base": "game:cochineal" },
+	"texture": { "base": "creaturescan:cochineal" },
 	"attributes": {
 		"displaycaseable": true,
 		"shelvable": true,
