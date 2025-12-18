@@ -917,7 +917,7 @@
 					}
 				},
 				{
-					"frame": 44,
+					"frame": 43,
 					"elements": {
 						"body": {  },
 						"neck": {  },
@@ -927,7 +927,7 @@
 					}
 				},
 				{
-					"frame": 45,
+					"frame": 44,
 					"elements": {
 						"body": { "offsetX": 2.0, "offsetY": 4.0, "offsetZ": -2.5, "rotationX": -95.0, "rotationY": -6.0, "rotationZ": -28.0 },
 						"neck": { "offsetX": 0.7, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -53.0 },

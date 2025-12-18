@@ -1204,7 +1204,7 @@
 					}
 				},
 				{
-					"frame": 90,
+					"frame": 89,
 					"elements": {
 						"body1": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"thigh1": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 20.246 },

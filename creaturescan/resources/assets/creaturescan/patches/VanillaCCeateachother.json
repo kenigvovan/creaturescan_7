@@ -1,37 +1,37 @@
 [
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodesByType/*",
+    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "kiwi-*",
     "file": "game:entities/land/bear.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodesByType/*",
+    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "squirrel-*",
     "file": "game:entities/land/bear.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodesByType/*",
+    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "caribou-*",
     "file": "game:entities/land/bear.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/entityCodesByType/*",
+    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "kiwi-*",
     "file": "game:entities/land/bear.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/entityCodesByType/*",
+    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "squirrel-*",
     "file": "game:entities/land/bear.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/entityCodesByType/*",
+    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
     "value": "caribou-*",
     "file": "game:entities/land/bear.json"
   },
@@ -1366,25 +1366,25 @@
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
+    "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "tiger-*",
     "file": "game:entities/land/hyena-pup.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
+    "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
     "value": "crocodile",
     "file": "game:entities/land/hyena-pup.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
+    "path": "/server/behaviors/10/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "tiger-*",
     "file": "game:entities/land/hyena-pup.json"
   },
   {
     "op": "add",
-    "path": "/server/behaviors/9/aitasks/3/stopOnNearbyEntityCodes/-",
+    "path": "/server/behaviors/10/aitasks/3/stopOnNearbyEntityCodes/-",
     "value": "crocodile",
     "file": "game:entities/land/hyena-pup.json"
   }
